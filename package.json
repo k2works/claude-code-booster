@@ -1,0 +1,39 @@
+{
+  "name": "@k2works/claude-code-booster",
+  "version": "0.0.0",
+  "description": "AI Agent Development Support Tool",
+  "main": "main.js",
+  "bin": {
+    "boost": "bin/claude-code-booster"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major",
+    "release": "npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k2works/claude-code-booster.git"
+  },
+  "author": "k2works",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k2works/claude-code-booster/issues"
+  },
+  "homepage": "https://github.com/k2works/claude-code-booster#readme",
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE",
+    "main.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "gulp": "^5.0.0",
+    "path": "^0.12.7"
+  }
+}

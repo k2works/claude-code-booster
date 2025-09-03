@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+
+const { exec } = require('child_process');
+const path = require('path');
+
+const setupProject = () => {
+  // パッケージのルートディレクトリのパスを取得する
+  const packageDir = path.join(__dirname, '..');
+
+  // gulpのdefaultタスクを実行するコマンドを定義する
+  const gulpfilePath = path.join(packageDir, 'lib', 'gulpfile.js');
+  const gulpCommand = `npx gulp --gulpfile "${gulpfilePath}"`;
+
+  // child_processモジュールのexec関数を使用して、gulpコマンドを実行する
+  const child = exec(gulpCommand);
+
+  // gulpコマンドの出力をコンソールに表示する
+  child.stdout.on('data', (data) => {
+    console.log(data);
+  });
+
+  // gulpコマンドのエラーをコンソールに表示する
+  child.stderr.on('data', (data) => {
+    console.error(data);
+  });
+}
+
+setupProject();
