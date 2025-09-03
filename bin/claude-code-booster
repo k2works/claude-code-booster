@@ -1,28 +1,31 @@
 #!/usr/bin/env node
 
-const { exec } = require('child_process');
 const path = require('path');
+const fs = require('fs-extra');
 
-const setupProject = () => {
+const TEMPLATE_DIR = 'lib/assets';
+
+async function setupProject() {
+  // プロジェクトのルートディレクトリのパスを取得する
+  const projectDir = process.env.INIT_CWD || process.cwd();
+
   // パッケージのルートディレクトリのパスを取得する
   const packageDir = path.join(__dirname, '..');
 
-  // gulpのdefaultタスクを実行するコマンドを定義する
-  const gulpfilePath = path.join(packageDir, 'lib', 'gulpfile.js');
-  const gulpCommand = `npx gulp --gulpfile "${gulpfilePath}"`;
+  // テンプレートファイルが含まれるディレクトリのパスを取得する
+  const templateDir = path.join(packageDir, TEMPLATE_DIR);
 
-  // child_processモジュールのexec関数を使用して、gulpコマンドを実行する
-  const child = exec(gulpCommand);
+  try {
+    // テンプレートファイルをプロジェクトのルートディレクトリにコピーする
+    await fs.copy(templateDir, projectDir, { overwrite: true, errorOnExist: false });
+    console.log(`[claude-code-booster] Copied assets from "${templateDir}" to "${projectDir}"`);
+  } catch (err) {
+    console.error('[claude-code-booster] Asset copy failed:', err);
+    process.exitCode = 1;
+    return;
+  }
 
-  // gulpコマンドの出力をコンソールに表示する
-  child.stdout.on('data', (data) => {
-    console.log(data);
-  });
-
-  // gulpコマンドのエラーをコンソールに表示する
-  child.stderr.on('data', (data) => {
-    console.error(data);
-  });
+  // 追加のセットアップ処理があればここに記述
 }
 
 setupProject();
