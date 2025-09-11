@@ -15,10 +15,30 @@ async function setupProject() {
   // テンプレートファイルが含まれるディレクトリのパスを取得する
   const templateDir = path.join(packageDir, TEMPLATE_DIR);
 
+  // コマンドライン引数の解析
+  const args = process.argv.slice(2);
+  const isUpdate = args.includes('--update');
+
   try {
-    // テンプレートファイルをプロジェクトのルートディレクトリにコピーする
-    await fs.copy(templateDir, projectDir, { overwrite: true, errorOnExist: false });
-    console.log(`[claude-code-booster] Copied assets from "${templateDir}" to "${projectDir}"`);
+    if (isUpdate) {
+      // --update オプション時は .claude と docs 配下のみ上書きコピー
+      const targets = ['.claude', 'docs'];
+      for (const dir of targets) {
+        const src = path.join(templateDir, dir);
+        const dest = path.join(projectDir, dir);
+        if (await fs.pathExists(src)) {
+          await fs.ensureDir(dest);
+          await fs.copy(src, dest, { overwrite: true, errorOnExist: false });
+          console.log(`[claude-code-booster] Updated "${dir}" from "${src}" to "${dest}"`);
+        } else {
+          console.warn(`[claude-code-booster] Skip: source not found "${src}"`);
+        }
+      }
+    } else {
+      // それ以外は従来通り assets 全体をコピー
+      await fs.copy(templateDir, projectDir, { overwrite: true, errorOnExist: false });
+      console.log(`[claude-code-booster] Copied assets from "${templateDir}" to "${projectDir}"`);
+    }
   } catch (err) {
     console.error('[claude-code-booster] Asset copy failed:', err);
     process.exitCode = 1;
