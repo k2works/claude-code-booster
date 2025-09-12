@@ -28,8 +28,26 @@ async function setupProject() {
         const dest = path.join(projectDir, dir);
         if (await fs.pathExists(src)) {
           await fs.ensureDir(dest);
-          await fs.copy(src, dest, { overwrite: true, errorOnExist: false });
-          console.log(`[claude-code-booster] Updated "${dir}" from "${src}" to "${dest}"`);
+
+          // docs 配下の index.md は上書き対象から除外する
+          const copyOptions = dir === 'docs'
+            ? {
+                overwrite: true,
+                errorOnExist: false,
+                filter: (from, to) => {
+                  // docs 直下の index.md のみ除外する（他は全てコピー）
+                  const indexPath = path.join(src, 'index.md');
+                  return from !== indexPath;
+                },
+              }
+            : { overwrite: true, errorOnExist: false };
+
+          await fs.copy(src, dest, copyOptions);
+          if (dir === 'docs') {
+            console.log('[claude-code-booster] Updated "docs" (excluding docs/index.md)');
+          } else {
+            console.log(`[claude-code-booster] Updated "${dir}" from "${src}" to "${dest}"`);
+          }
         } else {
           console.warn(`[claude-code-booster] Skip: source not found "${src}"`);
         }
