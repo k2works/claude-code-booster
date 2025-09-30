@@ -14,6 +14,7 @@
 - `--setup [環境名]` : 環境構築の初期設定とインフラ準備
   - `--setup Java` : Java開発環境の構築とSpring Bootプロジェクトセットアップ
   - `--setup FrontEnd` : TypeScript/React開発環境の構築とViteプロジェクトセットアップ
+  - `--setup C#WPF` : C# WPF開発環境の構築とClean Architectureプロジェクトセットアップ
 - `--build` : アプリケーションのビルドとパッケージング
 - `--deploy <環境>` : 指定環境へのデプロイ実行
 - `--status <環境>` : 特定環境の動作状況確認
@@ -22,6 +23,7 @@
 - `--health` : システム全体のヘルスチェック実行
 - `--backup` : データベース・設定ファイルのバックアップ作成
 - `--restore <バックアップ>` : 指定バックアップからの復元
+- `--daily` : 日次運用タスクの自動実行（日誌生成と概要編集）
 
 ### 基本例
 
@@ -42,6 +44,10 @@
 /ops --setup FrontEnd
 「プロジェクト名と作成場所（デフォルト app/frontend）を対話式で確認後、docs/reference/TypeScriptアプリケーション環境構築ガイド.md、@docs/design/tech_stack.md、@docs/design/architecture_frontend.md を基にしたTypeScript/React開発環境の統合セットアップ」
 
+# C# WPF開発環境の構築
+/ops --setup C#WPF
+「プロジェクト名と作成場所（デフォルト app/wpfapp）を対話式で確認後、@docs/design/tech_stack.md、@docs/design/architecture_backend.md、@docs/design/architecture_frontend.md を基にしたC# WPF + Clean Architecture開発環境の統合セットアップ」
+
 # プロダクション環境へのデプロイ
 /ops --deploy production
 「本番環境への安全なデプロイ実行とヘルスチェック」
@@ -57,6 +63,10 @@
 # 緊急時のロールバック
 /ops --rollback production
 「本番環境を前の安定バージョンにロールバック」
+
+# 日次運用タスクの実行
+/ops --daily
+「日誌の自動生成と概要編集を実行」
 ```
 
 ### 詳細機能
@@ -146,7 +156,71 @@
 /ops --setup FrontEnd
 ```
 
+#### C# WPF開発環境の統合セットアップ
+
+ドキュメントベースの包括的C# WPF + Clean Architecture開発環境構築コマンド：
+
+```bash
+# ドキュメント準拠のC# WPF開発環境セットアップ（対話式）
+/ops --setup C#WPF
+```
+
 **参照ドキュメント**:
+- `@docs/design/tech_stack.md`: C# WPF技術スタック選定理由と詳細仕様
+- `@docs/design/architecture_backend.md`: Clean Architecture + MagicOnion サーバー設計詳細
+- `@docs/design/architecture_frontend.md`: WPF MVVM アーキテクチャとプレゼンテーション層設計詳細
+
+**初期設定プロセス**:
+
+🎯 **対話式プロジェクト設定**:
+- プロジェクト名の確認（例: AdventureWorks.PurchasingSystem）
+- ソリューション名の確認（例: AdventureWorks）
+- 作成場所の確認（デフォルト: `app/`配下）
+- データベース接続文字列の確認
+
+**注意点**
+- app/app のような構成にしてはいけない
+- app/{solution-name} のような構成すること
+- tech_stack.md の ディレクトリ構成詳細にしたがうこと
+- ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
+- Javaの `src` や `tests` のようなディレクトリ構成にしないこと
+
+**構築される環境の詳細**:
+
+**📋 基盤技術** (@docs/design/tech_stack.md 準拠):
+- .NET 8.0 + C# 12
+- WPF + CommunityToolkit.Mvvm 8.x
+- MagicOnion 5.x (gRPC ベースRPC)
+- Dapper 2.x (Micro ORM)
+- Kamishibai 3.x (ナビゲーション)
+
+**🏗️ アーキテクチャ** (@docs/design/architecture_backend.md + @docs/design/architecture_frontend.md 準拠):
+- Clean Architecture（依存関係逆転）
+- Domain-Driven Design（ドメインモデル中心）
+- MVVM パターン（WPF標準）
+- レイヤー分離: Domain → Application → Infrastructure → Presentation
+- MagicOnion サーバーによるgRPC通信
+
+**💾 データベース環境**:
+- 開発・テスト: SQL Server LocalDB
+- 本番: SQL Server + Dapper
+- マイグレーション: DbUp 5.x
+- 接続プール: SqlConnection + HikariCP相当
+
+**🔍 品質管理ツール**:
+- テスト: NUnit 3 + FluentAssertions + Moq + Codeer.Friendly
+- 静的解析: SonarQube + StyleCop + FxCop
+- カバレッジ: OpenCover (Domain: 95%, Application: 85%目標)
+- UI テスト: Codeer.Friendly.Windows.Wpf
+- E2E テスト: Page Object Pattern
+
+**⚙️ 開発支援機能**:
+- Serilog (構造化ログ)
+- Docker Compose (開発環境)
+- MkDocs (ドキュメントサイト)
+- PlantUML (アーキテクチャ図)
+
+**TypeScript/React 参照ドキュメント**:
 - `docs/reference/TypeScriptアプリケーション環境構築ガイド.md`: TDD基盤セットアップ手順と開発規律
 - `@docs/design/tech_stack.md`: フロントエンド技術スタック選定理由と詳細仕様
 - `@docs/design/architecture_frontend.md`: SPA アーキテクチャとコンポーネント設計詳細
@@ -253,6 +327,36 @@
 # システム全体の統合ダッシュボード
 /ops --health --dashboard
 ```
+
+#### 日次運用タスク
+
+プロジェクトの日常的な運用作業を自動化し、開発履歴の記録と管理を支援：
+
+```bash
+# 日次運用タスクの自動実行
+/ops --daily
+```
+
+**実行される作業**:
+
+**📝 日誌生成と管理**:
+1. `npm run journal` コマンドの実行
+2. Git コミット履歴から日付別の作業記録を自動生成
+3. `docs/journal/YYYYMMDD.md` 形式でファイル作成
+4. `mkdocs.yml` に自動登録
+
+**✏️ 概要の自動編集**:
+- 技術的な作業内容を簡潔に要約
+- DDD（ドメイン駆動設計）などの設計パターンへの言及
+- 実施した主要な変更と改善点の明確化
+- bounded context の整合性などアーキテクチャレベルの変更を強調
+- 型参照の更新、リファクタリング詳細、テスト戦略などを含む
+
+**生成される日誌の構成**:
+- コミットメッセージ
+- 変更されたファイル一覧
+- 詳細な diff 情報
+- 作業内容の技術的サマリー
 
 #### バックアップと災害復旧
 
@@ -362,6 +466,23 @@ cat docs/design/architecture_frontend.md
 # → 開発ポート確認: "3000" (Enter でデフォルト採用)
 npm run dev
 「設計ドキュメント確認後、対話式でプロジェクト設定を確認し、TypeScript/React環境構築と開発サーバー起動」
+
+# ドキュメント準拠のC# WPF開発環境構築（対話式）
+cat docs/design/tech_stack.md
+cat docs/design/architecture_backend.md
+cat docs/design/architecture_frontend.md
+/ops --setup C#WPF
+# → ソリューション名入力: "AdventureWorks"
+# → プロジェクト名確認: "AdventureWorks.PurchasingSystem" (自動生成)
+# → 作成場所確認: "app/wpfapp/" (Enter でデフォルト採用)
+# → 接続文字列確認: "Server=(localdb)\\mssqllocaldb;..." (デフォルト採用)
+dotnet build
+「設計ドキュメント確認後、対話式でプロジェクト設定を確認し、C# WPF + Clean Architecture環境構築と初回ビルド実行」
+
+# 日次運用タスクと開発履歴管理
+git status
+/ops --daily
+「現在の作業状況を確認後、日誌生成と概要の自動編集を実行」
 ```
 
 ### 注意事項
