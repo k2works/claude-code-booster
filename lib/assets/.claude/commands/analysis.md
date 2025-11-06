@@ -81,7 +81,7 @@ docs/reference/ユースケース作成ガイド.md に基づくユースケー�
 #### アーキテクチャ設計サポート
 
 @docs/reference/アーキテクチャ設計ガイド.md に基づくアーキテクチャ設計ドキュメントを作成します。
-成果物は architecture_backend.md と architecture_frontend.md です。
+成果物は architecture_backend.md と architecture_frontend.md architecture_infrastructure.md です。
 
 ```bash
 /analysis --architecture
@@ -92,6 +92,7 @@ docs/reference/ユースケース作成ガイド.md に基づくユースケー�
 - @docs/requirements/user_story.md を参照
 - バックエンドアーキテクチャ設計を実施して @docs/design/architecture_backend.md を作成
 - フロンエンドアーキテクチャ設計を実施して @docs/design/architecture_frontend.md を作成
+- インフラストラクチャアーキテクチャ設計を実施して @docs/design/architecture_infrastructure.md を作成
 
 #### データモデル設計サポート
 
