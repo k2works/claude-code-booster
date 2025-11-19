@@ -58,6 +58,7 @@ Red-Green-Refactor サイクルを厳密に実行：
 - @docs/design/data-model.md を参照
 - @docs/design/domain-model.md を参照
 - @docs/design/tech_stack.md を参照
+- 作業完了後に対象のイテレーション @docs/development/iteration_plan-N.md の進捗を更新する
 
 #### アプローチ戦略の選択
 
