@@ -38,6 +38,23 @@ claude mcp add github npx -y @modelcontextprotocol/server-github -s project
 
 ### 配置
 
+#### GitHub Pages セットアップ
+
+1. **GitHub リポジトリの Settings を開く**
+    - リポジトリページで `Settings` タブをクリック
+
+2. **Pages 設定を開く**
+    - 左サイドバーの `Pages` をクリック
+
+3. **Source を設定**
+    - `Source` で `Deploy from a branch` を選択
+    - `Branch` で `gh-pages` を選択し、フォルダは `/ (root)` を選択
+    - `Save` をクリック
+
+4. **初回デプロイ**
+    - main ブランチにプッシュすると GitHub Actions が自動実行
+    - Actions タブでデプロイ状況を確認
+
 **[⬆ back to top](#構成)**
 
 ### 運用
