@@ -12,7 +12,7 @@ Dart ファイルの DartDoc コメントを体系的に管理し、高品質な
 「PR #4308 で変更されたファイルの DartDoc に Claude マーカーがあるか確認してください」
 
 # 特定ディレクトリのドキュメント整備
-「packages/app/lib/ui/screen/ 配下の Widget クラスに DartDoc を追加してください」
+「packages/apps/lib/ui/screen/ 配下の Widget クラスに DartDoc を追加してください」
 
 # マーカーなしで実行
 /update-dart-doc --marker false

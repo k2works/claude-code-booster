@@ -24,7 +24,7 @@ npm run build 2>&1
 「ビルドエラーを分析して修正方法を提示して」
 
 # 深層分析モード
-python app.py 2>&1
+python apps.py 2>&1
 /fix-error --deep
 「エラーの根本原因を環境要因も含めて分析して」
 
@@ -34,7 +34,7 @@ cargo test 2>&1
 「すぐに適用できる修正方法を提示して」
 
 # 予防策重視
-./app 2>&1 | tail -50
+./apps 2>&1 | tail -50
 /fix-error --preventive
 「エラーの修正と今後の予防策を提示して」
 ```
@@ -58,7 +58,7 @@ python script.py 2>&1
 「このスタックトレースから問題箇所を特定して環境要因も含めて分析して」
 
 # 複数のエラーをまとめて解決
-grep -E "ERROR|WARN" app.log | tail -20
+grep -E "ERROR|WARN" apps.log | tail -20
 /fix-error
 「これらのエラーと警告を優先度順に分類し、それぞれの解決方法を提案して」
 ```

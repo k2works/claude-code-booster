@@ -82,8 +82,8 @@ npm outdated && npm audit
 
 ```bash
 # プロファイリング
-node --prof app.js
-clinic doctor -- node app.js
+node --prof apps.js
+clinic doctor -- node apps.js
 
 # バンドル分析
 npx webpack-bundle-analyzer
