@@ -59,6 +59,80 @@ claude mcp add github npx -y @modelcontextprotocol/server-github -s project
 
 ### 運用
 
+#### ドキュメントの編集
+
+1. ローカル環境でMkDocsサーバーを起動
+   ```
+   docker-compose up mkdocs
+   ```
+   または、Gulpタスクを使用:
+   ```
+   npm run docs:serve
+   ```
+
+2. ブラウザで http://localhost:8000 にアクセスして編集結果をプレビュー
+
+3. `docs/`ディレクトリ内のMarkdownファイルを編集
+
+4. 変更をコミットしてプッシュ
+   ```
+   git add .
+   git commit -m "ドキュメントの更新"
+   git push
+   ```
+
+#### Gulpタスクの使用
+
+プロジェクトには以下のGulpタスクが用意されています：
+
+##### MkDocsタスク
+
+- MkDocsサーバーの起動:
+  ```
+  npm run docs:serve
+  ```
+  または
+  ```
+  npx gulp mkdocs:serve
+  ```
+
+- MkDocsサーバーの停止:
+  ```
+  npm run docs:stop
+  ```
+  または
+  ```
+  npx gulp mkdocs:stop
+  ```
+
+- MkDocsドキュメントのビルド:
+  ```
+  npm run docs:build
+  ```
+  または
+  ```
+  npx gulp mkdocs:build
+  ```
+
+##### 作業履歴（ジャーナル）タスク
+
+- すべてのコミット日付の作業履歴を生成:
+  ```
+  npm run journal
+  ```
+  または
+  ```
+  npx gulp journal:generate
+  ```
+
+- 特定の日付の作業履歴を生成:
+  ```
+  npx gulp journal:generate:date --date=YYYY-MM-DD
+  ```
+  (例: `npx gulp journal:generate:date --date=2023-04-01`)
+
+生成された作業履歴は `docs/journal/` ディレクトリに保存され、各ファイルには指定された日付のコミット情報が含まれます。
+
 #### GitHub Container Registry
 
 このプロジェクトでは、GitHub Container Registry（GHCR）を使用して開発コンテナイメージを管理しています。
@@ -79,13 +153,13 @@ GHCR からイメージを取得して実行するには：
 
 ```bash
 # イメージをプル
-docker pull ghcr.io/k2works/grokkingfp-excersice:latest
+docker pull ghcr.io/k2works/{project_name}:latest
 
 # または特定バージョン
 docker pull ghcr.io/k2works/grokkingfp-excersice:0.0.1
 
 # コンテナを実行
-docker run -it -v $(pwd):/srv ghcr.io/k2works/grokkingfp-excersice:latest
+docker run -it -v $(pwd):/srv ghcr.io/k2works/{project_name}:latest
 ```
 
 認証が必要な場合は、以下のコマンドでログインします：
