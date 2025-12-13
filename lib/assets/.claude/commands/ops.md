@@ -38,15 +38,15 @@
 
 # Java開発環境の構築
 /ops --setup Java
-「プロジェクト名と作成場所（デフォルト app/backend）を対話式で確認後、docs/reference/Javaアプリケーション環境構築ガイド.md、@docs/design/tech_stack.md、@docs/design/architecture_backend.md を基にしたJava開発環境の統合セットアップ」
+「プロジェクト名と作成場所（デフォルト apps/backend）を対話式で確認後、docs/reference/Javaアプリケーション環境構築ガイド.md、@docs/design/tech_stack.md、@docs/design/architecture_backend.md を基にしたJava開発環境の統合セットアップ」
 
 # TypeScript/React開発環境の構築
 /ops --setup FrontEnd
-「プロジェクト名と作成場所（デフォルト app/frontend）を対話式で確認後、docs/reference/TypeScriptアプリケーション環境構築ガイド.md、@docs/design/tech_stack.md、@docs/design/architecture_frontend.md を基にしたTypeScript/React開発環境の統合セットアップ」
+「プロジェクト名と作成場所（デフォルト apps/frontend）を対話式で確認後、docs/reference/TypeScriptアプリケーション環境構築ガイド.md、@docs/design/tech_stack.md、@docs/design/architecture_frontend.md を基にしたTypeScript/React開発環境の統合セットアップ」
 
 # C# WPF開発環境の構築
 /ops --setup C#WPF
-「プロジェクト名と作成場所（デフォルト app/wpfapp）を対話式で確認後、@docs/design/tech_stack.md、@docs/design/architecture_backend.md、@docs/design/architecture_frontend.md を基にしたC# WPF + Clean Architecture開発環境の統合セットアップ」
+「プロジェクト名と作成場所（デフォルト apps/wpfapp）を対話式で確認後、@docs/design/tech_stack.md、@docs/design/architecture_backend.md、@docs/design/architecture_frontend.md を基にしたC# WPF + Clean Architecture開発環境の統合セットアップ」
 
 # プロダクション環境へのデプロイ
 /ops --deploy production
@@ -107,12 +107,12 @@
 - プロジェクト名の確認（例: meeting-room-system）
 - パッケージ名の確認（例: com.example.{project-name}）
 - グループID・アーティファクトIDの設定確認
-- 作成場所の確認（デフォルト: `app/backend/`配下）
+- 作成場所の確認（デフォルト: `apps/backend/`配下）
 
 **注意点**
 - `docs/reference/Javaアプリケーション環境構築ガイド.md`: のGradle プロジェクトの初期化部分は参考にしない
-- app/backend/app のような構成にしてはいけない
-- app/backend/{project-name} のような構成すること
+- apps/backend/app のような構成にしてはいけない
+- apps/backend/{project-name} のような構成すること
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 
 **構築される環境の詳細**:
@@ -175,12 +175,12 @@
 🎯 **対話式プロジェクト設定**:
 - プロジェクト名の確認（例: AdventureWorks.PurchasingSystem）
 - ソリューション名の確認（例: AdventureWorks）
-- 作成場所の確認（デフォルト: `app/`配下）
+- 作成場所の確認（デフォルト: `apps/`配下）
 - データベース接続文字列の確認
 
 **注意点**
-- app/app のような構成にしてはいけない
-- app/{solution-name} のような構成すること
+- apps/app のような構成にしてはいけない
+- apps/{solution-name} のような構成すること
 - tech_stack.md の ディレクトリ構成詳細にしたがうこと
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 - Javaの `src` や `tests` のようなディレクトリ構成にしないこと
@@ -230,13 +230,13 @@
 🎯 **対話式プロジェクト設定**:
 - プロジェクト名の確認（例: meeting-room-reservation-ui）
 - パッケージ名の確認（例: @mrs/frontend）
-- 作成場所の確認（デフォルト: `app/frontend/`配下）
+- 作成場所の確認（デフォルト: `apps/frontend/`配下）
 - 開発ポートの確認（デフォルト: 3000）
 
 **注意点**
 - `docs/reference/TypeScriptアプリケーション環境構築ガイド.md`: のVite プロジェクトの初期化部分は参考にしない
-- app/frontend/app のような構成にしてはいけない
-- app/frontend/{project-name} のような構成すること
+- apps/frontend/app のような構成にしてはいけない
+- apps/frontend/{project-name} のような構成すること
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 
 **構築される環境の詳細**:
@@ -434,7 +434,7 @@ git status
 「最新コミットを含めたステージング環境へのデプロイ実行」
 
 # ログ分析と組み合わせた障害対応
-tail -100 /var/log/app.log
+tail -100 /var/log/apps.log
 /ops --rollback production
 「エラーログ分析に基づく緊急ロールバック実行」
 
@@ -450,7 +450,7 @@ cat docs/design/tech_stack.md
 cat docs/design/architecture_backend.md
 /ops --setup Java
 # → プロジェクト名入力: "meeting-room-system"
-# → 作成場所確認: "app/backend/" (Enter でデフォルト採用)
+# → 作成場所確認: "apps/backend/" (Enter でデフォルト採用)
 # → パッケージ名確認: "com.example.meetingroomsystem" (自動生成)
 ./gradlew build
 「設計ドキュメント確認後、対話式でプロジェクト設定を確認し、Java環境構築と初回ビルド実行」
@@ -461,7 +461,7 @@ cat docs/design/tech_stack.md
 cat docs/design/architecture_frontend.md
 /ops --setup FrontEnd
 # → プロジェクト名入力: "meeting-room-reservation-ui"
-# → 作成場所確認: "app/frontend/" (Enter でデフォルト採用)
+# → 作成場所確認: "apps/frontend/" (Enter でデフォルト採用)
 # → パッケージ名確認: "@mrs/frontend" (自動生成)
 # → 開発ポート確認: "3000" (Enter でデフォルト採用)
 npm run dev
@@ -474,7 +474,7 @@ cat docs/design/architecture_frontend.md
 /ops --setup C#WPF
 # → ソリューション名入力: "AdventureWorks"
 # → プロジェクト名確認: "AdventureWorks.PurchasingSystem" (自動生成)
-# → 作成場所確認: "app/wpfapp/" (Enter でデフォルト採用)
+# → 作成場所確認: "apps/wpfapp/" (Enter でデフォルト採用)
 # → 接続文字列確認: "Server=(localdb)\\mssqllocaldb;..." (デフォルト採用)
 dotnet build
 「設計ドキュメント確認後、対話式でプロジェクト設定を確認し、C# WPF + Clean Architecture環境構築と初回ビルド実行」

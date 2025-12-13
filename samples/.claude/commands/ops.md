@@ -107,12 +107,12 @@
 - プロジェクト名の確認（例: meeting-room-system）
 - パッケージ名の確認（例: com.example.{project-name}）
 - グループID・アーティファクトIDの設定確認
-- 作成場所の確認（デフォルト: `app/backend/`配下）
+- 作成場所の確認（デフォルト: `apps/backend/`配下）
 
 **注意点**
 - `docs/reference/Javaアプリケーション環境構築ガイド.md`: のGradle プロジェクトの初期化部分は参考にしない
-- app/backend/app のような構成にしてはいけない
-- app/backend/{project-name} のような構成すること
+- apps/backend/app のような構成にしてはいけない
+- apps/backend/{project-name} のような構成すること
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 
 **構築される環境の詳細**:
@@ -175,12 +175,12 @@
 🎯 **対話式プロジェクト設定**:
 - プロジェクト名の確認（例: AdventureWorks.PurchasingSystem）
 - ソリューション名の確認（例: AdventureWorks）
-- 作成場所の確認（デフォルト: `app/`配下）
+- 作成場所の確認（デフォルト: `apps/`配下）
 - データベース接続文字列の確認
 
 **注意点**
-- app/app のような構成にしてはいけない
-- app/{solution-name} のような構成すること
+- apps/app のような構成にしてはいけない
+- apps/{solution-name} のような構成すること
 - tech_stack.md の ディレクトリ構成詳細にしたがうこと
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 - Javaの `src` や `tests` のようなディレクトリ構成にしないこと
@@ -230,13 +230,13 @@
 🎯 **対話式プロジェクト設定**:
 - プロジェクト名の確認（例: meeting-room-reservation-ui）
 - パッケージ名の確認（例: @mrs/frontend）
-- 作成場所の確認（デフォルト: `app/frontend/`配下）
+- 作成場所の確認（デフォルト: `apps/frontend/`配下）
 - 開発ポートの確認（デフォルト: 3000）
 
 **注意点**
 - `docs/reference/TypeScriptアプリケーション環境構築ガイド.md`: のVite プロジェクトの初期化部分は参考にしない
-- app/frontend/app のような構成にしてはいけない
-- app/frontend/{project-name} のような構成すること
+- apps/frontend/app のような構成にしてはいけない
+- apps/frontend/{project-name} のような構成すること
 - ディレクトリだけの場合もコミットしたいので `.gitkeep` を入れる
 
 **構築される環境の詳細**:
