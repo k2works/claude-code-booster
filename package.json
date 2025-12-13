@@ -1,6 +1,6 @@
 {
   "name": "@k2works/claude-code-booster",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "AI Agent Development Support Tool",
   "main": "main.js",
   "bin": {
