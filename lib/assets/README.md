@@ -156,7 +156,7 @@ GHCR からイメージを取得して実行するには：
 docker pull ghcr.io/k2works/{project_name}:latest
 
 # または特定バージョン
-docker pull ghcr.io/k2works/grokkingfp-excersice:0.0.1
+docker pull ghcr.io/k2works/{project_name}:0.0.1
 
 # コンテナを実行
 docker run -it -v $(pwd):/srv ghcr.io/k2works/{project_name}:latest
