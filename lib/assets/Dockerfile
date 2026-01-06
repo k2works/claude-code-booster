@@ -64,6 +64,9 @@ RUN npm install -g @google/gemini-cli
 # Claude Codeのインストール
 RUN npm install -g @anthropic-ai/claude-code
 
+# Copilot CLIのインストール
+RUN nnpm install -g @github/copilot
+
 # すべてのインストールが完了した後、ユーザーのホームディレクトリの所有権を確保
 RUN chown -R $USERNAME:$USERNAME /home/$USERNAME
 
