@@ -3,6 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NODE_MAJOR: 22
     volumes:
       - .:/srv
     tty: true

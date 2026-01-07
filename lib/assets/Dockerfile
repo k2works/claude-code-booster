@@ -2,11 +2,12 @@
 FROM ubuntu:22.04 AS base
 
 # 環境変数の設定
+ARG NODE_MAJOR=22
 ENV DEBIAN_FRONTEND=noninteractive \
     LANG=ja_JP.UTF-8 \
     LC_ALL=ja_JP.UTF-8 \
     LC_CTYPE=ja_JP.UTF-8 \
-    NODE_VER=22
+    NODE_VER=$NODE_MAJOR
 
 # ユーザーの設定
 ARG USERNAME=developer
@@ -61,7 +62,7 @@ ENV PATH="/home/$USERNAME/.nix-profile/bin:/nix/var/nix/profiles/default/bin:${P
 USER root
 
 # Node.jsのインストール
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+RUN curl -fsSL https://deb.nodesource.com/setup_$NODE_VER.x | bash - \
     && apt-get install -y nodejs \
     && npm install -g yarn \
     && mkdir -p /home/$USERNAME/.nvm \
