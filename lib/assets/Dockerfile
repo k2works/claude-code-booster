@@ -15,8 +15,6 @@ ARG USER_GID=$USER_UID
 
 RUN groupadd --gid $USER_GID $USERNAME \
     && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    #
-    # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
     && apt-get install -y sudo \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
@@ -40,8 +38,27 @@ RUN apt-get update && apt-get install -y \
             wget \
             vim \
             tmux \
+            xz-utils \
             && apt-get clean \
             && rm -rf /var/lib/apt/lists/*
+
+# Nixのインストール
+ENV NIX_INSTALL_DIR=/nix
+RUN mkdir -m 0755 $NIX_INSTALL_DIR && chown $USERNAME $NIX_INSTALL_DIR
+USER $USERNAME
+ENV USER=$USERNAME
+ENV HOME=/home/$USERNAME
+RUN curl -L https://nixos.org/nix/install | sh -s -- --no-daemon \
+    && echo '. /home/'$USERNAME'/.nix-profile/etc/profile.d/nix.sh' >> /home/$USERNAME/.bashrc \
+    && mkdir -p /home/$USERNAME/.config/nix \
+    && echo "experimental-features = nix-command flakes" >> /home/$USERNAME/.config/nix/nix.conf
+
+# Nix環境変数の設定
+ENV PATH="/home/$USERNAME/.nix-profile/bin:/nix/var/nix/profiles/default/bin:${PATH}" \
+    NIX_PATH="/home/$USERNAME/.nix-profile/etc/profile.d/nix.sh:/nix/var/nix/profiles/default/etc/profile.d/nix.sh" \
+    NIX_SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+USER root
 
 # Node.jsのインストール
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
@@ -65,7 +82,7 @@ RUN npm install -g @google/gemini-cli
 RUN npm install -g @anthropic-ai/claude-code
 
 # Copilot CLIのインストール
-RUN nnpm install -g @github/copilot
+RUN npm install -g @github/copilot
 
 # すべてのインストールが完了した後、ユーザーのホームディレクトリの所有権を確保
 RUN chown -R $USERNAME:$USERNAME /home/$USERNAME
