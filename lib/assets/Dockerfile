@@ -85,6 +85,9 @@ RUN npm install -g @anthropic-ai/claude-code
 # Copilot CLIのインストール
 RUN npm install -g @github/copilot
 
+# Codex CLIのインストール
+RUN npm install -g @openai/codex
+
 # すべてのインストールが完了した後、ユーザーのホームディレクトリの所有権を確保
 RUN chown -R $USERNAME:$USERNAME /home/$USERNAME
 

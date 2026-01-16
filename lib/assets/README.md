@@ -20,7 +20,7 @@
 
 ## 詳細
 
-### Qick Start
+### Quick Start
 
 ```bash
 npm install

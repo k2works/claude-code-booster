@@ -9,7 +9,8 @@
     "docs:stop": "gulp mkdocs:stop",
     "docs:build": "gulp mkdocs:build",
     "claude:yol": "claude --dangerously-skip-permissions",
-    "copilot:yol": "copilot --allow-all-tools"
+    "copilot:yol": "copilot --allow-all-tools",
+    "codex:yol": "codex --yolo"
   },
   "repository": {
     "type": "git",
