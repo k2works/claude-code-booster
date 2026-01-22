@@ -191,16 +191,18 @@ VS Code で Dev Container を使用する場合：
 
 **[⬆ back to top](#構成)**
 
-### Nix による開発環境
+### 開発
+
+#### Nix による開発環境
 
 Nix を使用して、再現可能な開発環境を構築できます。
 
-#### 準備
+##### 準備
 
 1. [Nix をインストール](https://nixos.org/download.html)します。
 2. Flakes を有効にします（`~/.config/nix/nix.conf` に `experimental-features = nix-command flakes` を追加）。
 
-#### 環境の利用
+##### 環境の利用
 
 - **デフォルト環境（共通ツール）に入る:**
   ```bash
@@ -219,15 +221,11 @@ Nix を使用して、再現可能な開発環境を構築できます。
 
 環境から抜けるには `exit` を入力します。
 
-#### 依存関係の更新
+##### 依存関係の更新
 
 ```bash
 nix flake update
 ```
-
-**[⬆ back to top](#構成)**
-
-### 開発
 
 **[⬆ back to top](#構成)**
 
