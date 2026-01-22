@@ -198,6 +198,19 @@ if dein#load_state(s:dein_dir)
   call dein#add('vim-test/vim-test')
   call dein#add('tpope/vim-dispatch')
   call dein#add('github/copilot.vim')
+  call dein#add('rust-lang/rust.vim')
+  call dein#add('OmniSharp/omnisharp-vim')
+  call dein#add('OrangeT/vim-csharp')
+  call dein#add('uiiaoo/java-syntax.vim')
+  call dein#add('neovimhaskell/haskell-vim')
+  call dein#add('vim-ruby/vim-ruby')
+  call dein#add('stanangeloff/php.vim')
+  call dein#add('phpactor/phpactor', {'type': 'lua', 'on_ft': 'php'})
+  call dein#add('Olical/conjure')
+  call dein#add('clojure-vim/clojure.vim')
+  call dein#add('tpope/vim-fireplace', {'on_ft': 'clojure'})
+  call dein#add('elixir-editors/vim-elixir')
+  call dein#add('derekwyatt/vim-scala')
 
   call dein#end()
   call dein#save_state()
@@ -500,3 +513,38 @@ nmap <silent> <leader>a :TestSuite<CR>
 nmap <silent> <leader>l :TestLast<CR>
 nmap <silent> <leader>g :TestVisit<CR>
 let g:test#strategy = 'dispatch'
+
+"----------------------------------------------------------
+" 言語別設定
+"----------------------------------------------------------
+" Rust
+let g:rustfmt_autosave = 1
+
+" .NET (OmniSharp)
+let g:OmniSharp_server_use_mono = 0
+let g:OmniSharp_selector_ui = 'ctrlp'
+let g:OmniSharp_highlight_types = 3
+
+" Java
+" uiiaoo/java-syntax.vim はデフォルトで有効
+
+" Haskell
+let g:haskell_enable_quantification = 1   " enable highlighting of `forall`
+let g:haskell_enable_recursivedo = 1      " enable highlighting of `mdo` and `rec`
+let g:haskell_enable_arrowsyntax = 1     " enable highlighting of `proc`
+let g:haskell_enable_pattern_synonyms = 1 " enable highlighting of `pattern`
+let g:haskell_enable_typeroles = 1        " enable highlighting of type roles
+let g:haskell_enable_static_pointers = 1  " enable highlighting of `static`
+let g:haskell_backpack = 1                " enable highlighting of backpack keywords
+
+" Ruby
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2
+
+" PHP
+autocmd FileType php setlocal expandtab shiftwidth=4 tabstop=4
+
+" Elixir
+autocmd FileType elixir setlocal expandtab shiftwidth=2 tabstop=2
+
+" Scala
+autocmd FileType scala setlocal expandtab shiftwidth=2 tabstop=2
