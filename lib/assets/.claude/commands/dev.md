@@ -31,12 +31,12 @@
 
 開発フェーズは以下の工程で構成されます：
 
-1. **バックエンド開発** (`/dev-backend`)
+1. **バックエンド開発** (Skill: `developing-backend`)
    - 実装
    - ビルド・テスト
    - インサイドアウトアプローチ推奨
 
-2. **フロントエンド開発** (`/dev-frontend`)
+2. **フロントエンド開発** (Skill: `developing-frontend`)
    - 実装
    - ビルド・テスト
    - アウトサイドインアプローチ推奨
@@ -223,9 +223,9 @@ Claude の活動:
 3. **継続的コミット**: 各サイクル完了時に動作する状態でコミット
 4. **Rule of Three**: 同じコードが 3 回現れたらリファクタリング
 
-### 関連コマンド
+### 関連 Skills / ドキュメント
 
-- `/dev-backend` : バックエンド開発ガイド
-- `/dev-frontend` : フロントエンド開発ガイド
+- Skill: `developing-backend` : バックエンド開発ガイド
+- Skill: `developing-frontend` : フロントエンド開発ガイド
 - @docs/reference/CodexCLIMCPアプリケーション開発フロー.md : アプリケーション開発フロー
 - @docs/reference/CodexCLIMCPサーバー設定手順.md : Codex MCP サーバー設定手順

@@ -22,47 +22,47 @@
 
 分析フェーズは以下の工程で構成されます：
 
-1. **要件定義** (`/analysis-requirements`)
+1. **要件定義** (Skill: `analyzing-requirements`)
    - システム価値の明確化
    - システム外部環境の分析
    - システム境界の定義
 
-2. **ユースケース作成** (`/analysis-usecases`)
+2. **ユースケース作成** (Skill: `analyzing-usecases`)
    - ビジネスユースケースの抽出
    - システムユースケースの定義
    - ユーザーストーリーの作成
 
-3. **アーキテクチャ設計** (`/analysis-architecture`)
+3. **アーキテクチャ設計** (Skill: `analyzing-architecture`)
    - バックエンドアーキテクチャ
    - フロントエンドアーキテクチャ
    - インフラストラクチャアーキテクチャ
 
-4. **データモデル設計** (`/analysis-data-model`)
+4. **データモデル設計** (Skill: `analyzing-data-model`)
    - ER 図の作成
    - テーブル定義
 
-5. **ドメインモデル設計** (`/analysis-domain-model`)
+5. **ドメインモデル設計** (Skill: `analyzing-domain-model`)
    - エンティティ定義
    - 値オブジェクト定義
    - 集約の設計
 
-6. **UI 設計** (`/analysis-ui-design`)
+6. **UI 設計** (Skill: `analyzing-ui-design`)
    - 画面遷移図
    - 画面イメージ
 
-7. **テスト戦略** (`/analysis-test-strategy`)
+7. **テスト戦略** (Skill: `analyzing-test-strategy`)
    - テストピラミッド設計
    - テスト種別の定義
 
-8. **非機能要件** (`/analysis-non-functional`)
+8. **非機能要件** (Skill: `analyzing-non-functional`)
    - 性能要件
    - セキュリティ要件
 
-9. **運用要件** (`/analysis-operation`)
+9. **運用要件** (Skill: `analyzing-operation`)
    - 運用フロー
    - 監視設計
 
-10. **技術スタック** (`/analysis-tech-stack`)
+10. **技術スタック** (Skill: `analyzing-tech-stack`)
     - 技術選定
     - バージョン管理
 
@@ -89,15 +89,15 @@ cat README.md
 3. **継続的改善**: 開発フェーズでのフィードバックを基に分析結果を見直す
 4. **文書化**: 分析結果は PlantUML や Markdown で視覚的に文書化する
 
-### 関連コマンド
+### 関連 Skills
 
-- `/analysis-requirements` : 要件定義関連の作業支援
-- `/analysis-usecases` : ユースケース・ユーザーストーリー作成支援
-- `/analysis-architecture` : アーキテクチャ設計支援
-- `/analysis-data-model` : データモデル設計支援
-- `/analysis-domain-model` : ドメインモデル設計支援
-- `/analysis-ui-design` : UI 設計支援
-- `/analysis-test-strategy` : テスト戦略策定支援
-- `/analysis-non-functional` : 非機能要件定義支援
-- `/analysis-operation` : 運用要件定義支援
-- `/analysis-tech-stack` : 技術スタック選定支援
+- `analyzing-requirements` : 要件定義関連の作業支援
+- `analyzing-usecases` : ユースケース・ユーザーストーリー作成支援
+- `analyzing-architecture` : アーキテクチャ設計支援
+- `analyzing-data-model` : データモデル設計支援
+- `analyzing-domain-model` : ドメインモデル設計支援
+- `analyzing-ui-design` : UI 設計支援
+- `analyzing-test-strategy` : テスト戦略策定支援
+- `analyzing-non-functional` : 非機能要件定義支援
+- `analyzing-operation` : 運用要件定義支援
+- `analyzing-tech-stack` : 技術スタック選定支援
