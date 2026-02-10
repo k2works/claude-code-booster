@@ -7,7 +7,8 @@
     "boost": "bin/claude-code-booster"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretest": "node -e \"require('fs-extra').removeSync('dist')\"",
+    "test": "node scripts/setup.test.js",
     "login": "npm login",
     "patch": "npm version patch",
     "minor": "npm version minor",
