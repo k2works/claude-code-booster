@@ -29,6 +29,7 @@
 
 | スキル | 用途 |
 | :--- | :--- |
+| `analyzing-business` | ビジネスアーキテクチャ分析 |
 | `analyzing-requirements` | 要件定義（RDRA 2.0） |
 | `analyzing-usecases` | ユースケース・ユーザーストーリー |
 | `analyzing-architecture` | アーキテクチャ設計 |
