@@ -43,7 +43,9 @@ claude mcp add -s project codex -- npx @openai/codex mcp-server
 | :--- | :--- | :--- |
 | **オーケストレーション** | `orchestrating-analysis` | 分析フェーズ全体のワークフロー案内 |
 | | `orchestrating-development` | 開発フェーズ全体の TDD ワークフロー案内 |
-| **分析** | `analyzing-requirements` | RDRA 2.0 に基づく要件定義 |
+| | `orchestrating-project` | 計画・進捗管理フェーズ全体のワークフロー案内 |
+| **分析** | `analyzing-business` | ビジネスアーキテクチャ分析 |
+| | `analyzing-requirements` | RDRA 2.0 に基づく要件定義 |
 | | `analyzing-usecases` | ユースケース・ユーザーストーリー作成 |
 | | `analyzing-architecture` | アーキテクチャ設計 |
 | | `analyzing-data-model` | データモデル設計 |
