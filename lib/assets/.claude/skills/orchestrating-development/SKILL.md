@@ -220,5 +220,6 @@ Claude の活動:
 
 - Skill: `developing-backend` : バックエンド開発ガイド
 - Skill: `developing-frontend` : フロントエンド開発ガイド
+- Skill: `developing-release` : リリースワークフロー（品質ゲート・バージョン管理・CHANGELOG）
 - @docs/reference/CodexCLIMCPアプリケーション開発フロー.md : アプリケーション開発フロー
 - @docs/reference/CodexCLIMCPサーバー設定手順.md : Codex MCP サーバー設定手順

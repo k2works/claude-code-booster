@@ -24,6 +24,7 @@
 | :--- | :--- |
 | `orchestrating-analysis` | 分析フェーズの全体ワークフロー |
 | `orchestrating-development` | 開発フェーズの TDD ワークフロー・Codex 分業 |
+| `orchestrating-project` | 計画・進捗管理フェーズの全体ワークフロー |
 
 ### 分析
 
@@ -47,6 +48,7 @@
 | :--- | :--- |
 | `developing-backend` | バックエンド TDD（インサイドアウト） |
 | `developing-frontend` | フロントエンド TDD（アウトサイドイン） |
+| `developing-release` | リリースワークフロー（品質ゲート・バージョン管理・CHANGELOG） |
 
 ### 計画・進捗
 

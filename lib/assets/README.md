@@ -57,6 +57,7 @@ claude mcp add -s project codex -- npx @openai/codex mcp-server
 | | `analyzing-operation` | 運用要件定義 |
 | **開発** | `developing-backend` | バックエンド TDD（インサイドアウト） |
 | | `developing-frontend` | フロントエンド TDD（アウトサイドイン） |
+| | `developing-release` | リリースワークフロー（品質ゲート・バージョン管理・CHANGELOG） |
 | **計画・進捗** | `planning-releases` | リリース・イテレーション計画 |
 | | `syncing-github-project` | GitHub Project 同期 |
 | | `tracking-progress` | 進捗分析・レポート生成 |
