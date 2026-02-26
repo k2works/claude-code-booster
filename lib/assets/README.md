@@ -29,7 +29,7 @@ npm start
 ### 構築
 
 ```bash
-claude mcp add -s project codex -- npx @modelcontextprotocol/server-memory
+claude mcp add -s project memory -- npx @modelcontextprotocol/server-memory
 claude mcp add -s project codex -- npx @openai/codex mcp-server
 ```
 
