@@ -19,56 +19,62 @@ description: 分析フェーズ全体のワークフローをオーケストレ�
    - バリューストリームの設計
    - ビジネスケイパビリティモデルの構築
 
-2. **要件定義** (Skill: `analyzing-requirements`)
+2. **インセプションデッキ作成** (Skill: `analyzing-inception-deck`)
+
+   - プロジェクトの「なぜ」「何を」「どうやって」を 10 の問いで整理
+   - スコープ・リスク・トレードオフの明確化
+   - 概念アーキテクチャとマイルストーンの策定
+
+3. **要件定義** (Skill: `analyzing-requirements`)
 
    - システム価値の明確化
    - システム外部環境の分析
    - システム境界の定義
 
-3. **ユースケース作成** (Skill: `analyzing-usecases`)
+4. **ユースケース作成** (Skill: `analyzing-usecases`)
 
    - ビジネスユースケースの抽出
    - システムユースケースの定義
    - ユーザーストーリーの作成
 
-4. **アーキテクチャ設計** (Skill: `analyzing-architecture`)
+5. **アーキテクチャ設計** (Skill: `analyzing-architecture`)
 
    - バックエンドアーキテクチャ
    - フロントエンドアーキテクチャ
    - インフラストラクチャアーキテクチャ
 
-5. **データモデル設計** (Skill: `analyzing-data-model`)
+6. **データモデル設計** (Skill: `analyzing-data-model`)
 
    - ER 図の作成
    - テーブル定義
 
-6. **ドメインモデル設計** (Skill: `analyzing-domain-model`)
+7. **ドメインモデル設計** (Skill: `analyzing-domain-model`)
 
    - エンティティ定義
    - 値オブジェクト定義
    - 集約の設計
 
-7. **UI 設計** (Skill: `analyzing-ui-design`)
+8. **UI 設計** (Skill: `analyzing-ui-design`)
 
    - 画面遷移図
    - 画面イメージ
 
-8. **テスト戦略** (Skill: `analyzing-test-strategy`)
+9. **テスト戦略** (Skill: `analyzing-test-strategy`)
 
    - テストピラミッド設計
    - テスト種別の定義
 
-9. **非機能要件** (Skill: `analyzing-non-functional`)
+10. **非機能要件** (Skill: `analyzing-non-functional`)
 
-   - 性能要件
-   - セキュリティ要件
+    - 性能要件
+    - セキュリティ要件
 
-10. **運用要件** (Skill: `analyzing-operation`)
+11. **運用要件** (Skill: `analyzing-operation`)
 
     - 運用フロー
     - 監視設計
 
-11. **技術スタック** (Skill: `analyzing-tech-stack`)
+12. **技術スタック** (Skill: `analyzing-tech-stack`)
 
     - 技術選定
     - バージョン管理
@@ -115,6 +121,7 @@ cat README.md
 ### 関連スキル
 
 - `analyzing-business` : ビジネスアーキテクチャ分析支援
+- `analyzing-inception-deck` : インセプションデッキ作成支援
 - `analyzing-requirements` : 要件定義関連の作業支援
 - `analyzing-usecases` : ユースケース・ユーザーストーリー作成支援
 - `analyzing-architecture` : アーキテクチャ設計支援

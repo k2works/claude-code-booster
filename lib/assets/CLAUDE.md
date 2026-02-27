@@ -24,13 +24,12 @@
 | :--- | :--- |
 | `orchestrating-analysis` | 分析フェーズの全体ワークフロー |
 | `orchestrating-development` | 開発フェーズの TDD ワークフロー・Codex 分業 |
-| `orchestrating-project` | 計画・進捗管理フェーズの全体ワークフロー |
 
 ### 分析
 
 | スキル | 用途 |
 | :--- | :--- |
-| `analyzing-business` | ビジネスアーキテクチャ分析 |
+| `analyzing-inception-deck` | インセプションデッキ作成 |
 | `analyzing-requirements` | 要件定義（RDRA 2.0） |
 | `analyzing-usecases` | ユースケース・ユーザーストーリー |
 | `analyzing-architecture` | アーキテクチャ設計 |
@@ -48,7 +47,6 @@
 | :--- | :--- |
 | `developing-backend` | バックエンド TDD（インサイドアウト） |
 | `developing-frontend` | フロントエンド TDD（アウトサイドイン） |
-| `developing-release` | リリースワークフロー（品質ゲート・バージョン管理・CHANGELOG） |
 
 ### 計画・進捗
 
@@ -70,6 +68,7 @@
 | スキル | 用途 |
 | :--- | :--- |
 | `managing-docs` | ドキュメント管理・Lint |
+| `generating-slides` | インセプションデッキのスライド生成 |
 | `git-commit` | Conventional Commits 準拠のコミット |
 | `creating-adr` | ADR 作成 |
 
