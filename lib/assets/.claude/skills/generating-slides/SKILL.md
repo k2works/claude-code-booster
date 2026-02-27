@@ -68,16 +68,45 @@ node .claude/scripts/generate-inception-deck.mjs
 
 #### 生成スクリプトの更新
 
-inception-deck.md の内容が更新された場合、生成スクリプトのデータ部分を更新してから再実行する。
+inception-deck.md の内容が更新された場合、生成スクリプトの `SLIDE_DATA` オブジェクトを更新してから再実行する。
 
 1. @docs/analysis/inception-deck.md を読み込む
-2. @.claude/scripts/generate-inception-deck.mjs のスライドデータを更新
+2. @.claude/scripts/generate-inception-deck.mjs の `SLIDE_DATA` セクションを更新
 3. `node .claude/scripts/generate-inception-deck.mjs` で再生成
+
+#### スクリプト構成
+
+生成スクリプトは以下の 4 セクションで構成されている。
+
+| セクション | 内容 | 編集対象 |
+| :--- | :--- | :--- |
+| `SLIDE_DATA` | プロジェクト固有のデータ（テキスト・数値） | 毎回更新 |
+| テーマ設定 | カラー・フォント定義 | 通常変更不要 |
+| ヘルパー関数 | スライド部品の描画ロジック | 通常変更不要 |
+| スライド生成 | `SLIDE_DATA` を読み取り 12 枚を生成 | 通常変更不要 |
+
+`SLIDE_DATA` の各キーがスライドに対応している。
+
+| キー | 対応スライド |
+| :--- | :--- |
+| `meta` | メタ情報（author, title, version, date, outputFileName） |
+| `titleSlide` | Slide 1: タイトル |
+| `whyAreWeHere` | Slide 2: 我われはなぜここにいるのか |
+| `elevatorPitch` | Slide 3: エレベーターピッチ |
+| `values` | Slide 4: どんな価値をもたらすのか？ |
+| `scope` | Slide 5: やらないことリスト |
+| `stakeholders` | Slide 6: プロジェクトコミュニティ |
+| `technicalSolution` | Slide 7: 技術的な解決策の概要 |
+| `risks` | Slide 8: 夜も眠れなくなるような問題 |
+| `team` | Slide 9: 俺たちの "A チーム" |
+| `timeline` | Slide 10: 期間を見極める |
+| `tradeoffs` | Slide 11: トレードオフ・スライダー |
+| `initialRelease` | Slide 12: 初回のリリースに必要なもの |
 
 #### バージョン管理
 
-- 出力ファイル名のバージョン（例: `HCOSS_v0.1.0.pptx`）はリリースバージョンに合わせて更新する
-- スクリプト内の `outputPath` と `pptx.title` を同時に更新すること
+- 出力ファイル名は `SLIDE_DATA.meta.outputFileName` で指定する（例: `PROJECT_v0.1.0.pptx`）
+- `meta.title` と `meta.outputFileName` を同時に更新すること
 
 ### 6. 注意事項
 
@@ -91,13 +120,14 @@ inception-deck.md の内容が更新された場合、生成スクリプトの�
 
 1. `npm install pptxgenjs`（初回のみ）
 2. @docs/analysis/inception-deck.md の内容を確認
-3. `node .claude/scripts/generate-inception-deck.mjs` を実行
-4. @docs/analysis/slide/HCOSS_v0.1.0.pptx が生成されたことを確認
+3. @.claude/scripts/generate-inception-deck.mjs の `SLIDE_DATA` をプロジェクト固有の内容に書き換える
+4. `node .claude/scripts/generate-inception-deck.mjs` を実行
+5. @docs/analysis/slide/ に .pptx が生成されたことを確認
 
 ### インセプションデッキ更新後のスライド再生成
 
 1. @docs/analysis/inception-deck.md の更新内容を確認
-2. @.claude/scripts/generate-inception-deck.mjs のスライドデータを更新
+2. @.claude/scripts/generate-inception-deck.mjs の `SLIDE_DATA` を更新
 3. `node .claude/scripts/generate-inception-deck.mjs` を実行
 
 ### 関連スキル
