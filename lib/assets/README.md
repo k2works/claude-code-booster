@@ -33,6 +33,22 @@ claude mcp add -s project memory -- npx @modelcontextprotocol/server-memory
 claude mcp add -s project codex -- npx @openai/codex mcp-server
 ```
 
+#### ralph-loopの導入
+
+- Claude Code 起動後、/plugin を実行
+
+- 検索ボックスで ralph-loop を探して選択
+
+- インストールするスコープを選ぶ（ユーザー / プロジェクト / ローカル）
+
+- Claude Code を再起動
+
+- コマンドで実行
+
+```powershell
+/ralph-loop "<プロンプト>" --max-iterations <数値> --completion-promise "<完了テキスト>"
+```
+
 #### AI アシスタント（Skills）
 
 `.claude/skills/` ディレクトリに定義された Skills により、AI アシスタントがタスクに応じた専門的な指示を自動的に読み込みます。Progressive Disclosure（段階的開示）により、必要なスキルのみがコンテキストに展開されます。
