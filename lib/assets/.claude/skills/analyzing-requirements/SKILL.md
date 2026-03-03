@@ -12,6 +12,8 @@ RDRA モデルに基づいた体系的な要件定義を作成します。
 ### 1. 参照ドキュメント
 
 - @docs/reference/要件定義支援.md - 要件定義の進め方ガイド
+- @docs/analysis/business_architecture.md
+- @docs/analysis/inception_deck.md
 
 ### 2. テンプレート
 
