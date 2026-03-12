@@ -83,6 +83,7 @@
 - [TypeScript アプリケーション環境構築ガイド](./reference/TypeScriptアプリケーション環境構築ガイド.md)
 - [Codex CLI MCP アプリケーション開発フロー](./reference/CodexCLIMCPアプリケーション開発フロー.md)
 - [Codex CLI MCP サーバー設定手順](./reference/CodexCLIMCPサーバー設定手順.md)
+- [SonarQube ローカル環境セットアップ手順書](./reference/SonarQubeローカル環境セットアップ手順書.md)
 - [Vim 操作マニュアル](./reference/Vim操作マニュアル.md)
 
 ### テンプレート (`template/`)

@@ -41,4 +41,5 @@
 
 - [Codex CLI MCP アプリケーション開発フロー](./CodexCLIMCPアプリケーション開発フロー.md)
 - [Codex CLI MCP サーバー設定手順](./CodexCLIMCPサーバー設定手順.md)
+- [SonarQube ローカル環境セットアップ手順書](./SonarQubeローカル環境セットアップ手順書.md)
 - [Vim 操作マニュアル](./Vim操作マニュアル.md)
