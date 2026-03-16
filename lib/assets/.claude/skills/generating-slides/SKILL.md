@@ -13,8 +13,8 @@ description: インセプションデッキの Markdown から PowerPoint スラ
 |------|------|------|
 | テンプレート | @docs/template/インセプションデッキ.pptx | スライド構成のリファレンス（15 枚、4:3） |
 | 生成スクリプト | @.claude/scripts/generate-inception-deck.mjs | 内容の編集は可能 |
-| 入力 | `docs/analysis/inception-deck.md` | `analyzing-inception-deck` の成果物 |
-| 入力（補足） | `docs/analysis/business_architecture.md` | ビジネスアーキテクチャ分析書 |
+| 入力 | @docs/analysis/inception-deck.md | `analyzing-inception-deck` の成果物 |
+| 入力（補足） | @docs/analysis/business_architecture.md | ビジネスアーキテクチャ分析書 |
 | 成果物 | `docs/analysis/slide/xxxxx_v0.1.0.pptx` | 生成された PowerPoint スライド |
 
 ## スライド構成（12 枚）
