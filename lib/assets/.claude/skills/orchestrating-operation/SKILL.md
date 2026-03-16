@@ -91,6 +91,8 @@ IaC（Infrastructure as Code）によるインフラ管理を行います。
 
 各環境の構築・デプロイ・管理を自動化するスクリプトを作成します。
 
+@docs/reference/運用スクリプト作成ガイド.md に従い、ネーミングルール・ディレクトリ構成・実装スタイルを統一します。
+
 **作成タイミング**: 各環境のセットアップ完了時に、その環境の運用スクリプトを作成します。
 
 **スクリプトの種類**:
@@ -148,7 +150,9 @@ IaC（Infrastructure as Code）によるインフラ管理を行います。
 
 ### 関連スキル
 
-- `managing-operations` : 環境構築・デプロイ・監視の実行
+- `operating-setup` : 環境構築の段階的実行
+- `operating-provision` : IaC によるインフラプロビジョニング
+- `operating-cicd` : CI/CD パイプライン構築
+- `operating-deploy` : デプロイ・ロールバック
+- `operating-backup` : バックアップ・リストア
 - `analyzing-operation` : 運用要件の定義
-- `analyzing-architecture` : インフラアーキテクチャの設計
-- `analyzing-tech-stack` : 技術スタックの選定

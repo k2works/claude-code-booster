@@ -61,14 +61,18 @@
 
 | スキル | 用途 |
 | :--- | :--- |
-| `managing-operations` | 環境構築・デプロイ・監視 |
+| `operating-setup` | 環境構築（段階的セットアップ） |
+| `operating-provision` | IaC プロビジョニング（Terraform） |
+| `operating-cicd` | CI/CD パイプライン構築 |
+| `operating-deploy` | デプロイ・ロールバック |
+| `operating-backup` | バックアップ・リストア |
 | `killing-processes` | 開発プロセス強制終了 |
 
 ### ドキュメント・Git
 
 | スキル | 用途 |
 | :--- | :--- |
-| `managing-docs` | ドキュメント管理・Lint |
+| `operating-docs` | ドキュメント管理・Lint |
 | `generating-slides` | インセプションデッキのスライド生成 |
 | `git-commit` | Conventional Commits 準拠のコミット |
 | `creating-adr` | ADR 作成 |

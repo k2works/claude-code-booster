@@ -1,5 +1,5 @@
 ---
-name: managing-docs
+name: operating-docs
 description: 設計ドキュメントの一覧表示、進捗確認、内容参照、インデックス更新、Markdown Lint を実行。ドキュメント管理や整備時に使用。
 ---
 
