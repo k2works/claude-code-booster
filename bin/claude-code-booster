@@ -58,15 +58,13 @@ async function setupProject() {
       console.log(`[claude-code-booster] Copied assets from "${templateDir}" to "${projectDir}"`);
     }
 
-    // .codex と .gemini ディレクトリに skills をコピー
+    // .agents ディレクトリに skills をコピー
     const skillsSrc = path.join(templateDir, '.claude', 'skills');
     if (await fs.pathExists(skillsSrc)) {
-      for (const target of ['.codex', '.gemini']) {
-        const skillsDest = path.join(projectDir, target, 'skills');
-        await fs.ensureDir(skillsDest);
-        await fs.copy(skillsSrc, skillsDest, { overwrite: true, errorOnExist: false });
-        console.log(`[claude-code-booster] Copied skills to "${target}/skills"`);
-      }
+      const skillsDest = path.join(projectDir, '.agents', 'skills');
+      await fs.ensureDir(skillsDest);
+      await fs.copy(skillsSrc, skillsDest, { overwrite: true, errorOnExist: false });
+      console.log('[claude-code-booster] Copied skills to ".agents/skills"');
     }
   } catch (err) {
     console.error('[claude-code-booster] Asset copy failed:', err);
