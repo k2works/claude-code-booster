@@ -24,6 +24,7 @@
 | :--- | :--- |
 | `orchestrating-analysis` | 分析フェーズの全体ワークフロー |
 | `orchestrating-development` | 開発フェーズの TDD ワークフロー・Codex 分業 |
+| `orchestrating-operation` | 運用フェーズの環境構築・デプロイワークフロー |
 
 ### 分析
 
