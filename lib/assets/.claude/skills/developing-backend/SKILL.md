@@ -1,37 +1,39 @@
 ---
 name: developing-backend
-description: バックエンド開発の TDD ワークフロー。Red-Green-Refactor サイクル、インサイドアウトアプローチ、品質チェックリスト。Java/Spring Boot のバックエンド実装時に使用。
+description: バックエンド開発の TDD ワークフローを支援。Red-Green-Refactor サイクルとインサイドアウトアプローチで品質の高いバックエンドを実装する。「バックエンドを実装したい」「API を作りたい」「サーバーサイドの機能を追加したい」「バックエンドのテストを書きたい」といった場面で発動する。TDD で開発することで、リファクタリングの安全網を確保し、変更を楽に安全にできるコードを維持する。
 ---
 
-# バックエンド開発ガイド
+# バックエンド開発
 
-TDD サイクルに従ったバックエンド開発を支援します。
+TDD サイクルに従いバックエンドを開発する。インサイドアウトアプローチ（データ層→ドメイン層→API 層）で、内側から外側へ段階的に構築する。
 
-## Instructions
+インサイドアウトの利点は、ドメインロジックのテストが外部依存なしで書けること。テストの実行速度が速く、フィードバックループを短く保てる。
 
-### 1. 参照ドキュメント
+## 参照ドキュメント
 
-- @docs/reference/コーディングとテストガイド.md - ワークフロー
-- @docs/design/architecture_backend.md - バックエンドアーキテクチャ
-- @docs/design/data-model.md - データモデル
-- @docs/design/domain-model.md - ドメインモデル
-- @docs/design/tech_stack.md - 技術スタック
-- @docs/design/test_strategy.md - テスト戦略
+| 種類 | パス |
+|------|------|
+| ワークフロー | @docs/reference/コーディングとテストガイド.md |
+| アーキテクチャ | @docs/design/architecture_backend.md |
+| データモデル | @docs/design/data-model.md |
+| ドメインモデル | @docs/design/domain-model.md |
+| 技術スタック | @docs/design/tech_stack.md |
+| テスト戦略 | @docs/design/test_strategy.md |
 
-### 2. TDD サイクルの実践
+## TDD サイクル
 
-Red-Green-Refactor サイクルを厳密に実行：
+10-15 分で 1 サイクルを完了させる。サイクルが長引くなら、タスクの粒度が大きすぎる。
 
-1. **Red フェーズ**: 失敗するテストを最初に書く
-2. **Green フェーズ**: テストを通す最小限のコードを実装
-3. **Refactor フェーズ**: 重複を除去し設計を改善
+1. **Red**: 失敗するテストを最初に書く
+2. **Green**: テストを通す最小限のコードを実装する
+3. **Refactor**: 重複を除去し設計を改善する
 
-### 3. アプローチ戦略の選択
+## アプローチ
 
-- **インサイドアウト**: データ層から開始し上位層へ展開（推奨）
-- **アウトサイドイン**: API から開始しドメインロジックを段階的に実装
+- **インサイドアウト**（推奨）: データ層から開始し上位層へ展開する
+- **アウトサイドイン**: API から開始しドメインロジックを段階的に実装する
 
-### 4. テストコマンド
+## テストコマンド
 
 ```bash
 # 全テスト実行
@@ -44,20 +46,18 @@ cd apps/backend && ./gradlew test --tests "UserServiceTest"
 cd apps/backend && ./gradlew jacocoTestReport
 ```
 
-### 5. API ドキュメント
-
-バックエンドには Swagger UI が組み込まれています。
+## API ドキュメント
 
 ```bash
 # バックエンドを起動
 cd apps/backend && ./gradlew bootRun
-
 # Swagger UI: http://localhost:8080/swagger-ui.html
 # OpenAPI JSON: http://localhost:8080/v3/api-docs
-# OpenAPI YAML: http://localhost:8080/api-docs.yaml
 ```
 
-### 6. 品質チェックリスト
+## 品質チェックリスト
+
+コミット前に必ず確認する。
 
 - [ ] すべてのテストがパス
 - [ ] ESLint/コンパイラの警告がゼロ
@@ -65,42 +65,36 @@ cd apps/backend && ./gradlew bootRun
 - [ ] 単一の論理的作業単位を表現
 - [ ] コミットメッセージが変更内容を明確に説明
 
-### 7. コンテキスト管理
+## 途中から再開
 
-長時間の開発セッションでは Context limit reached エラーを回避するため、タスクの区切りごとに `/compact` を実施してコンテキストを圧縮する。
+開発セッションの途中から再開する場合は、まず現在のテスト状態を確認する。
 
-**`/compact` を実施するタイミング**:
+**Example:**
 
-- TDD サイクル（Red-Green-Refactor）を数回繰り返した後
-- ユーザーストーリー 1 件の実装が完了したとき
-- コミット完了後、次のタスクに着手する前
-- テストスイートの実行と結果確認が完了したとき
+```
+ユーザー: 「ユーザー認証の Entity と Repository は実装済み。Service 層に進みたい」
+回答: 既存テストを実行して Green 状態を確認する。
+      Service 層の失敗するテスト（Red）を書いてから実装に進む。
+      Repository の戻り値を使った Service のビジネスロジックをテストする。
+```
 
-**運用ルール**:
+## コンテキスト管理
 
-1. `/compact` 実施前に、現在の作業状態と次のタスクをメモとして出力する
-2. `/compact` 実施後、次のタスクの作業を継続する
-3. 大規模なユーザーストーリーでは、サブタスクごとに `/compact` を検討する
+タスクの区切りごとに `/compact` を実施して Context limit reached エラーを回避する。
 
-### 8. 注意事項
+- TDD サイクルを数回繰り返した後、ユーザーストーリー完了時、コミット完了後に実施する
+- `/compact` 前に現在の作業状態と次のタスクをメモとして出力する
 
-- **前提条件**: Java/Gradle のテスト環境が設定済みであること
-- **制限事項**: TDD の三原則を厳密に守る（テストなしでプロダクションコードを書かない）
-- **推奨事項**: コミット前に必ず品質チェックリストを実行
-- 作業完了後に対象のイテレーション @docs/development/iteration_plan-N.md の進捗を更新する
+## 注意事項
 
-## Examples
+- Java/Gradle のテスト環境が設定済みであること（前提条件）
+- TDD の三原則を厳密に守る。テストなしでプロダクションコードを書かない
+- コミット前に必ず品質チェックリストを実行する
+- 作業完了後に対象の @docs/development/iteration_plan-N.md の進捗を更新する
+- TODO 駆動開発でタスクを細かく分割し、Rule of Three で 3 回同じコードが現れたらリファクタリングする
 
-### 新機能の TDD 実装
+## 関連スキル
 
-1. 失敗するテストを書く（Red）
-2. テストを通す最小限のコードを実装（Green）
-3. 重複を排除し設計を改善（Refactor）
-4. 品質チェックリストを実行してコミット
-
-### ベストプラクティス
-
-1. **TODO 駆動開発**: タスクを細かい TODO に分割してから実装開始
-2. **小さなサイクル**: Red-Green-Refactor を 10-15 分で完了させる
-3. **継続的コミット**: 各サイクル完了時に動作する状態でコミット
-4. **Rule of Three**: 同じコードが 3 回現れたらリファクタリング
+- `developing-frontend` — フロントエンド TDD 開発
+- `orchestrating-development` — 開発フェーズ全体のワークフロー
+- `git-commit` — Conventional Commits 準拠のコミット
