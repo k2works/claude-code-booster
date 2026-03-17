@@ -49,21 +49,17 @@ async function testInitialSetup() {
   assert(await fs.pathExists(path.join(tmpDir, '.claude')), '.claude が作成される');
   assert(await fs.pathExists(path.join(tmpDir, '.claude', 'skills')), '.claude/skills が作成される');
   assert(await fs.pathExists(path.join(tmpDir, 'docs')), 'docs が作成される');
-  assert(await fs.pathExists(path.join(tmpDir, '.codex', 'skills')), '.codex/skills が作成される');
-  assert(await fs.pathExists(path.join(tmpDir, '.gemini', 'skills')), '.gemini/skills が作成される');
+  assert(await fs.pathExists(path.join(tmpDir, '.agents', 'skills')), '.agents/skills が作成される');
+  assert(await fs.pathExists(path.join(tmpDir, 'AGENTS.md')), 'AGENTS.md がコピーされる');
+  assert(await fs.pathExists(path.join(tmpDir, 'CLAUDE.md')), 'CLAUDE.md がコピーされる');
 
   // skills の中身が一致するか確認
   const claudeSkills = await fs.readdir(path.join(tmpDir, '.claude', 'skills'));
-  const codexSkills = await fs.readdir(path.join(tmpDir, '.codex', 'skills'));
-  const geminiSkills = await fs.readdir(path.join(tmpDir, '.gemini', 'skills'));
+  const agentsSkills = await fs.readdir(path.join(tmpDir, '.agents', 'skills'));
   assert(claudeSkills.length > 0, '.claude/skills にファイルが存在する');
   assert(
-    JSON.stringify(claudeSkills.sort()) === JSON.stringify(codexSkills.sort()),
-    '.codex/skills の内容が .claude/skills と一致する',
-  );
-  assert(
-    JSON.stringify(claudeSkills.sort()) === JSON.stringify(geminiSkills.sort()),
-    '.gemini/skills の内容が .claude/skills と一致する',
+    JSON.stringify(claudeSkills.sort()) === JSON.stringify(agentsSkills.sort()),
+    '.agents/skills の内容が .claude/skills と一致する',
   );
 }
 
@@ -83,9 +79,13 @@ async function testUpdateOption() {
     }
   }
 
+  // AGENTS.md と CLAUDE.md を変更して --update で上書きされるか確認
+  await fs.writeFile(path.join(tmpDir, 'AGENTS.md'), 'MODIFIED');
+  await fs.writeFile(path.join(tmpDir, 'CLAUDE.md'), 'MODIFIED');
+
   run(['--update']);
 
-  // 上書きされていることを確認
+  // .claude/skills が上書きされていることを確認
   if (skillDirs.length > 0) {
     const markerFile = path.join(tmpDir, '.claude', 'skills', skillDirs[0], 'SKILL.md');
     if (await fs.pathExists(markerFile)) {
@@ -94,21 +94,22 @@ async function testUpdateOption() {
     }
   }
 
-  // --update でも .codex/skills, .gemini/skills が更新される
-  assert(await fs.pathExists(path.join(tmpDir, '.codex', 'skills')), '--update で .codex/skills が存在する');
-  assert(await fs.pathExists(path.join(tmpDir, '.gemini', 'skills')), '--update で .gemini/skills が存在する');
+  // --update でも .agents/skills が更新される
+  assert(await fs.pathExists(path.join(tmpDir, '.agents', 'skills')), '--update で .agents/skills が存在する');
 
   const claudeSkills = await fs.readdir(path.join(tmpDir, '.claude', 'skills'));
-  const codexSkills = await fs.readdir(path.join(tmpDir, '.codex', 'skills'));
-  const geminiSkills = await fs.readdir(path.join(tmpDir, '.gemini', 'skills'));
+  const agentsSkills = await fs.readdir(path.join(tmpDir, '.agents', 'skills'));
   assert(
-    JSON.stringify(claudeSkills.sort()) === JSON.stringify(codexSkills.sort()),
-    '--update で .codex/skills の内容が .claude/skills と一致する',
+    JSON.stringify(claudeSkills.sort()) === JSON.stringify(agentsSkills.sort()),
+    '--update で .agents/skills の内容が .claude/skills と一致する',
   );
-  assert(
-    JSON.stringify(claudeSkills.sort()) === JSON.stringify(geminiSkills.sort()),
-    '--update で .gemini/skills の内容が .claude/skills と一致する',
-  );
+
+  // AGENTS.md と CLAUDE.md が上書きされていることを確認
+  const agentsMdContent = await fs.readFile(path.join(tmpDir, 'AGENTS.md'), 'utf-8');
+  assert(agentsMdContent !== 'MODIFIED', '--update で AGENTS.md が上書きされる');
+
+  const claudeMdContent = await fs.readFile(path.join(tmpDir, 'CLAUDE.md'), 'utf-8');
+  assert(claudeMdContent !== 'MODIFIED', '--update で CLAUDE.md が上書きされる');
 }
 
 // --- 実行 ---

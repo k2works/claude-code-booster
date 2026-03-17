@@ -52,6 +52,17 @@ async function setupProject() {
           console.warn(`[claude-code-booster] Skip: source not found "${src}"`);
         }
       }
+
+      // ルート直下の設定ファイルも上書きコピー
+      const rootFiles = ['AGENTS.md', 'CLAUDE.md'];
+      for (const file of rootFiles) {
+        const src = path.join(templateDir, file);
+        const dest = path.join(projectDir, file);
+        if (await fs.pathExists(src)) {
+          await fs.copy(src, dest, { overwrite: true, errorOnExist: false });
+          console.log(`[claude-code-booster] Updated "${file}"`);
+        }
+      }
     } else {
       // それ以外は従来通り assets 全体をコピー
       await fs.copy(templateDir, projectDir, { overwrite: true, errorOnExist: false });
