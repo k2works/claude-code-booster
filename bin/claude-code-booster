@@ -35,8 +35,8 @@ async function setupProject() {
                 overwrite: true,
                 errorOnExist: false,
                 filter: (from, to) => {
-                  // docs 直下の index.md をすべて除外する（他は全てコピー）
-                  if (path.basename(from) === 'index.md' && path.dirname(from) === src) {
+                  // docs 配下の index.md をすべて除外する（他は全てコピー）
+                  if (path.basename(from) === 'index.md') {
                     return false;
                   }
                   return true;
