@@ -4,19 +4,19 @@
 
 ## まずこれを読もうリスト
 
-- [ビジネスアーキテクチャ](./analysis/business_architecture.md) - ビジネス構造を定義。設計の基盤。
-- [インセプションデッキ](./analysis/inception_deck.md) - プロジェクトの全体像と方向性を共有。
+- [ビジネスアーキテクチャ](./strategy/business_architecture.md) - ビジネス構造を定義。設計の基盤。
+- [インセプションデッキ](./strategy/inception_deck.md) - プロジェクトの全体像と方向性を共有。
 
 ## ドキュメント構成
 
-### 分析 (`analysis/`)
+### 戦略 (`strategy/`)
 
 | ドキュメント | 状態 |
 | :--- | :--- |
-| [ビジネスアーキテクチャ](./analysis/business_architecture.md) | 未着手 |
-| [インセプションデッキ](./analysis/inception_deck.md) | 未着手 |
+| [ビジネスアーキテクチャ](./strategy/business_architecture.md) | 未着手 |
+| [インセプションデッキ](./strategy/inception_deck.md) | 未着手 |
 
-### 要件定義 (`requirements/`)
+### 要件 (`requirements/`)
 
 | ドキュメント | 状態 |
 | :--- | :--- |
@@ -48,9 +48,12 @@
 
 ### 運用 (`operation/`)
 
-| ドキュメント | 状態 |
-| :--- | :--- |
-| [アプリケーション開発環境セットアップ手順書](./operation/dev_app_instruction.md) | 未着手 |
+| ドキュメント                                                       | 状態 |
+|:-------------------------------------------------------------| :--- |
+| [アプリケーション開発環境セットアップ手順書](./operation/dev_app_instruction.md)  | 未着手 |
+| [開発環境セットアップ手順書](./operation/dev_infra_instruction.md)        | 未着手 |
+| [ステージング開発環境セットアップ手順書](./operation/stg_infra_instruction.md)  | 未着手 |
+| [プロダクション開発環境セットアップ手順書](./operation/prd_infra_instruction.md) | 未着手 |
 
 ### ADR (`adr/`)
 
