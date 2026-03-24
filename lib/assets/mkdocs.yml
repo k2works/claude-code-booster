@@ -73,6 +73,10 @@ nav:
       - 概要: development/index.md
   - 運用:
       - 概要: operation/index.md
+  - レビュー:
+      - 概要: review/index.md
+  - ADR:
+      - 概要: adr/index.md
   - リファレンス:
       - 概要: reference/index.md
       - よいソフトウェアとは: reference/よいソフトウェアとは.md
@@ -100,8 +104,6 @@ nav:
       - Codex CLI MCP サーバー設定手順: reference/CodexCLIMCPサーバー設定手順.md
       - SonarQube ローカル環境セットアップ手順書: reference/SonarQubeローカル環境セットアップ手順書.md
       - Vim 操作マニュアル: reference/Vim操作マニュアル.md
-  - ADR:
-      - 概要: adr/index.md
   - テンプレート:
       - 概要: template/index.md
       - まずこれを読もうリスト: template/まずこれを読もうリスト.md
