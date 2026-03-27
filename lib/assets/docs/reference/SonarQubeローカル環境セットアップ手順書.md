@@ -312,6 +312,8 @@ SONAR_TOKEN=<YOUR_TOKEN>
 
 1. SonarQube でプロジェクトを作成してください。Project Key が `sonarqube.config.json` の `projectKey` と一致しているか確認してください。
 2. 次のどちらかで権限を付与してください。
+
+
    - 付与方法 A: 管理者でログイン > Administration > Security > Users で対象ユーザーに `Execute Analysis` を付与
    - 付与方法 B: プロジェクト画面 > Project Settings > Permissions で `Execute Analysis` を付与
 

@@ -9,16 +9,22 @@
 ### 第1部: 関数型プログラミングの基礎原則
 
 1. [不変性とデータ変換](./01-immutability-and-data-transformation.md)
+
+
     - 不変データ構造の重要性
     - データ変換パイプライン
     - 副作用の分離
 
 2. [関数合成と高階関数](./02-function-composition.md)
+
+
     - 関数合成の基本
     - 部分適用とカリー化
     - 高階関数の活用
 
 3. [多態性の実現方法](./03-polymorphism.md)
+
+
     - マルチメソッドによるディスパッチ
     - プロトコルとレコード
     - マルチメソッド vs プロトコルの使い分け
@@ -26,16 +32,22 @@
 ### 第2部: 仕様とテスト
 
 4. [Clojure Spec による仕様定義](./04-clojure-spec.md)
+
+
     - データ構造の仕様定義
     - 関数仕様の定義（fdef）
     - 実行時検証と自動テスト生成
 
 5. [プロパティベーステスト](./05-property-based-testing.md)
+
+
     - test.check の基本
     - ジェネレータの作成
     - プロパティの定義と検証
 
 6. [テスト駆動開発と関数型プログラミング](./06-tdd-in-functional.md)
+
+
     - Red-Green-Refactor サイクル
     - テストファーストの関数設計
     - リファクタリングと不変性
@@ -43,18 +55,24 @@
 ### 第3部: デザインパターン - 構造パターン
 
 7. [Composite パターン](./07-composite-pattern.md)
+
+
     - 個別オブジェクトと複合オブジェクトの統一的な扱い
     - Shape（図形）の移動・拡大を統一インターフェースで操作
     - Switchable（スイッチ）のグループ化と一括操作
     - マルチメソッドによる多態性の実現
 
 8. [Decorator パターン](./08-decorator-pattern.md)
+
+
     - 機能の動的な追加
     - JournaledShape: 操作履歴の記録（ジャーナリング）
     - 関数デコレータ: ログ、リトライ、キャッシュ
     - デコレータの組み合わせ
 
 9. [Adapter パターン](./09-adapter-pattern.md)
+
+
     - インターフェースの変換
     - VariableLightAdapter: 可変強度ライトをオン/オフに適応
     - データフォーマットアダプター: 新旧フォーマット変換
@@ -63,18 +81,24 @@
 ### 第4部: デザインパターン - 振る舞いパターン
 
 10. [Strategy パターン](./10-strategy-pattern.md)
+
+
     - アルゴリズムをカプセル化し交換可能にする
     - 料金計算: 通常・割引・会員・数量割引の各戦略
     - 関数型アプローチ: 高階関数による戦略の合成
     - マルチメソッドによる多態性の実現
 
 11. [Command パターン](./11-command-pattern.md)
+
+
     - 操作をデータとしてカプセル化
     - テキストコマンド: 挿入・削除・置換
     - キャンバスコマンド: 図形の追加・削除・移動
     - Undo/Redo 機能と MacroCommand
 
 12. [Visitor パターン](./12-visitor-pattern.md)
+
+
     - データ構造と操作の分離
     - JSON/XML 変換 Visitor の実装
     - 面積・周囲長計算 Visitor
@@ -83,12 +107,16 @@
 ### 第5部: デザインパターン - 生成パターン
 
 13. [Abstract Factory パターン](./13-abstract-factory-pattern.md)
+
+
     - 関連するオブジェクトのファミリーを一貫して生成
     - ShapeFactory: Standard/Outlined/Filled の各実装
     - UIFactory: プラットフォーム別 UI コンポーネント生成
     - マルチメソッドによる製品生成のディスパッチ
 
 14. [Abstract Server パターン](./14-abstract-server-pattern.md)
+
+
     - 依存関係逆転の原則（DIP）の実現
     - Switchable: Light/Fan/Motor の統一インターフェース
     - Repository: データアクセスの抽象化
@@ -97,27 +125,37 @@
 ### 第6部: 実践的なケーススタディ
 
 15. [ゴシップ好きなバスの運転手](./15-gossiping-bus-drivers.md)
+
+
     - バス運転手が停留所で噂を共有するシミュレーション
     - 無限シーケンス（cycle）による循環ルート表現
     - 集合演算による噂の伝播
     - 状態変換パイプラインの実装
 
 16. [給与計算システム](./16-payroll-system.md)
+
+
     - ドメインモデリング
     - 支払いスケジュールと給与タイプ
     - Clojure Spec によるデータ検証
 
 17. [レンタルビデオシステム](./17-video-rental-system.md)
+
+
     - 料金計算ロジックの設計
     - ポリシーパターンの適用
     - テキスト/HTML フォーマッターの実装
 
 18. [並行処理システム](./18-concurrency-system.md)
+
+
     - Clojure エージェントによる非同期処理
     - 状態機械パターン
     - イベント駆動アーキテクチャ
 
 19. [Wa-Tor シミュレーション](./19-wator-simulation.md)
+
+
     - 捕食者-被食者モデルの実装
     - セルオートマトンとマルチメソッド
     - GUI との統合（Quil）
@@ -126,16 +164,22 @@
 ### 第7部: まとめと応用
 
 20. [パターン間の相互作用](./20-pattern-interactions.md)
+
+
     - Composite と Decorator の組み合わせ
     - Command と Observer の連携
     - 複合的なアーキテクチャ設計
 
 21. [関数型デザインのベストプラクティス](./21-best-practices.md)
+
+
     - データ中心設計
     - 純粋関数と副作用の分離
     - テスト可能な設計
 
 22. [オブジェクト指向から関数型への移行](./22-oo-to-fp-migration.md)
+
+
     - 既存コードのリファクタリング戦略
     - 段階的な移行アプローチ
     - 共存と統合
