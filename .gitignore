@@ -142,3 +142,4 @@ vite.config.ts.timestamp-*
 .idea
 tmp
 .claude
+lib/assets/.claude/agent-memory
