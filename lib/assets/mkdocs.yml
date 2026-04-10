@@ -134,5 +134,5 @@ nav:
       - AWS ステージング環境セットアップ手順書: template/AWSステージング環境セットアップ手順書.md
       - AWS プロダクション環境セットアップ手順書: template/AWSプロダクション環境セットアップ手順書.md
       - 企業分析: template/企業分析.md
-      - 企業事例: template/企業事例.md
+      - 事例分析: template/事例分析.md
       - README: template/README.md
