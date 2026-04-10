@@ -13,18 +13,18 @@
 
 ## ドキュメント構成
 
-| カテゴリ | 概要 | 状況 |
-| :--- | :--- | :--- |
-| [戦略](./strategy/index.md) | 事例分析、経営戦略、ビジネスアーキテクチャ、インセプションデッキの整理 | `index.md` を整備済み |
-| [要件](./requirements/index.md) | RDRA 2.0 とユースケース整理の入口 | `index.md` を整備済み |
-| [設計](./design/index.md) | アーキテクチャ、モデル、テスト、非機能の整理 | `index.md` を整備済み |
-| [開発](./development/index.md) | リリース計画、イテレーション計画、進捗管理 | `index.md` を整備済み |
-| [運用](./operation/index.md) | 環境構築、デプロイ、運用手順の整理 | `index.md` を整備済み |
-| [レビュー](./review/index.md) | 分析・開発レビュー結果の記録 | `index.md` を整備済み |
-| [ADR](./adr/index.md) | Architecture Decision Records の管理 | `index.md` を整備済み |
-| [記事](./article/index.md) | 学習用の記事シリーズ一覧 | `index.md` を整備済み |
-| [リファレンス](./reference/index.md) | 開発ガイドラインやベストプラクティス | 29 件のドキュメントを配置 |
-| [テンプレート](./template/index.md) | 各種ドキュメントの作成テンプレート | 17 件のテンプレートを配置 |
+| カテゴリ | 概要                                  | 状況 |
+| :--- |:------------------------------------| :--- |
+| [戦略](./strategy/index.md) | 企業分析、経営戦略、ビジネスアーキテクチャ、インセプションデッキの整理 | `index.md` を整備済み |
+| [要件](./requirements/index.md) | RDRA 2.0 とユースケース整理の入口               | `index.md` を整備済み |
+| [設計](./design/index.md) | アーキテクチャ、モデル、テスト、非機能の整理              | `index.md` を整備済み |
+| [開発](./development/index.md) | リリース計画、イテレーション計画、進捗管理               | `index.md` を整備済み |
+| [運用](./operation/index.md) | 環境構築、デプロイ、運用手順の整理                   | `index.md` を整備済み |
+| [レビュー](./review/index.md) | 分析・開発レビュー結果の記録                      | `index.md` を整備済み |
+| [ADR](./adr/index.md) | Architecture Decision Records の管理   | `index.md` を整備済み |
+| [記事](./article/index.md) | 学習用の記事シリーズ一覧                        | `index.md` を整備済み |
+| [リファレンス](./reference/index.md) | 開発ガイドラインやベストプラクティス                  | 29 件のドキュメントを配置 |
+| [テンプレート](./template/index.md) | 各種ドキュメントの作成テンプレート                   | 17 件のテンプレートを配置 |
 
 ## 補足
 

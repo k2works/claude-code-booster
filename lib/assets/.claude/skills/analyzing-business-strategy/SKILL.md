@@ -269,7 +269,7 @@ SWOT で抽出した強みを、持続的競争優位性の観点で評価する
 ## 関連スキル
 
 - `analyzing-business-case` — 前提となる事例（与件文）作成（本スキルの入力を生成）
-- `analyzing-business` — ビジネスアーキテクチャ分析（実プロジェクトの事業構造整理）
+- `analyzing-business-architecture` — ビジネスアーキテクチャ分析（実プロジェクトの事業構造整理）
 - `generating-bmc` — 本スキルの BMC セクションから SVG 図を生成（後続の可視化タスク）
 - `analyzing-inception-deck` — 後続のプロジェクト方向性整理
 - `analyzing-requirements` — 後続の要件定義（機能戦略・業務分析を入力）
