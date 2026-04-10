@@ -79,7 +79,7 @@ nav:
       - 概要: adr/index.md
   - 記事:
       - 概要: article/index.md
-      - テスト駆動開発から始める XX 入門: article/getting-start-tdd/index.md
+      - テスト駆動開発から始めるプログラミング入門: article/getting-start-tdd/index.md
       - Grokking Functional Programming: article/grokkingfp/index.md
       - Grokking Concurrency: article/grokking-concurrency/index.md
       - 関数型デザイン - 原則、パターン、実践: article/functional-desgin-ppp/index.md
