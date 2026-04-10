@@ -32,6 +32,9 @@
 
 | スキル | 用途 |
 | :--- | :--- |
+| `analyzing-business-case` | 企業事例（ケーススタディ）の与件文作成 |
+| `analyzing-business-strategy` | 企業戦略・事業戦略・機能戦略の 3 階層戦略立案 |
+| `analyzing-business-architecture` | ビジネスアーキテクチャ分析（BMC・バリューストリーム・ケイパビリティマップ） |
 | `analyzing-inception-deck` | インセプションデッキ作成 |
 | `analyzing-requirements` | 要件定義（RDRA 2.0） |
 | `analyzing-usecases` | ユースケース・ユーザーストーリー |
