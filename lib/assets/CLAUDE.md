@@ -97,6 +97,12 @@
 | `creating-release-report` | リリース完了報告書作成 |
 | `creating-iteration-report` | イテレーション完了報告書作成 |
 
+### 学習
+
+| スキル | 用途 |
+| :--- | :--- |
+| `practicing-getting-start-tdd` | TDD プログラミング入門の対話式チュートリアル |
+
 ### 共通
 
 | スキル | 用途 |
