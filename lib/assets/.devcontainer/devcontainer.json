@@ -23,7 +23,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "direnv allow /srv",
+	// Nix devShell は手動ロード方式。コンテナ起動後、必要に応じて `direnv allow` または `nix develop` を実行してください。
 
 	// Configure tool-specific properties.
   "customizations" : {
