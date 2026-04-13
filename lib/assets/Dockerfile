@@ -58,12 +58,7 @@ ENV HOME=/home/$USERNAME
 RUN curl -L https://nixos.org/nix/install | sh -s -- --no-daemon \
     && echo '. /home/'$USERNAME'/.nix-profile/etc/profile.d/nix.sh' >> /home/$USERNAME/.bashrc \
     && mkdir -p /home/$USERNAME/.config/nix \
-    && echo "experimental-features = nix-command flakes" >> /home/$USERNAME/.config/nix/nix.conf \
-    && . /home/$USERNAME/.nix-profile/etc/profile.d/nix.sh \
-    && nix profile install nixpkgs#direnv nixpkgs#nix-direnv \
-    && mkdir -p /home/$USERNAME/.config/direnv \
-    && echo 'source $HOME/.nix-profile/share/nix-direnv/direnvrc' > /home/$USERNAME/.config/direnv/direnvrc \
-    && echo 'eval "$(direnv hook bash)"' >> /home/$USERNAME/.bashrc
+    && echo "experimental-features = nix-command flakes" >> /home/$USERNAME/.config/nix/nix.conf
 
 # Nix環境変数の設定
 ENV PATH="/home/$USERNAME/.nix-profile/bin:/nix/var/nix/profiles/default/bin:${PATH}" \
