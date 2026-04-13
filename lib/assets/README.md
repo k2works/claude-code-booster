@@ -243,6 +243,22 @@ Nix を使用して、再現可能な開発環境を構築できます。
 
 環境から抜けるには `exit` を入力します。
 
+##### direnv による自動ロード（Dev Container 環境）
+
+Dev Container 環境では、direnv がディレクトリ移動時に Nix devShell を自動ロードします。手動で `nix develop` を実行する必要はありません。
+
+- `.envrc` に `use flake` が設定されており、`flake.nix` の default devShell が自動的に有効化されます
+- コンテナ作成時に `direnv allow` が自動実行されるため、初回の許可操作は不要です
+
+ローカル環境で direnv を使用する場合：
+
+1. [direnv をインストール](https://direnv.net/docs/installation.html)します。
+2. シェルにフックを追加します（例: `eval "$(direnv hook bash)"` を `.bashrc` に追加）。
+3. プロジェクトディレクトリで許可します:
+   ```bash
+   direnv allow
+   ```
+
 ##### 依存関係の更新
 
 ```bash
