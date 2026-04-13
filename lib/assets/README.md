@@ -249,6 +249,43 @@ Nix を使用して、再現可能な開発環境を構築できます。
 nix flake update
 ```
 
+#### GitHub Codespaces に SSH 接続
+
+外部ターミナルアプリから GitHub Codespaces に SSH 接続することで、VS Code のエディタスペースを広く使いながら別ウィンドウのターミナルで作業できます。
+
+##### 前提条件
+
+- [GitHub CLI](https://cli.github.com/) がインストール済みであること
+
+##### 手順
+
+1. **Codespace を作成する**
+
+   https://github.com/codespaces から Codespace を作成します。
+
+2. **Codespace 名を確認する**
+
+   ブラウザに表示される Codespace の URL から名前を取得します。
+
+   例: URL が `https://upgraded-cod-rpxpjr97jrwcxxw7.github.dev/` の場合、Codespace 名は `upgraded-cod-rpxpjr97jrwcxxw7` です。
+
+3. **SSH 接続する**
+
+   ```bash
+   gh codespace ssh -c <codespace名>
+   ```
+
+   例:
+   ```bash
+   gh codespace ssh -c upgraded-cod-rpxpjr97jrwcxxw7
+   ```
+
+接続後は `npm run build` や `git log` など通常のターミナル操作が可能です。
+
+##### 参考
+
+- [GitHub Codespaces に SSH 接続する](https://zenn.dev/hirokisakabe/articles/fdd7eb730423c0)
+
 **[⬆ back to top](#構成)**
 
 ## 参照
