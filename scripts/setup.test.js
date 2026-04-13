@@ -110,6 +110,13 @@ async function testUpdateOption() {
 
   const claudeMdContent = await fs.readFile(path.join(tmpDir, 'CLAUDE.md'), 'utf-8');
   assert(claudeMdContent !== 'MODIFIED', '--update で CLAUDE.md が上書きされる');
+
+  // --update で ops/nix が更新されることを確認
+  assert(await fs.pathExists(path.join(tmpDir, 'ops', 'nix', 'shells', 'shell.nix')), '--update で ops/nix/shells/shell.nix が存在する');
+  assert(await fs.pathExists(path.join(tmpDir, 'ops', 'nix', 'environments')), '--update で ops/nix/environments が存在する');
+
+  // --update で .envrc が更新されることを確認
+  assert(await fs.pathExists(path.join(tmpDir, '.envrc')), '--update で .envrc が存在する');
 }
 
 // --- 実行 ---

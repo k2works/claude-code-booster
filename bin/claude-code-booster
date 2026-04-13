@@ -22,7 +22,7 @@ async function setupProject() {
   try {
     if (isUpdate) {
       // --update オプション時は .claude と docs 配下のみ上書きコピー
-      const targets = ['.claude', 'docs', '.devcontainer'];
+      const targets = ['.claude', 'docs', '.devcontainer', 'ops/nix'];
       for (const dir of targets) {
         const src = path.join(templateDir, dir);
         const dest = path.join(projectDir, dir);
@@ -56,7 +56,7 @@ async function setupProject() {
       }
 
       // ルート直下の設定ファイルも上書きコピー
-      const rootFiles = ['AGENTS.md', 'CLAUDE.md', 'Dockerfile'];
+      const rootFiles = ['AGENTS.md', 'CLAUDE.md', 'Dockerfile', '.envrc'];
       for (const file of rootFiles) {
         const src = path.join(templateDir, file);
         const dest = path.join(projectDir, file);
