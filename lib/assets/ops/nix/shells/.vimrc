@@ -144,8 +144,8 @@ if &runtimepath !~# '/dein.vim'
       execute '!git clone https://github.com/Shougo/dein.vim' s:dein_dir
     endif
   endif
-  execute 'set runtimepath^=' .. substitute(
-        \ fnamemodify(s:dein_dir, ':p') , '[/\\]$', '', '')
+  let s:dein_path = substitute(fnamemodify(s:dein_dir, ':p'), '[/\\]$', '', '')
+  execute 'set runtimepath^=' . s:dein_path
 endif
 
 if &compatible
@@ -188,6 +188,8 @@ if dein#load_state(s:dein_dir)
   call dein#add('suy/vim-ctrlp-commandline')
   call dein#add('rking/ag.vim')
   call dein#add('mattn/ctrlp-matchfuzzy')
+  " ファイルツリー
+  call dein#add('preservim/nerdtree')
   " 開発
   call dein#add('airblade/vim-gitgutter')
   call dein#add('tpope/vim-fugitive')
@@ -212,6 +214,7 @@ if dein#load_state(s:dein_dir)
   call dein#add('tpope/vim-fireplace', {'on_ft': 'clojure'})
   call dein#add('elixir-editors/vim-elixir')
   call dein#add('derekwyatt/vim-scala')
+  call dein#add('ludovicchabant/vim-gutentags')
 
   call dein#end()
   call dein#save_state()
@@ -268,6 +271,16 @@ let g:ctrlp_match_window = 'order:ttb,min:20,max:20,results:100' " マッチウ�
 let g:ctrlp_show_hidden = 1 " .(ドット)から始まるファイルも検索対象にする
 let g:ctrlp_types = ['fil'] "ファイル検索のみ使用
 let g:ctrlp_extensions = ['funky', 'commandline'] " CtrlPの拡張として「funky」と「commandline」を使用
+
+" NERDTreeの設定
+let g:NERDTreeShowHidden = 1
+nnoremap <silent> <leader>e :NERDTreeToggle<CR>
+nnoremap <silent> <leader>ef :NERDTreeFind<CR>
+
+" gutentagsの設定
+let g:gutentags_enabled = 1
+let g:gutentags_generate_on_missing = 1
+set tags=./tags;,tags
 
 " CtrlPCommandLineの有効化
 command! CtrlPCommandLine call ctrlp#init(ctrlp#commandline#id())

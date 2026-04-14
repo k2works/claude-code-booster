@@ -11,6 +11,7 @@ packages.mkShell {
     unzip
     nodejs_22
     gh
+    universal-ctags
   ];
   # ホスト環境から完全に分離する
   pure = true;
