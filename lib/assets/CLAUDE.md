@@ -68,6 +68,7 @@
 | スキル | 用途 |
 | :--- | :--- |
 | `planning-releases` | リリース・イテレーション計画 |
+| `creating-development-strategy` | 開発戦略（局面別 TDD アプローチ・ウォーキングスケルトン）策定 |
 | `syncing-github-project` | GitHub Project 同期 |
 | `tracking-progress` | 進捗分析・レポート |
 | `validating-iteration-plan` | イテレーション計画の整合性検証 |
