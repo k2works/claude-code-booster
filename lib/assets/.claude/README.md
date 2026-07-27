@@ -217,6 +217,8 @@ Claude Code をより効率的に使うための基本設定テンプレート�
 │   ├── tracking-progress/SKILL.md
 │   ├── syncing-github-project/SKILL.md
 │   ├── planning-releases/SKILL.md
+│   ├── opening-iteration/SKILL.md
+│   ├── closing-iteration/SKILL.md
 │   ├── creating-development-strategy/SKILL.md
 │   ├── creating-journal/SKILL.md
 │   ├── creating-slides/SKILL.md
