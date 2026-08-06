@@ -5,6 +5,25 @@ const fs = require('fs-extra');
 
 const TEMPLATE_DIR = 'lib/assets';
 
+// コピー対象から除外するディレクトリ名
+// .agents      : .claude/skills から常に再生成するため、テンプレート側の実体は持ち込まない
+// node_modules : 依存は利用者が package.json から復元する
+const EXCLUDED_DIRS = ['.agents', 'node_modules'];
+
+/**
+ * コピー除外対象かどうかを判定する.
+ * @param {string} srcRoot コピー元のルート
+ * @param {string} from コピー元のパス
+ * @returns {boolean} 除外するなら true
+ */
+function isExcluded(srcRoot, from) {
+  const relative = path.relative(srcRoot, from);
+  if (!relative) {
+    return false;
+  }
+  return relative.split(path.sep).some((segment) => EXCLUDED_DIRS.includes(segment));
+}
+
 async function setupProject() {
   // プロジェクトのルートディレクトリのパスを取得する
   const projectDir = process.env.INIT_CWD || process.cwd();
@@ -29,20 +48,20 @@ async function setupProject() {
         if (await fs.pathExists(src)) {
           await fs.ensureDir(dest);
 
-          // docs 直下の index.md はすべて除外する
-          const copyOptions = dir === 'docs'
-            ? {
-                overwrite: true,
-                errorOnExist: false,
-                filter: (from, to) => {
-                  // docs 配下の index.md をすべて除外する（他は全てコピー）
-                  if (path.basename(from) === 'index.md') {
-                    return false;
-                  }
-                  return true;
-                },
+          // 生成物は除外する。docs は加えて直下の index.md をすべて除外する
+          const copyOptions = {
+            overwrite: true,
+            errorOnExist: false,
+            filter: (from, to) => {
+              if (isExcluded(src, from)) {
+                return false;
               }
-            : { overwrite: true, errorOnExist: false };
+              if (dir === 'docs' && path.basename(from) === 'index.md') {
+                return false;
+              }
+              return true;
+            },
+          };
 
           await fs.copy(src, dest, copyOptions);
           if (dir === 'docs') {
@@ -66,8 +85,12 @@ async function setupProject() {
         }
       }
     } else {
-      // それ以外は従来通り assets 全体をコピー
-      await fs.copy(templateDir, projectDir, { overwrite: true, errorOnExist: false });
+      // それ以外は assets 全体をコピー（生成物は除外）
+      await fs.copy(templateDir, projectDir, {
+        overwrite: true,
+        errorOnExist: false,
+        filter: (from, to) => !isExcluded(templateDir, from),
+      });
       console.log(`[claude-code-booster] Copied assets from "${templateDir}" to "${projectDir}"`);
     }
 

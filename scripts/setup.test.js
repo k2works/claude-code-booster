@@ -61,6 +61,19 @@ async function testInitialSetup() {
     JSON.stringify(claudeSkills.sort()) === JSON.stringify(agentsSkills.sort()),
     '.agents/skills の内容が .claude/skills と一致する',
   );
+
+  // テンプレート側の生成物（node_modules・.agents）は持ち込まない
+  if (await fs.pathExists(path.join(TEMPLATE_DIR, 'node_modules'))) {
+    assert(
+      !(await fs.pathExists(path.join(tmpDir, 'node_modules'))),
+      'テンプレートの node_modules はコピーされない',
+    );
+  }
+  const agentsEntries = await fs.readdir(path.join(tmpDir, '.agents'));
+  assert(
+    JSON.stringify(agentsEntries) === JSON.stringify(['skills']),
+    '.agents 直下は skills のみ（テンプレートの .agents は持ち込まない）',
+  );
 }
 
 async function testUpdateOption() {
