@@ -111,3 +111,4 @@ lib
 site
 tmp
 .agents
+apps/manual

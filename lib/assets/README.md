@@ -137,6 +137,19 @@ Skills 一覧は [CLAUDE.md の Skills 体系](CLAUDE.md#skills-体系) を参�
   npx gulp mkdocs:build
   ```
 
+##### ユーザーマニュアルタスク
+
+- ユーザーマニュアル（`docs/manual/`）を HTML へ変換:
+  ```
+  npm run manual:build
+  ```
+  または
+  ```
+  npx gulp manual:build
+  ```
+
+生成された HTML は `apps/manual/` に出力されます。サイトタイトル・著作権表示・ポータルへの戻りリンクは `.env` の `MANUAL_TITLE` / `MANUAL_COPYRIGHT` / `MANUAL_PORTAL_URL` で設定できます。
+
 ##### 作業履歴（ジャーナル）タスク
 
 - すべてのコミット日付の作業履歴を生成:
