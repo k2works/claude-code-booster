@@ -125,6 +125,36 @@ async function testUpdateOption() {
   assert(claudeMdContent !== 'MODIFIED', '--update で CLAUDE.md が上書きされる');
 }
 
+async function testProjectFileSurvivesUpdate() {
+  console.log('\n[Test] PROJECT.md は --update で残る');
+  await fs.emptyDir(tmpDir);
+  run();
+
+  const skillDirs = await fs.readdir(path.join(tmpDir, '.claude', 'skills'));
+  if (skillDirs.length === 0) {
+    assert(false, 'スキルが 1 つ以上ある（前提）');
+    return;
+  }
+
+  // プロジェクト固有の補足。テンプレート側には存在しないファイル。
+  const skillDir = path.join(tmpDir, '.claude', 'skills', skillDirs[0]);
+  const projectFile = path.join(skillDir, 'PROJECT.md');
+  await fs.writeFile(projectFile, 'PROJECT LOCAL');
+  // 同じディレクトリの SKILL.md は上書きされる側
+  await fs.writeFile(path.join(skillDir, 'SKILL.md'), 'MODIFIED');
+
+  run(['--update']);
+
+  assert(await fs.pathExists(projectFile), 'PROJECT.md が削除されない');
+  if (await fs.pathExists(projectFile)) {
+    const content = await fs.readFile(projectFile, 'utf-8');
+    assert(content === 'PROJECT LOCAL', 'PROJECT.md の内容が保たれる');
+  }
+
+  const skillContent = await fs.readFile(path.join(skillDir, 'SKILL.md'), 'utf-8');
+  assert(skillContent !== 'MODIFIED', '同じディレクトリの SKILL.md は上書きされる');
+}
+
 // --- 実行 ---
 
 (async () => {
@@ -132,6 +162,7 @@ async function testUpdateOption() {
     await setup();
     await testInitialSetup();
     await testUpdateOption();
+    await testProjectFileSurvivesUpdate();
   } catch (err) {
     console.error('\nUnexpected error:', err);
     failed++;

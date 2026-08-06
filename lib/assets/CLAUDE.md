@@ -20,6 +20,10 @@
 
 `.claude/skills/` に定義された Skills がタスクに応じて自動発動します。詳細な指示は各スキルの SKILL.md を参照してください。
 
+同じディレクトリに `PROJECT.md` があれば、SKILL.md とあわせて必ず読んでください。SKILL.md は言語・フレームワーク非依存の汎用手順なので、本プロジェクトでの実際のパス・コマンド・制約は `PROJECT.md` 側に書かれています。両者が食い違う場合は `PROJECT.md` を正とします。
+
+> `PROJECT.md` は booster の更新（`npx boost --update`）で上書きされません。SKILL.md は上書きされるため、プロジェクト固有の記述は SKILL.md に直接書かず `PROJECT.md` に置いてください。
+
 ### オーケストレーション
 
 | スキル | 用途 |
