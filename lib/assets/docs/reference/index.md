@@ -51,3 +51,4 @@
 - [Codex CLI MCP サーバー設定手順](./CodexCLIMCPサーバー設定手順.md)
 - [SonarQube ローカル環境セットアップ手順書](./SonarQubeローカル環境セットアップ手順書.md)
 - [Vim 操作マニュアル](./Vim操作マニュアル.md)
+- [OKF 導入ガイド（Open Knowledge Format v0.2）](./OKF導入ガイド_V0.2.md)
