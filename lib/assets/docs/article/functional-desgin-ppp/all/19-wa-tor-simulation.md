@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第19章: Wa-Tor シミュレーション — 6言語統合ガイド"
+description: "Wa-Tor は、トーラス型の 2D グリッド上で魚とサメの生態系をシミュレートするセルオートマトンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第19章: Wa-Tor シミュレーション — 6言語統合ガイド
 
 ## 1. はじめに

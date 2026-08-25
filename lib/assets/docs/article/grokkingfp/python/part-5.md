@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 並行処理"
+description: "本章では、関数型プログラミングにおける並行処理を学びます。"
+tags: [article, grokkingfp, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part V: 並行処理
 
 本章では、関数型プログラミングにおける並行処理を学びます。`asyncio` を使った非同期処理、`Ref`（アトミック参照）による安全な共有状態管理、そして `Fiber`（軽量タスク）によるバックグラウンド処理を習得します。

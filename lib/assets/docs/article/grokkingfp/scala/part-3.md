@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリングと Option/Either"
+description: "本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。"
+tags: [article, grokkingfp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part III: エラーハンドリングと Option/Either
 
 本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。`null` や例外に頼らず、`Option` と `Either` を使って型安全にエラーを扱う方法を習得します。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第24章：生産計画の設計"
+description: "本章では、生産管理システムの核心部分である「生産計画」を設計します。"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第24章：生産計画の設計
 
 本章では、生産管理システムの核心部分である「生産計画」を設計します。生産計画は、製造業における意思決定の起点となる重要な機能です。

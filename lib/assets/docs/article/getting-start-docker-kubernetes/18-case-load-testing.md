@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 18 章 ケーススタディの負荷テスト"
+description: "第 12 章「12.3 負荷テスト」では、Python 製の負荷テストツール Locust をコンテナで動かす考え方を学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 18 章 ケーススタディの負荷テスト
 
 ## はじめに

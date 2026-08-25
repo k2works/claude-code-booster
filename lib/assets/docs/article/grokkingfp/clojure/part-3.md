@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリング（Clojure 版）"
+description: "本章では、Clojure における安全なエラーハンドリングを学びます。"
+tags: [article, grokkingfp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: エラーハンドリング（Clojure 版）
 
 本章では、Clojure における安全なエラーハンドリングを学びます。`nil` の扱い、Result 型パターン、そして代数的データ型（ADT）を習得します。

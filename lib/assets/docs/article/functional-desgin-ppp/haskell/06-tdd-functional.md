@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第6章: テスト駆動開発と関数型プログラミング"
+description: "テスト駆動開発（TDD）は、テストを先に書いてから実装を行う開発手法です。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第6章: テスト駆動開発と関数型プログラミング
 
 ## はじめに

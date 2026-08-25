@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第10章: 並行・並列処理 — 11言語比較"
+description: "第 9 章までで、関数型プログラミングの基礎から IO モナド、ストリーム処理まで学んできました。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第10章: 並行・並列処理 — 11言語比較
 
 ## 10.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章 パターンの相互作用 - 複合パターンの活用"
+description: "この章では、複数の関数型デザインパターンを組み合わせて、複雑な問題を解決する方法を学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第20章 パターンの相互作用 - 複合パターンの活用
 
 ## 概要

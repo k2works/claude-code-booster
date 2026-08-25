@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第10章: Strategy パターン"
+description: "Strategy パターンは、アルゴリズムをカプセル化し、クライアントから独立して交換可能にするパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第10章: Strategy パターン
 
 ## はじめに

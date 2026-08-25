@@ -1,11 +1,10 @@
 ---
-title: Part I - 逐次処理
-description: パスワードクラッキングで学ぶ逐次処理の基礎
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, sequential, fsharp
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part I - 逐次処理"
+description: "パスワードクラッキングで学ぶ逐次処理の基礎"
+tags: [article, grokking-concurrency, fsharp, concurrency, sequential]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part I: 逐次処理

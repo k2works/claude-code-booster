@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Rust で学ぶ関数型プログラミング Part IV: 非同期処理とストリーム"
+description: "Part III では Option と Result を使ったエラーハンドリングと、代数的データ型（ADT）によるドメインモデリングを学びました。"
+tags: [article, grokkingfp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Rust で学ぶ関数型プログラミング Part IV: 非同期処理とストリーム
 
 ## はじめに

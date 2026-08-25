@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第 7 章: カプセル化とポリモーフィズム"
+tags: [article, getting-start-tdd, go]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: カプセル化とポリモーフィズム
 
 ## 7.1 追加仕様と TODO リスト

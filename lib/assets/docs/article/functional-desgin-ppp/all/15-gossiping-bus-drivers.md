@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第15章: Gossiping Bus Drivers — 6言語統合ガイド"
+description: "Gossiping Bus Drivers は、バス運転手たちが停留所で出会うたびに噂を交換し、全員が同じ噂を共有するまでシミュレーションを続ける問題です。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第15章: Gossiping Bus Drivers — 6言語統合ガイド
 
 ## 1. はじめに

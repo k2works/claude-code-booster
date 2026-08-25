@@ -1,13 +1,3 @@
----
-title: Java で学ぶ並行処理プログラミング
-description: Grokking Concurrency Java 版
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
----
-
 # Java で学ぶ並行処理プログラミング
 
 ## 概要

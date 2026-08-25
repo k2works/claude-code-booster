@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: Stream と遅延評価"
+description: "この章では、Stream モジュールを使った遅延評価を学びます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: Stream と遅延評価
 
 ## 11.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第15章: ゴシップ好きなバスの運転手"
+description: "「ゴシップ好きなバスの運転手」は、バス運転手が停留所で噂を共有するシミュレーション問題です。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第15章: ゴシップ好きなバスの運転手
 
 ## はじめに

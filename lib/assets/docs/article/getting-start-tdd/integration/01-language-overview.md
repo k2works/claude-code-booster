@@ -1,3 +1,12 @@
+---
+type: Article
+title: "12 言語の概要と分類"
+description: "本章では、12 言語を複数の軸で分類し、それぞれの設計思想と特徴を俯瞰します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 12 言語の概要と分類
 
 本章では、12 言語を複数の軸で分類し、それぞれの設計思想と特徴を俯瞰します。最後に、各言語の FizzBuzz コア実装を比較することで、同一の仕様が言語ごとにどう表現されるかを確認します。

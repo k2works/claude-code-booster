@@ -1,3 +1,12 @@
+---
+type: Article
+title: "付録 A 開発ツールのセットアップ"
+description: "本編で扱った Docker や Kubernetes を快適に学習・開発するには、いくつかの周辺ツールをそろえておくと便利です。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 付録 A 開発ツールのセットアップ
 
 ## はじめに

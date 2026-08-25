@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV - 第 9 章：ストリーム処理"
+description: "リスト（配列）は全要素をメモリに保持する有限のデータ構造です。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV - 第 9 章：ストリーム処理
 
 ## 9.1 はじめに：遅延評価と無限のデータ

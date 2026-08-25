@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと型安全性"
+description: "前章までに高階関数、不変データ、パイプライン処理を学びました。"
+tags: [article, getting-start-tdd, ruby]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと型安全性
 
 ## 12.1 はじめに

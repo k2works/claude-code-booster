@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: データ検証 — 6言語統合ガイド"
+description: "データ検証は、ソフトウェアの信頼性を支える基礎です。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: データ検証 — 6言語統合ガイド
 
 ## 1. はじめに

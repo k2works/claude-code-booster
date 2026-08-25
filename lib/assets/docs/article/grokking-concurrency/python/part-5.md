@@ -1,11 +1,10 @@
 ---
-title: Part V - 同期と排他制御
-description: 並行処理における同期問題と解決策を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, lock, semaphore, deadlock, python
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part V - 同期と排他制御"
+description: "並行処理における同期問題と解決策を学ぶ"
+tags: [article, grokking-concurrency, python, concurrency, lock, semaphore, deadlock]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part V: 同期と排他制御

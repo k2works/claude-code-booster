@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: パターンマッチとガード節"
+description: "この章では、Elixir の分岐を読みやすく保つために、関数頭部のパターンマッチ、when ガード節、case と cond の使い分けを整理します。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: パターンマッチとガード節
 
 ## 8.1 はじめに

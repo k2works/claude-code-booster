@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 6 章: タスクランナーと CI/CD"
+description: "この章では、ローカル開発と CI を同じ実行基盤でそろえる方法を扱います。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 6 章: タスクランナーと CI/CD
 
 ## 6.1 はじめに

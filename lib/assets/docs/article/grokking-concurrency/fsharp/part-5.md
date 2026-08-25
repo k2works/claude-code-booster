@@ -1,11 +1,10 @@
 ---
-title: Part V - 同期と排他制御
-description: 銀行口座で学ぶロックとデッドロック回避
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, synchronization, lock, fsharp
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part V - 同期と排他制御"
+description: "銀行口座で学ぶロックとデッドロック回避"
+tags: [article, grokking-concurrency, fsharp, concurrency, synchronization, lock]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part V: 同期と排他制御

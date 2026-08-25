@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第8章: Decorator パターン — 6言語統合ガイド"
+description: "Decorator パターンは、既存の機能に新しい振る舞いを動的に追加する GoF パターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第8章: Decorator パターン — 6言語統合ガイド
 
 ## 1. はじめに

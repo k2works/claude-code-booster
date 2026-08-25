@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 5 章 Kubernetes 入門"
+description: "前章まででは、Docker による単一ホスト上のコンテナ実行と、Docker Compose や Swarm による複数コンテナの管理を学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 5 章 Kubernetes 入門
 
 ![Kubernetes の基本概念を説明する 4 コマ漫画](images/chapter-05-comic.png)

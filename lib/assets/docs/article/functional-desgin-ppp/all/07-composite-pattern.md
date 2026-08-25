@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第7章: Composite パターン — 6言語統合ガイド"
+description: "Composite パターンは、個別のオブジェクトと複合オブジェクトを同一のインターフェースで扱う GoF パターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第7章: Composite パターン — 6言語統合ガイド
 
 ## 1. はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II - 第 4 章：高階関数"
+description: "高階関数（Higher-Order Functions）は、関数型プログラミングの最も強力な構成要素です。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part II - 第 4 章：高階関数
 
 ## 4.1 はじめに：関数を値として扱う

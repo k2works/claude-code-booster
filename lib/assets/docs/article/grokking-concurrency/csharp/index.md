@@ -1,13 +1,3 @@
----
-title: C# で学ぶ並行処理プログラミング
-description: Grokking Concurrency C# 版
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, csharp
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
----
-
 # C# で学ぶ並行処理プログラミング
 
 ## 概要

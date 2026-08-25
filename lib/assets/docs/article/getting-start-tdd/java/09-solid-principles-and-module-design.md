@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: SOLID 原則とモジュール設計"
+description: "前章までで、FizzBuzz のコードはデザインパターンを適用して大きく改善されました。"
+tags: [article, getting-start-tdd, java]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: SOLID 原則とモジュール設計
 
 ## 9.1 はじめに

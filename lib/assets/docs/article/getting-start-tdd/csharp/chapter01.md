@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 1 章: TODO リストと最初のテスト"
+description: "プログラムを作成するにあたって、まず何をすればよいでしょうか？私たちは、仕様を確認して TODO リスト を作るところから始めます。"
+tags: [article, getting-start-tdd, csharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 1 章: TODO リストと最初のテスト
 
 ## 1.1 はじめに

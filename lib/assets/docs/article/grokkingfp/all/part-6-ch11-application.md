@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章: 実践アプリケーション — 11言語比較"
+description: "第 10 章までで、関数型プログラミングの基礎から並行処理まで幅広い概念を学んできました。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第11章: 実践アプリケーション — 11言語比較
 
 ## 11.1 はじめに

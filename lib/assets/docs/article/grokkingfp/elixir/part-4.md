@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: IO とストリーム処理"
+description: "本章では、関数型プログラミングにおける副作用の扱い方を学びます。"
+tags: [article, grokkingfp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV: IO とストリーム処理
 
 本章では、関数型プログラミングにおける副作用の扱い方を学びます。Elixir の無名関数を使って副作用を遅延実行し、Stream モジュールで無限のデータを効率的に扱う方法を習得します。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第9章：在庫管理の設計"
+description: "販売管理システムにおいて、在庫管理は商品の物理的な状態を追跡し、適正在庫を維持するための重要な機能です。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第9章：在庫管理の設計
 
 販売管理システムにおいて、在庫管理は商品の物理的な状態を追跡し、適正在庫を維持するための重要な機能です。本章では、倉庫別・商品別の在庫管理、引当処理、入出庫履歴、棚卸業務のデータベース設計と実装を行います。

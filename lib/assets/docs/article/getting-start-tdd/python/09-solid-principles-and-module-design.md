@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: SOLID 原則とモジュール設計"
+description: "前章までに、FizzBuzz をオブジェクト指向設計で洗練させてきました。"
+tags: [article, getting-start-tdd, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: SOLID 原則とモジュール設計
 
 ## 9.1 はじめに

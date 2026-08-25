@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章: 高階関数とカリー化"
+description: "第 3 部では代数的データ型、型クラス、パターンマッチ、モジュール設計を学びました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 10 章: 高階関数とカリー化
 
 ## 10.1 はじめに

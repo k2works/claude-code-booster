@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: Clojure Spec による仕様定義"
+description: "Clojure Spec は、データ構造と関数の仕様を定義するための強力なライブラリです。"
+tags: [article, functional-desgin-ppp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: Clojure Spec による仕様定義
 
 ## はじめに

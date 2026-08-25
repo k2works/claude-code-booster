@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: ケースクラスとトレイトによるポリモーフィズム"
+description: "第 1 部〜第 2 部で TDD の基本サイクルと開発環境を整えました。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: ケースクラスとトレイトによるポリモーフィズム
 
 ## 7.1 はじめに

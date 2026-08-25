@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章：財務会計システムの全体像"
+description: "本章では、財務会計システムの全体像を把握し、販売管理システムとの連携や、財務会計と管理会計の違い、システムアーキテクチャについて解説します。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第14章：財務会計システムの全体像
 
 本章では、財務会計システムの全体像を把握し、販売管理システムとの連携や、財務会計と管理会計の違い、システムアーキテクチャについて解説します。

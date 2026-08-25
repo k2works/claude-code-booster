@@ -1,3 +1,17 @@
+---
+type: Reference
+title: "OKF 導入ガイド（Open Knowledge Format v0.2）"
+description: "このドキュメントは、Google Cloud Platform が公開している Open Knowledge Format (OKF) SPEC.md Version 0.2 を基に、仕様の内容を日本語で整理し、プロジェクトに導入するための"
+tags: [reference]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-08-25T02:23:04Z }
+sources:
+  - id: okf-spec
+    resource: https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md
+    title: Open Knowledge Format SPEC.md v0.2
+    author: org:GoogleCloudPlatform
+---
+
 # OKF 導入ガイド（Open Knowledge Format v0.2）
 
 このドキュメントは、Google Cloud Platform が公開している [Open Knowledge Format (OKF) SPEC.md](https://github.com/GoogleCloudPlatform/open-knowledge-format/blob/main/SPEC.md) **Version 0.2** を基に、仕様の内容を日本語で整理し、プロジェクトに導入するための手順をまとめたものです。

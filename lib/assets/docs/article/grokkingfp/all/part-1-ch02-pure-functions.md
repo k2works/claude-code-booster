@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I - 第 2 章：純粋関数と副作用"
+description: "純粋関数は関数型プログラミングの最も基本的な構成要素です。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part I - 第 2 章：純粋関数と副作用
 
 ## 2.1 はじめに：純粋関数の価値

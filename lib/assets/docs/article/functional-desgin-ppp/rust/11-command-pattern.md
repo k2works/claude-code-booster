@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章: Command パターン"
+description: "Command パターンは、操作をオブジェクトとしてカプセル化し、実行、取り消し、再実行を可能にするパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第11章: Command パターン
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第37章：イベント駆動アーキテクチャ"
+description: "本章では、モダンなシステム統合の基盤となるイベント駆動アーキテクチャについて解説します。"
+tags: [article, practical-database-design, part5]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第37章：イベント駆動アーキテクチャ
 
 本章では、モダンなシステム統合の基盤となるイベント駆動アーキテクチャについて解説します。ドメインイベント、イベントソーシング、CQRS といった概念を理解し、基幹業務システムへの適用方法を学びます。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章: ビデオレンタルシステム"
+description: "ビデオレンタルシステムは、Martin Fowler の「Refactoring」で有名なサンプルコードを Elixir で関数型に再実装したものです。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第17章: ビデオレンタルシステム
 
 ## はじめに

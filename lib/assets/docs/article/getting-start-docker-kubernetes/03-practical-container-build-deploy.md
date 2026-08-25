@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 3 章 実用的なコンテナの構築とデプロイ"
+description: "前章では Docker の基本的な操作と、1 つのコンテナを動かすところまでを学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 3 章 実用的なコンテナの構築とデプロイ
 
 ![実用的なコンテナ構築とデプロイを説明する 4 コマ漫画](images/chapter-03-comic.png)

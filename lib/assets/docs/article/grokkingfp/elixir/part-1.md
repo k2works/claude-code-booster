@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I: 関数型プログラミングの基礎"
+description: "本章では、関数型プログラミング（FP）の基本概念を学びます。"
+tags: [article, grokkingfp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part I: 関数型プログラミングの基礎
 
 本章では、関数型プログラミング（FP）の基本概念を学びます。命令型プログラミングとの違いを理解し、純粋関数の利点を実感することが目標です。

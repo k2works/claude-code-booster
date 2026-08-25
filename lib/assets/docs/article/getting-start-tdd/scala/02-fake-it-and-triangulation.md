@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 2 章: 仮実装と三角測量"
+description: "第 1 章では、最小の 1 ケースを Green にしました。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 2 章: 仮実装と三角測量
 
 ## 2.1 はじめに

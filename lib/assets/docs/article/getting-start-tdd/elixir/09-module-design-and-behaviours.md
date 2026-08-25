@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: モジュール設計とビヘイビア"
+description: "この章では、モジュールの責務分割を保ちながら拡張しやすい構成を作るために、モジュールの入れ子、@behaviour / @callback、alias を使った設計を扱います。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: モジュール設計とビヘイビア
 
 ## 9.1 はじめに

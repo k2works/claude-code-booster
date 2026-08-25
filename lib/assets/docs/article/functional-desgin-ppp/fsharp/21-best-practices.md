@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第21章: 関数型デザインのベストプラクティス"
+description: "本章では、関数型プログラミングにおける設計のベストプラクティスを体系的に解説します。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第21章: 関数型デザインのベストプラクティス
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 3 章: 明白な実装とリファクタリング"
+description: "この章では FizzBuzz の仕様を cond で明白に実装し、1 から 100 までのリスト生成まで完成させます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 3 章: 明白な実装とリファクタリング
 
 ## 3.1 はじめに

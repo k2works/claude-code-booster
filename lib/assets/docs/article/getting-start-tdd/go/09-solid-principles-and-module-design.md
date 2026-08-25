@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第 9 章: SOLID 原則とモジュール設計"
+tags: [article, getting-start-tdd, go]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: SOLID 原則とモジュール設計
 
 ## 9.1 SOLID 原則の検証

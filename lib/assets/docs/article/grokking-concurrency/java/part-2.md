@@ -1,11 +1,10 @@
 ---
-title: Part II - プロセスとスレッド
-description: OS レベルの並行処理の基本単位を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, process, thread, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part II - プロセスとスレッド"
+description: "OS レベルの並行処理の基本単位を学ぶ"
+tags: [article, grokking-concurrency, java, concurrency, process, thread]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part II: プロセスとスレッド

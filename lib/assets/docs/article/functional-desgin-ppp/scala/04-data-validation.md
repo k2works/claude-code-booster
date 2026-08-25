@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: データバリデーション"
+description: "Scala では、型システムとスマートコンストラクタを組み合わせることで、コンパイル時と実行時の両方でデータの整合性を保証できます。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: データバリデーション
 
 ## はじめに

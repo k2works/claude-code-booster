@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第19章: Wa-Tor シミュレーション"
+description: "Wa-Tor は、A.K. Dewdney が Scientific American 誌で紹介した生態系シミュレーションです。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第19章: Wa-Tor シミュレーション
 
 ## はじめに

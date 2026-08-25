@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第2章: 関数合成と高階関数"
+description: "関数型プログラミングの真髄は、小さな関数を組み合わせて複雑な処理を構築することにあります。"
+tags: [article, functional-desgin-ppp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第2章: 関数合成と高階関数
 
 ## はじめに

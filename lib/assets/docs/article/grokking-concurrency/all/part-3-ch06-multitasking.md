@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: マルチタスキングとスケジューリング"
+description: "Part II でスレッドによる並列処理を学びました。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: マルチタスキングとスケジューリング
 
 ## 3.1 はじめに

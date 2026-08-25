@@ -1,3 +1,12 @@
+---
+type: Article
+title: "執筆計画アウトライン"
+description: "「Docker/Kubernetes 実践コンテナ解説」シリーズの執筆計画。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 執筆計画アウトライン
 
 ## 概要

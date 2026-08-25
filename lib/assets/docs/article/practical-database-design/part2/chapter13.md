@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第13章：API サービスの実装"
+description: "本章では、販売管理システムのデータベース設計を外部から利用できるようにするため、RESTful API サービスを実装します。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第13章：API サービスの実装
 
 本章では、販売管理システムのデータベース設計を外部から利用できるようにするため、RESTful API サービスを実装します。ヘキサゴナルアーキテクチャ（Ports and Adapters）を採用し、ドメインロジックを外部技術から分離した保守性の高い API を構築します。

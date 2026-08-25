@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：財務会計システム 研究 5 - Axon CQRS/ES の実装"
+description: "本研究では、REST API（第21章）、gRPC（研究 3）、GraphQL（研究 4）とは異なるアプローチとして、CQRS（Command Query Responsibility Segregation） と Event Sourci"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：財務会計システム 研究 5 - Axon CQRS/ES の実装
 
 ## はじめに

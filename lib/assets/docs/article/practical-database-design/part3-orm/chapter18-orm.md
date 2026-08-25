@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章：勘定科目残高の設計（ORM版）"
+description: "会計システムにおける残高管理の基盤となる「勘定科目別残高テーブル」を TDD で設計していきます。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第18章：勘定科目残高の設計（ORM版）
 
 会計システムにおける残高管理の基盤となる「勘定科目別残高テーブル」を TDD で設計していきます。日次・月次の残高管理と、帳票出力に必要なテーブル構造を実装します。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章: Command パターン"
+description: "Command パターンは、リクエストをオブジェクトとしてカプセル化し、異なるリクエストでクライアントをパラメータ化したり、リクエストをキューに入れたり、操作の履歴を記録したりできるようにするパターンです。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第11章: Command パターン
 
 ## はじめに

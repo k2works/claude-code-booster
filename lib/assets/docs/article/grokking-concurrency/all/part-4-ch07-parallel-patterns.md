@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: タスク分解と並列パターン"
+description: "Part III でマルチタスキングの仕組みを学びました。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV: タスク分解と並列パターン
 
 ## 4.1 はじめに

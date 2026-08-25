@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第9章: Adapter パターン"
+description: "Adapter パターンは、互換性のないインターフェースを持つクラスを協調して動作させるパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第9章: Adapter パターン
 
 ## はじめに

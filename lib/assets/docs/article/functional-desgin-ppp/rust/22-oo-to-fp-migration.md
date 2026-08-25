@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章: OO から FP への移行"
+description: "本章では、オブジェクト指向（OO）スタイルのコードを関数型（FP）スタイルに移行する方法を学びます。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第22章: OO から FP への移行
 
 ## はじめに

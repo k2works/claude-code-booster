@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリングと nil / Result パターン"
+description: "本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。"
+tags: [article, grokkingfp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: エラーハンドリングと nil / Result パターン
 
 本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。例外に頼らず、`nil` と `{:ok, value} / {:error, reason}` パターンを使って型安全にエラーを扱う方法を習得します。

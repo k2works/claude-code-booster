@@ -1,13 +1,3 @@
----
-title: index
-description: Rust で学ぶ並行処理プログラミング
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, rust
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
----
-
 # Grokking Concurrency - Rust 版
 
 本シリーズは「Grokking Concurrency」（Kirill Bobrov 著）の学習コンパニオンとして、並行処理プログラミングの概念を Rust で実装しながら日本語で解説します。

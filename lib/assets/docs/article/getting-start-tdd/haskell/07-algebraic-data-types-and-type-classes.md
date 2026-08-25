@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: 代数的データ型と型クラスによるポリモーフィズム"
+description: "第 1 部では手続き型の FizzBuzz プログラムを TDD で構築し、第 2 部では開発環境と自動化を整備しました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: 代数的データ型と型クラスによるポリモーフィズム
 
 ## 7.1 はじめに

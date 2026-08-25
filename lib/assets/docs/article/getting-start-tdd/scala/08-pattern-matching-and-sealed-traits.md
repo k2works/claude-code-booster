@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: パターンマッチとシールドトレイト"
+description: "Scala の match は単なる switch の置き換えではなく、型と条件を統合して表現できる強力な構文です。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: パターンマッチとシールドトレイト
 
 ## 8.1 はじめに

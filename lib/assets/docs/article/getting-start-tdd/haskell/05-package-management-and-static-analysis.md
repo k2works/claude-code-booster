@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 5 章: パッケージ管理と静的解析"
+description: "Haskell 開発では、依存関係の管理とコード品質の維持を仕組み化することが重要です。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 5 章: パッケージ管理と静的解析
 
 ## 5.1 はじめに

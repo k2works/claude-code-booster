@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章: レンタルビデオシステム"
+description: "本章では、レンタルビデオシステムを通じて、価格計算、明細書生成、ポイント計算など、複雑なビジネスロジックを関数型で実装します。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第17章: レンタルビデオシステム
 
 ## はじめに

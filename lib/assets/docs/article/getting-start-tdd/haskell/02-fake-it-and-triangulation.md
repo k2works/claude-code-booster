@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 2 章: 仮実装と三角測量"
+description: "前章では、FizzBuzz の仕様を TODO リストに分解し、最初のテストを仮実装で通しました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 2 章: 仮実装と三角測量
 
 ## 2.1 はじめに

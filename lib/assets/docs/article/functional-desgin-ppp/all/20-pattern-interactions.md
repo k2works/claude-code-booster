@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章: パターン間の相互作用 — 6言語統合ガイド"
+description: "個々のデザインパターンを学んだ後、次のステップはパターンを組み合わせてより高度な設計を実現することです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第20章: パターン間の相互作用 — 6言語統合ガイド
 
 ## 1. はじめに

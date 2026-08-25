@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章：共通処理の設計"
+description: "販売管理システムでは、赤黒処理、自動採番、監査カラム、履歴管理といった共通的な処理が多くの業務で横断的に使用されます。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第11章：共通処理の設計
 
 販売管理システムでは、赤黒処理、自動採番、監査カラム、履歴管理といった共通的な処理が多くの業務で横断的に使用されます。本章では、これらの共通処理のデータベース設計と実装を行います。

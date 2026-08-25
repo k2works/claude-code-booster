@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第16章：仕訳の設計"
+description: "財務会計システムの核心部分である「仕訳処理」を TDD で設計していきます。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第16章：仕訳の設計
 
 財務会計システムの核心部分である「仕訳処理」を TDD で設計していきます。複式簿記の原則に基づき、仕訳データの登録・管理を実現するテーブル構造を設計します。

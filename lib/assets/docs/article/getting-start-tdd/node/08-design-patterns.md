@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: デザインパターンの適用"
+description: "前章ではカプセル化とポリモーフィズムを使って、手続き的な条件分岐をクラス階層に置き換えました。"
+tags: [article, getting-start-tdd, node]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: デザインパターンの適用
 
 ## 8.1 はじめに

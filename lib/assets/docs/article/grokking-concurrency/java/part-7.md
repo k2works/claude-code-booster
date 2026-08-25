@@ -1,11 +1,10 @@
 ---
-title: Part VII - 非同期プログラミング
-description: CompletableFuture と Virtual Threads を使った非同期プログラミングを学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, async, completablefuture, virtual-threads, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part VII - 非同期プログラミング"
+description: "CompletableFuture と Virtual Threads を使った非同期プログラミングを学ぶ"
+tags: [article, grokking-concurrency, java, concurrency, async, completablefuture, virtual-threads]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VII: 非同期プログラミング

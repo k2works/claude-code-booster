@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第8章：調達管理の設計"
+description: "販売管理システムにおいて、商品の仕入れを管理する調達業務は事業継続の基盤となります。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第8章：調達管理の設計
 
 販売管理システムにおいて、商品の仕入れを管理する調達業務は事業継続の基盤となります。本章では、発注から入荷・検収、仕入計上までの一連の調達業務フローに対応したデータベース設計と実装を行います。

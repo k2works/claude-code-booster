@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第2章: 関数合成と高階関数 — 6言語統合ガイド"
+description: "関数型プログラミングの力の源泉は、小さな関数を組み合わせて大きな処理を構築することにあります。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第2章: 関数合成と高階関数 — 6言語統合ガイド
 
 ## 1. はじめに

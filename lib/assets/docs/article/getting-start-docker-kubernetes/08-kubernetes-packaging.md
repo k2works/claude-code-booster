@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章 Kubernetes アプリケーションのパッケージング"
+description: "前章までで、Pod、Deployment、Service、Ingress、StatefulSet、Job といった Kubernetes のリソースを、素の YAML マニフェストとして記述しデプロイしてきました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 8 章 Kubernetes アプリケーションのパッケージング
 
 ![Kubernetes アプリケーションのパッケージングを説明する 4 コマ漫画](images/chapter-08-comic.png)

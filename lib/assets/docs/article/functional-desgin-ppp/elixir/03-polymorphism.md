@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第3章: 多態性の実現方法"
+description: "多態性（ポリモーフィズム）は、同じインターフェースで異なる振る舞いを実現する強力な概念です。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第3章: 多態性の実現方法
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第16章: 給与計算システム"
+description: "給与計算システムは、従業員の給与計算と支払い処理を統合的に管理するシステムです。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第16章: 給与計算システム
 
 ## はじめに

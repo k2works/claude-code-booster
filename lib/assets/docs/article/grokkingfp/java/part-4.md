@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: IO と副作用の管理"
+description: "本章では、関数型プログラミングにおける副作用の扱い方を学びます。"
+tags: [article, grokkingfp, java]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV: IO と副作用の管理
 
 本章では、関数型プログラミングにおける副作用の扱い方を学びます。IO モナドを使って副作用を純粋関数内で安全に記述し、ストリーム処理で無限のデータを扱う方法を習得します。

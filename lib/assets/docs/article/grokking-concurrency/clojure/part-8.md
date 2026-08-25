@@ -1,11 +1,10 @@
 ---
-title: Part VIII - 分散並列処理
-description: pmap と MapReduce パターン
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, clojure, mapreduce
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part VIII - 分散並列処理"
+description: "pmap と MapReduce パターン"
+tags: [article, grokking-concurrency, clojure, concurrency, mapreduce]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VIII: 分散並列処理

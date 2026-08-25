@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第19章: Wa-Tor シミュレーション"
+description: "本章では、Wa-Tor（Water Torus）シミュレーションを通じて、セルオートマトンと判別共用体を使った捕食者-被食者モデルの実装を学びます。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第19章: Wa-Tor シミュレーション
 
 ## はじめに

@@ -1,11 +1,10 @@
 ---
-title: Part VI - ノンブロッキング I/O
-description: async/await によるノンブロッキング処理
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, async, tokio, rust
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part VI - ノンブロッキング I/O"
+description: "async/await によるノンブロッキング処理"
+tags: [article, grokking-concurrency, rust, concurrency, async, tokio]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VI: ノンブロッキング I/O

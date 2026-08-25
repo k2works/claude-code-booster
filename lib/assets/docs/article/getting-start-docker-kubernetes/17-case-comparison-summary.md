@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 17 章 ケーススタディ実装比較まとめ"
+description: "第 13〜16 章では、同一ドメイン（国際貨物輸送システム = Cargo Tracker）を 4 つの異なるアーキテクチャで実装し、それぞれを Docker Compose・Kustomize・Helm でデプロイして比較しました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 17 章 ケーススタディ実装比較まとめ
 
 ## はじめに

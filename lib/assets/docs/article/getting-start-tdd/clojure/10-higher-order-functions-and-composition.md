@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章: 高階関数と関数合成"
+description: "この章では Clojure の 高階関数 と 関数合成 を使って、FizzBuzz プログラムをより関数型らしいスタイルに変換します。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 10 章: 高階関数と関数合成
 
 ## 10.1 はじめに

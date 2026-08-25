@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV - 第 8 章：IO モナドと副作用の分離"
+description: "純粋関数は同じ入力に対して常に同じ出力を返し、外部の状態を変更しません。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV - 第 8 章：IO モナドと副作用の分離
 
 ## 8.1 はじめに：副作用の問題

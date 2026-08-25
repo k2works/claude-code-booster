@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III - 第 7 章：Either 型と代数的データ型"
+description: "前章で学んだ Option 型は、値の有無を型で表現する強力な手段でした。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III - 第 7 章：Either 型と代数的データ型
 
 ## 7.1 はじめに：Option の限界

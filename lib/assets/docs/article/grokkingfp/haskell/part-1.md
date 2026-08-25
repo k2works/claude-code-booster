@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I: 関数型プログラミングの基礎"
+description: "本章では、関数型プログラミング（FP）の基本概念を Haskell で学びます。"
+tags: [article, grokkingfp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part I: 関数型プログラミングの基礎
 
 本章では、関数型プログラミング（FP）の基本概念を Haskell で学びます。Haskell は純粋関数型言語であり、FP の概念を最も直接的に体験できます。

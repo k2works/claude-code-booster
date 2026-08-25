@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 14 章 イベント駆動マイクロサービスのデプロイ — Kustomize 対 Helm"
+description: "前章では構成要素の少ないモノリスを題材に、Docker Compose と Kustomize を比較しました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 14 章 イベント駆動マイクロサービスのデプロイ — Kustomize 対 Helm
 
 ## はじめに

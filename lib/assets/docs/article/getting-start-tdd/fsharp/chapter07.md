@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: レコード型とモジュールによるカプセル化"
+description: "第 1 部では手続き型の FizzBuzz プログラムを TDD で構築しました。"
+tags: [article, getting-start-tdd, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: レコード型とモジュールによるカプセル化
 
 ## 7.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part VII: 非同期プログラミング"
+description: "Part VI でノンブロッキング I/O を学びました。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part VII: 非同期プログラミング
 
 ## 7.1 はじめに

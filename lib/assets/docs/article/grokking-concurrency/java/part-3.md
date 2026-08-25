@@ -1,11 +1,10 @@
 ---
-title: Part III - マルチタスキングとスケジューリング
-description: マルチタスキングとタイムシェアリングの概念を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, multitasking, scheduling, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part III - マルチタスキングとスケジューリング"
+description: "マルチタスキングとタイムシェアリングの概念を学ぶ"
+tags: [article, grokking-concurrency, java, concurrency, multitasking, scheduling]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part III: マルチタスキングとスケジューリング

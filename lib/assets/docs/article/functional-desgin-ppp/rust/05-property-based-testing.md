@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第5章: プロパティベーステスト"
+description: "この章では、Rust の proptest クレートを使ったプロパティベーステストを学びます。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第5章: プロパティベーステスト
 
 ## 概要

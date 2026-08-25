@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章：財務会計システムの全体像（ORM版）"
+description: "本章では、財務会計システムの全体像を把握し、Spring Data JPA を使用した ORM 実装のアーキテクチャについて解説します。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第14章：財務会計システムの全体像（ORM版）
 
 本章では、財務会計システムの全体像を把握し、Spring Data JPA を使用した ORM 実装のアーキテクチャについて解説します。MyBatis 版との違いを比較しながら、JPA の特徴を活かした設計手法を学びます。

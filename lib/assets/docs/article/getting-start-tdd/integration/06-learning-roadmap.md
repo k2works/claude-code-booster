@@ -1,3 +1,12 @@
+---
+type: Article
+title: "学習ロードマップ"
+description: "本章では、12 言語を効果的に学ぶための推奨順序、各言語で習得できる概念、そして学習を深めるための次のステップを提示します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 学習ロードマップ
 
 本章では、12 言語を効果的に学ぶための推奨順序、各言語で習得できる概念、そして学習を深めるための次のステップを提示します。

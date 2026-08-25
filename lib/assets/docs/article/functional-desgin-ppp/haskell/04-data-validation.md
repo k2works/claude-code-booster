@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: データバリデーション"
+description: "Haskell では型システムと組み合わせて、コンパイル時と実行時の両方でデータの整合性を保証できます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: データバリデーション
 
 ## はじめに

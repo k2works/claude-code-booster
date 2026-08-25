@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章: 高階関数とパイプライン演算子"
+description: "この章では、Elixir の高階関数を使って、データ変換を宣言的に記述する方法を学びます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 10 章: 高階関数とパイプライン演算子
 
 ## 10.1 はじめに

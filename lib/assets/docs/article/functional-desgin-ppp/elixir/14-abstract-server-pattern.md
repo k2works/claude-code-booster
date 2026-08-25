@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章: Abstract Server パターン"
+description: "Abstract Server パターンは、依存関係逆転の原則（DIP）を実現するパターンです。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第14章: Abstract Server パターン
 
 ## はじめに

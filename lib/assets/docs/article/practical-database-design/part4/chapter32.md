@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第32章：API サービスの実装"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第32章：API サービスの実装
 
 ## 32.1 ヘキサゴナルアーキテクチャの復習

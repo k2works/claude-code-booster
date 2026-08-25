@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 16 章 ES/CQRS マイクロサービス（Kafka）のデプロイ — Kustomize 対 Helm"
+description: "前章では ES/CQRS を Axon Framework（専用イベントストア Axon Server）で実装した case-3 を比較しました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 16 章 ES/CQRS マイクロサービス（Kafka）のデプロイ — Kustomize 対 Helm
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 5 章: パッケージ管理と静的解析"
+description: "この章では、Python プロジェクトにパッケージ管理ツールと静的解析ツールを導入し、コードの品質を自動的にチェックする仕組みを整えます。"
+tags: [article, getting-start-tdd, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 5 章: パッケージ管理と静的解析
 
 ## 5.1 はじめに

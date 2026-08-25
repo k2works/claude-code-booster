@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II: 関数型スタイルのプログラミング"
+description: "本章では、関数型プログラミングの核心となるテクニックを学びます。"
+tags: [article, grokkingfp, typescript]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part II: 関数型スタイルのプログラミング
 
 本章では、関数型プログラミングの核心となるテクニックを学びます。イミュータブルなデータ操作、高階関数、そして `chain`（flatMap）による複雑なデータ変換を習得します。

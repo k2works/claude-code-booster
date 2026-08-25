@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II: 関数型スタイルのプログラミング"
+description: "本章では、関数型プログラミングの核心となるテクニックを学びます。"
+tags: [article, grokkingfp, java]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part II: 関数型スタイルのプログラミング
 
 本章では、関数型プログラミングの核心となるテクニックを学びます。イミュータブルなデータ操作、高階関数、そして `flatMap` による複雑なデータ変換を Vavr を使って習得します。

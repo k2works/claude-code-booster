@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章: パターン間の相互作用"
+description: "本章では、これまで学んだデザインパターンを組み合わせて、より複雑なシステムを構築する方法を学びます。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第20章: パターン間の相互作用
 
 ## はじめに

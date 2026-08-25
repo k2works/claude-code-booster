@@ -1,13 +1,3 @@
----
-title: index
-description:
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags:
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
----
-
 # Grokking Concurrency - Python 版
 
 本シリーズは「Grokking Concurrency」（Kirill Bobrov 著）の学習コンパニオンとして、並行処理プログラミングの概念を Python で実装しながら日本語で解説します。

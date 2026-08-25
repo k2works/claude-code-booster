@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章：Axon CQRS/ES の実装【ORM版】"
+description: "本章では、財務会計システムに CQRS（Command Query Responsibility Segregation） と Event Sourcing を実装します。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第22章：Axon CQRS/ES の実装【ORM版】
 
 本章では、財務会計システムに **CQRS（Command Query Responsibility Segregation）** と **Event Sourcing** を実装します。Axon Framework を使用し、コマンド（書き込み）とクエリ（読み取り）を分離し、すべての状態変更をイベントとして記録するアーキテクチャを構築します。

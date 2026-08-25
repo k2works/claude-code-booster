@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 3 章: 明白な実装とリファクタリング"
+description: "前章では、3・5・15 の各ケースを仮実装で通しました。"
+tags: [article, getting-start-tdd, php]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 3 章: 明白な実装とリファクタリング
 
 ## 3.1 はじめに

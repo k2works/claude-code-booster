@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: SOLID 原則とモジュール設計"
+description: "前章までに多くのデザインパターンを適用しましたが、すべてのクラスが 1 つのファイルに詰め込まれた状態です。"
+tags: [article, getting-start-tdd, node]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: SOLID 原則とモジュール設計
 
 ## 9.1 はじめに

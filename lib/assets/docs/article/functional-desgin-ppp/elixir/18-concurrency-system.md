@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章: 並行処理システム"
+description: "並行処理システムは、Elixir の強力な並行処理機能を活用して、イベント駆動、状態マシン、メッセージキューなどのパターンを実装します。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第18章: 並行処理システム
 
 ## はじめに

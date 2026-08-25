@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 05: プロパティベーステスト"
+description: "Elixir における StreamData を使ったプロパティベーステストについて学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 05: プロパティベーステスト
 
 Elixir における StreamData を使ったプロパティベーステストについて学びます。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章 並行処理システム - 状態機械パターン"
+description: "この章では、Software Transactional Memory (STM) を使用した並行処理システムを実装します。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第18章 並行処理システム - 状態機械パターン
 
 ## 概要

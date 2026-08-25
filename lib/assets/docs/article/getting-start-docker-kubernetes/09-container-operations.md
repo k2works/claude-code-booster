@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章 コンテナの運用"
+description: "前章までで、Docker によるコンテナの構築・デプロイから、Kubernetes 上でのアプリケーションのパッケージングまでを学んできました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 9 章 コンテナの運用
 
 ![コンテナ運用を説明する 4 コマ漫画](images/chapter-09-comic.png)

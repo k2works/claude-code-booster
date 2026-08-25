@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第26章：外注委託管理の設計"
+description: "本章では、外注委託業務の DB 設計を解説します。"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第26章：外注委託管理の設計
 
 本章では、外注委託業務の DB 設計を解説します。自社で製造できない工程を外部の委託先に依頼し、材料を支給して加工してもらう業務フローをデータベースで表現します。

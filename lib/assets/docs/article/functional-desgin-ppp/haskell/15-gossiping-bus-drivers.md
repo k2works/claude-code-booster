@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第15章: ゴシップ好きなバスの運転手"
+description: "本章では、「ゴシップ好きなバスの運転手」という問題を通じて、関数型プログラミングの実践的なアプローチを学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第15章: ゴシップ好きなバスの運転手
 
 ## はじめに

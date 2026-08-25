@@ -1,11 +1,10 @@
 ---
-title: Part II - プロセスとスレッド
-description: std::thread によるスレッド操作
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, thread, rust
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part II - プロセスとスレッド"
+description: "std::thread によるスレッド操作"
+tags: [article, grokking-concurrency, rust, concurrency, thread]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part II: プロセスとスレッド

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 5 章: パッケージ管理と静的解析"
+description: "この章では、Elixir の依存管理とコード品質チェックを扱います。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 5 章: パッケージ管理と静的解析
 
 ## 5.1 はじめに

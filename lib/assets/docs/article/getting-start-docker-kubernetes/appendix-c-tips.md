@@ -1,3 +1,12 @@
+---
+type: Article
+title: "付録 C コンテナ開発・運用の Tips"
+description: "本編では、コンテナの基礎から複数コンテナ構成、Kubernetes、継続的デリバリーまでを段階的に学んできました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 付録 C コンテナ開発・運用の Tips
 
 ## はじめに

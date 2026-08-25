@@ -1,11 +1,10 @@
 ---
-title: Part IV - タスク分解と並列パターン
-description: Fork/Join パターンとパイプラインパターン
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, fork-join, pipeline, scala
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part IV - タスク分解と並列パターン"
+description: "Fork/Join パターンとパイプラインパターン"
+tags: [article, grokking-concurrency, scala, concurrency, fork-join, pipeline]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part IV: タスク分解と並列パターン

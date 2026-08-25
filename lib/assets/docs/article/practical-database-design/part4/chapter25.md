@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第25章：購買管理の設計"
+description: "本章では、MRP で生成された購買オーダを実際の発注に変換し、入荷・検収までの一連の購買業務を設計します。"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第25章：購買管理の設計
 
 本章では、MRP で生成された購買オーダを実際の発注に変換し、入荷・検収までの一連の購買業務を設計します。

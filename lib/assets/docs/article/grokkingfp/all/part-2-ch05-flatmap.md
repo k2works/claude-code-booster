@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II - 第 5 章：flatMap とモナド的合成"
+description: "前章で学んだ map は、各要素を 1 つの値に変換する操作でした。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part II - 第 5 章：flatMap とモナド的合成
 
 ## 5.1 はじめに：ネストした変換の問題

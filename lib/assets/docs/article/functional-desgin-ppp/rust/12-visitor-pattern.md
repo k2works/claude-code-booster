@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第12章: Visitor パターン"
+description: "Visitor パターンは、データ構造の要素に対する操作を、データ構造から分離するパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第12章: Visitor パターン
 
 ## はじめに

@@ -1,11 +1,10 @@
 ---
-title: Part III - マルチタスキングとスケジューリング
-description: STM を使ったゲームループ
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, stm, haskell
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part III - マルチタスキングとスケジューリング"
+description: "STM を使ったゲームループ"
+tags: [article, grokking-concurrency, haskell, concurrency, stm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part III: マルチタスキングとスケジューリング

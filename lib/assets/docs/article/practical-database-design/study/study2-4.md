@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：販売管理システム 研究 4 - GraphQL サービスの実装"
+description: "本研究では、REST API（第10部-A）や gRPC（研究 3）とは異なるアプローチとして、GraphQL による販売管理システムを実装します。"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：販売管理システム 研究 4 - GraphQL サービスの実装
 
 ## はじめに

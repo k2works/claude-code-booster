@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 09: I/O と外部システム"
+description: "Elixir における I/O 操作と外部システムとの連携を関数型に扱う方法を学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 09: I/O と外部システム
 
 Elixir における I/O 操作と外部システムとの連携を関数型に扱う方法を学びます。

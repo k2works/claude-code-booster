@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：生産管理システム 研究 3 - gRPC サービスの実装"
+description: "本研究では、API サーバー構成（第32章）とは異なるアプローチとして、gRPC による生産管理システムを実装します。"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：生産管理システム 研究 3 - gRPC サービスの実装
 
 ## はじめに

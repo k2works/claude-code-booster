@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリングと型による安全性"
+description: "本章では、関数型プログラミングにおけるエラーハンドリングを学びます。"
+tags: [article, grokkingfp, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: エラーハンドリングと型による安全性
 
 本章では、関数型プログラミングにおけるエラーハンドリングを学びます。例外を使わず、型を使って安全にエラーを扱う方法を習得します。Python では `returns` ライブラリの `Maybe` と `Result` 型を使用します。

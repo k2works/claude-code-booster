@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章 オブジェクト指向から関数型への移行"
+description: "この章では、一般的なオブジェクト指向パターンを関数型の同等物に移行する方法を学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第22章 オブジェクト指向から関数型への移行
 
 ## 概要

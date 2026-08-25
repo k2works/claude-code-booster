@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第12章：販売管理データ設計（B 社事例）"
+description: "販売管理システムのデータベース設計を、食肉・食肉加工品の製造販売を行う B 社の事例を通じて実践的に学びます。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第12章：販売管理データ設計（B 社事例）
 
 販売管理システムのデータベース設計を、食肉・食肉加工品の製造販売を行う B 社の事例を通じて実践的に学びます。本章では、実際のビジネスに基づいたマスタデータとトランザクションデータの設計・実装方法を解説します。

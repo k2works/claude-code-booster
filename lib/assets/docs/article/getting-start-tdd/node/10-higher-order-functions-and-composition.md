@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章: 高階関数と関数合成"
+description: "第 3 部ではオブジェクト指向設計でコードを構造化しました。"
+tags: [article, getting-start-tdd, node]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 10 章: 高階関数と関数合成
 
 ## 10.1 はじめに

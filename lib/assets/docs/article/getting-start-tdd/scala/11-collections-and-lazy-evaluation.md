@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: コレクション処理と遅延評価"
+description: "Scala の強みの 1 つは、表現力の高いコレクションライブラリです。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: コレクション処理と遅延評価
 
 ## 11.1 はじめに

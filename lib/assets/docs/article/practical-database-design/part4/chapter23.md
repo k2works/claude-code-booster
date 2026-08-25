@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第23章：マスタ情報の設計"
+description: "本章では、生産管理システムの基盤となるマスタ情報を設計します。"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第23章：マスタ情報の設計
 
 本章では、生産管理システムの基盤となるマスタ情報を設計します。ヘキサゴナルアーキテクチャ（ポート＆アダプターパターン）を採用し、ドメイン層がインフラストラクチャ層に依存しない設計とします。

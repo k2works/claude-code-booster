@@ -1,11 +1,10 @@
 ---
-title: Part I - 並行処理の基礎
-description: 逐次処理の基本と並行処理の必要性を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, sequential, csharp
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part I - 並行処理の基礎"
+description: "逐次処理の基本と並行処理の必要性を学ぶ"
+tags: [article, grokking-concurrency, csharp, concurrency, sequential]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part I: 並行処理の基礎

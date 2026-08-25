@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: SOLID 原則とモジュール設計"
+description: "前章ではデザインパターンを適用して設計を改善しました。"
+tags: [article, getting-start-tdd, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: SOLID 原則とモジュール設計
 
 ## 9.1 はじめに

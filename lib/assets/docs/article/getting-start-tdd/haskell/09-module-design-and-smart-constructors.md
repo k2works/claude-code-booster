@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: モジュール設計とスマートコンストラクタ"
+description: "前章までに代数的データ型、型クラス、パターンマッチ、ガード、Either 型を導入しました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: モジュール設計とスマートコンストラクタ
 
 ## 9.1 はじめに

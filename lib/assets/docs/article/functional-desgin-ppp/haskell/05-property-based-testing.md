@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第5章: プロパティベーステスト"
+description: "従来の単体テストでは特定の入力に対する出力を検証しますが、プロパティベーステストでは、すべての入力に対して成り立つべき「性質（プロパティ）」を定義し、ランダムに生成された多数のテストケースで検証します。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第5章: プロパティベーステスト
 
 ## はじめに

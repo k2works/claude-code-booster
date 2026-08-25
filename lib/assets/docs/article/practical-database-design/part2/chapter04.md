@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章：販売管理システムの全体像"
+description: "本章から第2部「販売管理システム」の解説に入ります。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第4章：販売管理システムの全体像
 
 本章から第2部「販売管理システム」の解説に入ります。まず、販売管理システムのスコープと、関連する組織の役割分担について解説します。

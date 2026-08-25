@@ -1,11 +1,10 @@
 ---
-title: Part V - 同期と排他制御
-description: Lock と Monitor を使った同期を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, lock, synchronization, csharp
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part V - 同期と排他制御"
+description: "Lock と Monitor を使った同期を学ぶ"
+tags: [article, grokking-concurrency, csharp, concurrency, lock, synchronization]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part V: 同期と排他制御

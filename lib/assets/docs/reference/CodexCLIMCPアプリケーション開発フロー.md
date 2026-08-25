@@ -1,3 +1,13 @@
+---
+type: Reference
+title: "アプリケーション開発フロー"
+description: "本ドキュメントは、Claude（AI アシスタント）と Codex（実装エージェント）を活用した開発フローを定義します。"
+tags: [reference]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-04-07T05:40:09Z }
+stale_after: 2027-02-23T00:00:00Z
+---
+
 # アプリケーション開発フロー
 
 ## 概要

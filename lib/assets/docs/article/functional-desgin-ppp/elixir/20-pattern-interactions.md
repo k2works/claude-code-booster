@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章: パターン間の相互作用"
+description: "関数型設計パターンは単独で使用するよりも、組み合わせることでより強力になります。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第20章: パターン間の相互作用
 
 ## はじめに

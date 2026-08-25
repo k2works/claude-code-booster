@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 1 章: TODO リストと最初のテスト"
+description: "この章では、TDD の基本サイクルである Red-Green-Refactor を FizzBuzz 問題で体験します。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 1 章: TODO リストと最初のテスト
 
 ## 1.1 はじめに

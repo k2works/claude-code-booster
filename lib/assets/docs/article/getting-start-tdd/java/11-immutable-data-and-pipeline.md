@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 不変データとパイプライン処理"
+description: "前章では Lambda 式、メソッド参照、Stream API の基本を学びました。"
+tags: [article, getting-start-tdd, java]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 不変データとパイプライン処理
 
 ## 11.1 はじめに

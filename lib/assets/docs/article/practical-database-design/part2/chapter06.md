@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第6章：受注・出荷・売上の設計"
+description: "販売管理システムの中核となるトランザクションデータを設計していきます。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第6章：受注・出荷・売上の設計
 
 販売管理システムの中核となるトランザクションデータを設計していきます。本章では、受注から出荷、売上計上までの一連の業務フローに対応したデータベース設計と実装を行います。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 3 章: 明白な実装とリファクタリング"
+description: "前章で三角測量による実装を学びました。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 3 章: 明白な実装とリファクタリング
 
 ## 3.1 はじめに

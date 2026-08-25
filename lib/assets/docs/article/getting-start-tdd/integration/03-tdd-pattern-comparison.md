@@ -1,3 +1,12 @@
+---
+type: Article
+title: "パラダイム別 TDD パターン比較"
+description: "本章では、OOP と FP それぞれのパラダイムにおける TDD の進め方の違いを比較します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # パラダイム別 TDD パターン比較
 
 本章では、OOP と FP それぞれのパラダイムにおける TDD の進め方の違いを比較します。同じ FizzBuzz 問題でも、パラダイムによってテストの書き方、リファクタリングの方向性、設計パターンの適用方法が大きく異なります。

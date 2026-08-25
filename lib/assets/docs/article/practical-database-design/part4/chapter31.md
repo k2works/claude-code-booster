@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第31章：生産管理データ設計（E社事例）"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第31章：生産管理データ設計（E社事例）
 
 ## 31.1 E社の概要

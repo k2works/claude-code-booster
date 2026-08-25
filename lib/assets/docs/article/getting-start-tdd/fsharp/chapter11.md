@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 不変データとコレクション処理"
+description: "前章ではパイプライン演算子と関数合成を学びました。"
+tags: [article, getting-start-tdd, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 不変データとコレクション処理
 
 ## 11.1 はじめに

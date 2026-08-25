@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリングと Maybe/Result"
+description: "本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。"
+tags: [article, grokkingfp, ruby]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: エラーハンドリングと Maybe/Result
 
 本章では、関数型プログラミングにおける安全なエラーハンドリングを学びます。`nil` や例外に頼らず、dry-monads の `Maybe` と `Result` を使って型安全にエラーを扱う方法を習得します。

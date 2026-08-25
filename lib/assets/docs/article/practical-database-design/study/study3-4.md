@@ -1,3 +1,12 @@
+---
+type: Article
+title: "研究 4：GraphQL サービスの実装"
+description: "本パートでは、REST API や gRPC とは異なるアプローチとして、GraphQL による財務会計システムを実装します。"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 研究 4：GraphQL サービスの実装
 
 ## はじめに

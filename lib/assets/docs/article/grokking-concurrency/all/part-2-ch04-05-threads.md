@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II: プロセスとスレッド"
+description: "Part I で逐次処理の限界を確認しました。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part II: プロセスとスレッド
 
 ## 2.1 はじめに

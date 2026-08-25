@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第36章：マスタデータ管理（MDM）"
+description: "本章では、複数の基幹業務システム間で共有されるマスタデータの管理方法について解説します。"
+tags: [article, practical-database-design, part5]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第36章：マスタデータ管理（MDM）
 
 本章では、複数の基幹業務システム間で共有されるマスタデータの管理方法について解説します。マスタデータ管理（Master Data Management: MDM）は、企業全体でのデータ品質と一貫性を確保するための重要な取り組みです。

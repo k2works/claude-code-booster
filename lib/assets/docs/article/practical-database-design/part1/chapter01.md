@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第1章：基幹業務システムとは"
+description: "本章では、基幹業務システムの概要と、ドメイン駆動設計（DDD）との関係について解説します。"
+tags: [article, practical-database-design, part1]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第1章：基幹業務システムとは
 
 本章では、基幹業務システムの概要と、ドメイン駆動設計（DDD）との関係について解説します。

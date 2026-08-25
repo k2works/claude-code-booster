@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 不変データとパイプライン処理"
+description: "前章では高階関数と関数合成を学びました。"
+tags: [article, getting-start-tdd, ruby]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第 11 章: 不変データとパイプライン処理
 
 ## 11.1 はじめに

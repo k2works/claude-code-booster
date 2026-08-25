@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 1 章 コンテナと Docker の基礎"
+description: "現代のアプリケーション開発において、コンテナはもはや欠かせない技術となりました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 1 章 コンテナと Docker の基礎
 
 ![コンテナと Docker の基礎を説明する 4 コマ漫画](images/chapter-01-comic.png)

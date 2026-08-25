@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第16章: 給与計算システム"
+description: "本章では、給与計算システムを通じて、関数型プログラミングで業務ドメインをモデリングする方法を学びます。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第16章: 給与計算システム
 
 ## はじめに

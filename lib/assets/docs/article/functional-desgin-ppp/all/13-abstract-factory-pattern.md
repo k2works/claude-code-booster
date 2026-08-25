@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第13章: Abstract Factory パターン — 6言語統合ガイド"
+description: "Abstract Factory パターンは、関連するオブジェクトのファミリーを一貫した方法で生成する GoF パターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第13章: Abstract Factory パターン — 6言語統合ガイド
 
 ## 1. はじめに

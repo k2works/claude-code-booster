@@ -1,11 +1,10 @@
 ---
-title: Part I - 並行処理の基礎
-description: 逐次処理とパスワードクラッカーの実装
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, sequential, haskell
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part I - 並行処理の基礎"
+description: "逐次処理とパスワードクラッカーの実装"
+tags: [article, grokking-concurrency, haskell, concurrency, sequential]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part I: 並行処理の基礎

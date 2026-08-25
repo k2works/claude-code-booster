@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第7章：債権管理の設計"
+description: "販売管理システムにおいて、売上が発生した後の請求・入金管理は経営の根幹を支える重要な業務です。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第7章：債権管理の設計
 
 販売管理システムにおいて、売上が発生した後の請求・入金管理は経営の根幹を支える重要な業務です。本章では、請求業務と回収業務のデータベース設計と実装を行います。

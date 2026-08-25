@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 13 章 モノリスのデプロイ — Docker Compose 対 Kustomize"
+description: "第 5 部では、実在の業務システム「国際貨物輸送システム（Cargo Tracker）」を題材に、アーキテクチャの違いがコンテナのデプロイ手段の選択にどう影響するかを学びます。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 13 章 モノリスのデプロイ — Docker Compose 対 Kustomize
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章 Kubernetes の発展的な利用"
+description: "前章では Kubernetes の基本的なリソース（Pod、ReplicaSet、Deployment、Service、Ingress）を使ってアプリケーションをデプロイする方法を学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 7 章 Kubernetes の発展的な利用
 
 ![Kubernetes の発展的な利用を説明する 4 コマ漫画](images/chapter-07-comic.png)

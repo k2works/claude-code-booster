@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part VIII: 分散並列処理"
+description: "本章では、大規模データを複数のプロセッサで効率的に処理する MapReduce パターンを学びます。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part VIII: 分散並列処理
 
 ## 8.1 はじめに

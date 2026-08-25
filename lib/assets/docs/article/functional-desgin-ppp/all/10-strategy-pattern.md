@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第10章: Strategy パターン — 6言語統合ガイド"
+description: "Strategy パターンは、アルゴリズムをカプセル化し、実行時に切り替えるための GoF パターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第10章: Strategy パターン — 6言語統合ガイド
 
 ## 1. はじめに

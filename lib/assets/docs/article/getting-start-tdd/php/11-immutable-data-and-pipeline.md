@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第 11 章: 不変データとパイプライン処理"
+tags: [article, getting-start-tdd, php]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 不変データとパイプライン処理
 
 ## 11.1 不変データ設計の確認

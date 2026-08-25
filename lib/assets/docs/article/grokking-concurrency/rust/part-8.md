@@ -1,11 +1,10 @@
 ---
-title: Part VIII - 分散並列処理
-description: MapReduce パターンと Rayon
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, mapreduce, rayon, rust
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part VIII - 分散並列処理"
+description: "MapReduce パターンと Rayon"
+tags: [article, grokking-concurrency, rust, concurrency, mapreduce, rayon]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VIII: 分散並列処理

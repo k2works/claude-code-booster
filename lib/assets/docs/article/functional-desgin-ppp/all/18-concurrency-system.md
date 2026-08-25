@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章: 並行処理システム — 6言語統合ガイド"
+description: "並行処理は、関数型プログラミングの不変性が最も威力を発揮する領域です。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第18章: 並行処理システム — 6言語統合ガイド
 
 ## 1. はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I - 第 1 章：関数型プログラミング入門"
+description: "関数型プログラミング（FP）は「何をするか（WHAT）」を宣言的に記述するパラダイムです。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part I - 第 1 章：関数型プログラミング入門
 
 ## 1.1 はじめに：なぜ関数型プログラミングか

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：販売管理システム 研究 1 - モノリスサービスの実装"
+description: "本研究では、API サーバー構成（第13章）とは異なるアプローチとして、モノリスアーキテクチャによる販売管理システムを実装します。"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：販売管理システム 研究 1 - モノリスサービスの実装
 
 ## はじめに

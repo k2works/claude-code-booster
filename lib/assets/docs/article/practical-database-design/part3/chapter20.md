@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章：財務会計データ設計（D社事例）"
+description: "本章では、化粧品製造販売会社D社を題材として、実際の財務会計システムにおけるデータ設計の全体像を解説します。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第20章：財務会計データ設計（D社事例）
 
 本章では、化粧品製造販売会社D社を題材として、実際の財務会計システムにおけるデータ設計の全体像を解説します。企業概要から組織構成、勘定科目体系、そしてSeedデータの実装まで、包括的に説明します。

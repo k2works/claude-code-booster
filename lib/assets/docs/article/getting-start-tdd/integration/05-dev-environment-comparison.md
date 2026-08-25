@@ -1,3 +1,12 @@
+---
+type: Article
+title: "開発環境と CI/CD 比較"
+description: "本章では、12 言語の開発環境構築、ビルドツール、リンター / フォーマッタ、CI/CD パイプラインを比較します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 開発環境と CI/CD 比較
 
 本章では、12 言語の開発環境構築、ビルドツール、リンター / フォーマッタ、CI/CD パイプラインを比較します。本プロジェクトでは Nix によるすべての言語の開発環境統一を実現しています。

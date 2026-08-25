@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと with 構文"
+description: "この章では、Elixir で例外に頼りすぎず、値としてエラーを扱う方法を学びます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと with 構文
 
 ## 12.1 はじめに

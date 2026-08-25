@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：販売管理システム 研究 5 - Axon CQRS/ES の実装"
+description: "本研究では、REST API（第10部-A）、gRPC（研究 3）、GraphQL（研究 4）とは異なるアプローチとして、CQRS（Command Query Responsibility Segregation） と Event Sour"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：販売管理システム 研究 5 - Axon CQRS/ES の実装
 
 ## はじめに

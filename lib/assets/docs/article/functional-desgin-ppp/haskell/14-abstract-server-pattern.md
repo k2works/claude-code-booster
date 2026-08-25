@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章: Abstract Server パターン"
+description: "Abstract Server パターンは、Dependency Inversion Principle（DIP）の適用例であり、高レベルモジュールが低レベルモジュールに依存せず、両者が抽象に依存するようにするパターンです。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第14章: Abstract Server パターン
 
 ## はじめに

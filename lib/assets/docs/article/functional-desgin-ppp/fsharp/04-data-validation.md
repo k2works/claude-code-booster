@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: データバリデーション"
+description: "F# では、判別共用体、スマートコンストラクタ、Result 型を組み合わせることで、コンパイル時と実行時の両方でデータの整合性を保証できます。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: データバリデーション
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章: 並行処理システム"
+description: "本章では、Clojure のエージェントを使った並行処理システムを学びます。"
+tags: [article, functional-desgin-ppp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第18章: 並行処理システム
 
 ## はじめに

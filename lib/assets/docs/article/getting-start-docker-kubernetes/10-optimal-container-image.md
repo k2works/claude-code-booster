@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章 最適なコンテナイメージ作成と運用"
+description: "前章までで、コンテナ化したアプリケーションを Kubernetes 上で動かし、パッケージングして配布するところまでを学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 10 章 最適なコンテナイメージ作成と運用
 
 ![最適なコンテナイメージ作成を説明する 4 コマ漫画](images/chapter-10-comic.png)

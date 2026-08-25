@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 06: TDD と関数型プログラミング"
+description: "Elixir におけるテスト駆動開発（TDD）と関数型プログラミングの融合について学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 06: TDD と関数型プログラミング
 
 Elixir におけるテスト駆動開発（TDD）と関数型プログラミングの融合について学びます。

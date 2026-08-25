@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第3章: 多態性の実現方法 — 6言語統合ガイド"
+description: "多態性（ポリモーフィズム）は、同じインターフェースで異なる型の振る舞いを切り替える仕組みです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第3章: 多態性の実現方法 — 6言語統合ガイド
 
 ## 1. はじめに

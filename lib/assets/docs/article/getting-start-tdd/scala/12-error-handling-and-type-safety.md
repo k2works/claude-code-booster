@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと型安全性"
+description: "Scala では、例外を多用するよりも型でエラー可能性を表現する設計が推奨されます。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと型安全性
 
 ## 12.1 はじめに

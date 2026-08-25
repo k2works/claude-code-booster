@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II - 第 3 章：イミュータブルなデータ操作"
+description: "関数型プログラミングでは、データは一度作ったら変更しないのが原則です。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part II - 第 3 章：イミュータブルなデータ操作
 
 ## 3.1 はじめに：なぜイミュータブルか

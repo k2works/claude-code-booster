@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: カプセル化とポリモーフィズム"
+description: "第 1 部では FizzBuzz を TDD で実装し、第 2 部では開発環境を整備しました。"
+tags: [article, getting-start-tdd, node]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: カプセル化とポリモーフィズム
 
 ## 7.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 並行処理"
+description: "本章では、関数型プログラミングにおける並行処理を学びます。"
+tags: [article, grokkingfp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part V: 並行処理
 
 本章では、関数型プログラミングにおける並行処理を学びます。Ref によるスレッドセーフな共有状態管理、Async.Parallel による並列実行、そして MailboxProcessor（Agent）による軽量並行処理の構築方法を習得します。

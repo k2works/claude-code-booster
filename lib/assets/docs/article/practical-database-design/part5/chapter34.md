@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第34章：メッセージングパターン"
+description: "本章では、エンタープライズインテグレーションの基盤となるメッセージングパターンについて解説します。"
+tags: [article, practical-database-design, part5]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第34章：メッセージングパターン
 
 本章では、エンタープライズインテグレーションの基盤となるメッセージングパターンについて解説します。Gregor Hohpe と Bobby Woolf による「Enterprise Integration Patterns」で体系化されたパターンを、基幹業務システムの文脈で理解していきます。

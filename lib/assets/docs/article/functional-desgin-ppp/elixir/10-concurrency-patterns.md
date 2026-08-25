@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 10: 並行処理パターン"
+description: "Elixir における並行処理パターンを学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 10: 並行処理パターン
 
 Elixir における並行処理パターンを学びます。アクターモデルと関数型プログラミングを組み合わせた安全な並行処理を実装します。

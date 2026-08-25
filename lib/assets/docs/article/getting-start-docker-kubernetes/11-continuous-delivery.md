@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章 コンテナにおける継続的デリバリー"
+description: "前章では CI（継続的インテグレーション）について学び、コードの変更をきっかけにテストとイメージのビルド・push を自動化する仕組みを構築しました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 11 章 コンテナにおける継続的デリバリー
 
 ![コンテナにおける継続的デリバリーを説明する 4 コマ漫画](images/chapter-11-comic.png)

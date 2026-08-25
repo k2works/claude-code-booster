@@ -1,13 +1,3 @@
----
-title: Scala で学ぶ並行処理
-description: Scala 3 による並行処理プログラミング
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, scala, parallel
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
----
-
 # Scala で学ぶ並行処理
 
 ## 概要

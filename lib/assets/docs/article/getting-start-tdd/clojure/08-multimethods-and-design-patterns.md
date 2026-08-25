@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: マルチメソッドとデザインパターン"
+description: "前章ではプロトコルとレコードによるポリモーフィズムを学びました。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: マルチメソッドとデザインパターン
 
 ## 8.1 はじめに

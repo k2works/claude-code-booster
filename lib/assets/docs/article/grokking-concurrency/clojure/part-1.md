@@ -1,11 +1,10 @@
 ---
-title: Part I - 逐次処理
-description: Clojure の基本と SHA-256 ハッシュ
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, clojure, sequential
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part I - 逐次処理"
+description: "Clojure の基本と SHA-256 ハッシュ"
+tags: [article, grokking-concurrency, clojure, concurrency, sequential]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part I: 逐次処理

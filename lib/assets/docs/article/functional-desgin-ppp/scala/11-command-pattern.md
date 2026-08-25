@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章: Command パターン"
+description: "Command パターンは、リクエストをオブジェクトとしてカプセル化し、操作の履歴管理、Undo/Redo、バッチ処理を可能にするパターンです。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第11章: Command パターン
 
 ## はじめに

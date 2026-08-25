@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 6 章: タスクランナーと CI/CD"
+description: "前章では静的コード解析ツールとコードカバレッジを導入しました。"
+tags: [article, getting-start-tdd, java]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 6 章: タスクランナーと CI/CD
 
 ## 6.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: IO と副作用の管理"
+description: "本章では、関数型プログラミングにおける副作用の扱い方を学びます。"
+tags: [article, grokkingfp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part IV: IO と副作用の管理
 
 本章では、関数型プログラミングにおける副作用の扱い方を学びます。Haskell では IO モナドを使って副作用を型システムで管理し、遅延リストで無限のデータを扱う方法を習得します。

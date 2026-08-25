@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 同期と排他制御"
+description: "並行処理の最大の課題は共有状態の安全な管理です。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part V: 同期と排他制御
 
 ## 5.1 はじめに

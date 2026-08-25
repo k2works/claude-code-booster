@@ -1,13 +1,3 @@
----
-title: Clojure で学ぶ並行処理
-description: Grokking Concurrency の Clojure 実装
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, clojure, stm
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
----
-
 # Clojure で学ぶ並行処理
 
 ## 概要

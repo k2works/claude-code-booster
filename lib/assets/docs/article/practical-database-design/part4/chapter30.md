@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第30章：製造原価管理の設計"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第30章：製造原価管理の設計
 
 ## 30.1 原価計算の概要

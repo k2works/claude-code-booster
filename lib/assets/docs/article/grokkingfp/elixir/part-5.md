@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 並行処理と OTP"
+description: "本章では、Elixir における並行処理を学びます。"
+tags: [article, grokkingfp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part V: 並行処理と OTP
 
 本章では、Elixir における並行処理を学びます。軽量プロセスによる並行実行、Agent/Task による安全な状態管理と非同期処理、そして OTP パターン（GenServer、Supervisor）による堅牢な並行システムの構築方法を習得します。

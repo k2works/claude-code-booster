@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章: Abstract Server パターン — 6言語統合ガイド"
+description: "Abstract Server パターンは、SOLID 原則の依存性逆転の原則（DIP）を実現するパターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第14章: Abstract Server パターン — 6言語統合ガイド
 
 ## 1. はじめに

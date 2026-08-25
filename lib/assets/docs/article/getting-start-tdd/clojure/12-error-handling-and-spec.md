@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと Spec"
+description: "この章では Clojure のエラーハンドリングと、clojure.spec によるデータバリデーションを学びます。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと Spec
 
 ## 12.1 はじめに

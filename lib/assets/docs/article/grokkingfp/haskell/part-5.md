@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 並行処理"
+description: "本章では、関数型プログラミングにおける並行処理を学びます。"
+tags: [article, grokkingfp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part V: 並行処理
 
 本章では、関数型プログラミングにおける並行処理を学びます。Haskell では IORef、Async、STM（Software Transactional Memory）を使って、安全で効率的な並行プログラムを構築できます。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Rust で学ぶ関数型プログラミング Part V: 並行処理"
+description: "Part IV では async/await とストリーム処理を学びました。"
+tags: [article, grokkingfp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Rust で学ぶ関数型プログラミング Part V: 並行処理
 
 ## はじめに

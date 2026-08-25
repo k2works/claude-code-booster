@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第12章: テスト戦略とプロパティベーステスト — 11言語比較"
+description: "第 11 章までで、関数型プログラミングの基礎から並行処理まで幅広い概念を学んできました。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第12章: テスト戦略とプロパティベーステスト — 11言語比較
 
 ## 12.1 はじめに

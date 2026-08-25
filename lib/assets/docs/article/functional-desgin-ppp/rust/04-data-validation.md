@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第4章: データ検証"
+description: "この章では、Rust の型システムと Result/Option を使ったデータバリデーションの実装方法を学びます。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第4章: データ検証
 
 ## 概要

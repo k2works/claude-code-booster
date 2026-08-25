@@ -1,11 +1,10 @@
 ---
-title: Part V - 同期と排他制御
-description: レースコンディション、デッドロックと Lock、Semaphore を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, lock, semaphore, deadlock, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part V - 同期と排他制御"
+description: "レースコンディション、デッドロックと Lock、Semaphore を学ぶ"
+tags: [article, grokking-concurrency, java, concurrency, lock, semaphore, deadlock]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part V: 同期と排他制御

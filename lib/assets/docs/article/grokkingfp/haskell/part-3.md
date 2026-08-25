@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III: エラーハンドリングと Maybe/Either"
+description: "本章では、関数型プログラミングにおける安全なエラーハンドリングを Haskell で学びます。"
+tags: [article, grokkingfp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part III: エラーハンドリングと Maybe/Either
 
 本章では、関数型プログラミングにおける安全なエラーハンドリングを Haskell で学びます。`null` や例外に頼らず、`Maybe` と `Either` を使って型安全にエラーを扱う方法を習得します。

@@ -1,13 +1,3 @@
----
-title: F# で学ぶ並行処理
-description: F# による並行処理プログラミング
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, fsharp, async
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
----
-
 # F# で学ぶ並行処理
 
 ## 概要

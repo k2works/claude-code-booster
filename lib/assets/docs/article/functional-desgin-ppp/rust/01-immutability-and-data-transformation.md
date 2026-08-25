@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第1章: 不変性とデータ変換"
+description: "関数型プログラミングの最も重要な概念の一つが不変性（Immutability）です。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第1章: 不変性とデータ変換
 
 ## はじめに

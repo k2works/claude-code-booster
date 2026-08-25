@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第33章：システム統合の概要"
+description: "本章から第5部「エンタープライズインテグレーション」の解説に入ります。"
+tags: [article, practical-database-design, part5]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第33章：システム統合の概要
 
 本章から第5部「エンタープライズインテグレーション」の解説に入ります。これまで解説してきた販売管理システム、財務会計システム、生産管理システムを統合し、企業全体として整合性のあるシステムを構築するための考え方とパターンについて解説します。

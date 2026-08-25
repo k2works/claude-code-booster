@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: モジュール設計と型による設計"
+description: "前章では判別共用体とパターンマッチを導入しました。"
+tags: [article, getting-start-tdd, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: モジュール設計と型による設計
 
 ## 9.1 はじめに

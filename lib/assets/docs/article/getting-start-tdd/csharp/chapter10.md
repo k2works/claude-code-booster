@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 10 章: 高階関数と関数合成"
+description: "C# は LINQ やラムダ式を通じて関数型プログラミングの機能を豊富にサポートしています。"
+tags: [article, getting-start-tdd, csharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 10 章: 高階関数と関数合成
 
 ## 10.1 はじめに

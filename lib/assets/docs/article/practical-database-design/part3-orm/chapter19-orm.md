@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第19章：赤黒とログの設計（ORM版）"
+description: "会計システムにおけるデータ訂正方式（赤黒処理）とログ管理の設計を行います。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第19章：赤黒とログの設計（ORM版）
 
 会計システムにおけるデータ訂正方式（赤黒処理）とログ管理の設計を行います。

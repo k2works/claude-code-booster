@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第15章：勘定科目の設計"
+description: "財務会計システムの根幹となる勘定科目マスタを設計します。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第15章：勘定科目の設計
 
 財務会計システムの根幹となる勘定科目マスタを設計します。本章では、TDD（テスト駆動開発）を用いて勘定科目マスタ、勘定科目構成マスタ、課税取引マスタを実装していきます。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 6 章 Kubernetes のデプロイ・クラスタ構築"
+description: "前章では Kubernetes の基本的なリソース（Pod、ReplicaSet、Deployment、Service など）と、それらをマニフェストで宣言的に管理する考え方を学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 6 章 Kubernetes のデプロイ・クラスタ構築
 
 ![Kubernetes クラスタへのデプロイを説明する 4 コマ漫画](images/chapter-06-comic.png)

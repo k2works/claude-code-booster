@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章: OO から FP への移行 — 6言語統合ガイド"
+description: "オブジェクト指向（OO）から関数型プログラミング（FP）への移行は、一夜にして完了するものではありません。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第22章: OO から FP への移行 — 6言語統合ガイド
 
 ## 1. はじめに

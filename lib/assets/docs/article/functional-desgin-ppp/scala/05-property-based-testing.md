@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第5章: プロパティベーステスト"
+description: "従来の単体テストでは、特定の入力に対する期待される出力を検証します。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第5章: プロパティベーステスト
 
 ## はじめに

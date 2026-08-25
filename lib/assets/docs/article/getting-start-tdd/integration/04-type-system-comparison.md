@@ -1,3 +1,12 @@
+---
+type: Article
+title: "型システムとエラーハンドリング比較"
+description: "本章では、12 言語の型システムとエラーハンドリングのアプローチを比較します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 型システムとエラーハンドリング比較
 
 本章では、12 言語の型システムとエラーハンドリングのアプローチを比較します。型システムの強さはコードの安全性に直結し、エラーハンドリングの方法はプログラムの堅牢性を左右します。

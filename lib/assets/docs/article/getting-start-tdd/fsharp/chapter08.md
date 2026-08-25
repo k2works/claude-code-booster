@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: 判別共用体とパターンマッチ"
+description: "前章ではレコード型とモジュールによるカプセル化を実現しました。"
+tags: [article, getting-start-tdd, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: 判別共用体とパターンマッチ
 
 ## 8.1 はじめに

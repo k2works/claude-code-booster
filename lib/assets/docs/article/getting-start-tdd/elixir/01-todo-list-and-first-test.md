@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 1 章: TODO リストと最初のテスト"
+description: "この章では、FizzBuzz 問題を小さな TODO リストに分解し、ExUnit で最初のテストを書きます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 1 章: TODO リストと最初のテスト
 
 ## 1.1 はじめに

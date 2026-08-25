@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第38章：API 設計とサービス連携"
+description: "本章では、基幹業務システムにおける API 設計の原則と、サービス間連携のパターンについて解説します。"
+tags: [article, practical-database-design, part5]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第38章：API 設計とサービス連携
 
 本章では、基幹業務システムにおける API 設計の原則と、サービス間連携のパターンについて解説します。RESTful API の設計、サービス間通信の方式、API ゲートウェイの活用、そしてインテグレーションテストの実践方法を学びます。

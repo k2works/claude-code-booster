@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章：自動仕訳の設計"
+description: "販売管理システムなどの業務システムから会計システムへの自動仕訳処理を TDD で設計していきます。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第17章：自動仕訳の設計
 
 販売管理システムなどの業務システムから会計システムへの自動仕訳処理を TDD で設計していきます。売上データから仕訳データへの自動変換ルールと、効率的なバッチ処理の設計を行います。

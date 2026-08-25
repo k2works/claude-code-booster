@@ -1,3 +1,12 @@
+---
+type: Article
+title: "テストフレームワーク比較"
+description: "本章では、12 言語のテストフレームワークを比較し、テスト構造、アサーション方法、テスト実行コマンドの違いを解説します。"
+tags: [article, getting-start-tdd, integration]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # テストフレームワーク比較
 
 本章では、12 言語のテストフレームワークを比較し、テスト構造、アサーション方法、テスト実行コマンドの違いを解説します。TDD を実践する上で、テストフレームワークの特性を理解することは重要です。

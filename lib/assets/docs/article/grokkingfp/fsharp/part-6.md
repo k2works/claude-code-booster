@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part VI: 実践的なアプリケーション構築とテスト"
+description: "本章では、これまで学んだ関数型プログラミングの概念を統合し、実践的なアプリケーションを構築します。"
+tags: [article, grokkingfp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part VI: 実践的なアプリケーション構築とテスト
 
 本章では、これまで学んだ関数型プログラミングの概念を統合し、実践的なアプリケーションを構築します。また、関数型プログラミングにおけるテスト戦略についても学びます。

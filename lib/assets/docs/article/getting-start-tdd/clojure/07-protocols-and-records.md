@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: プロトコルとレコードによるポリモーフィズム"
+description: "この章からは FizzBuzz プログラムに追加仕様を実装しながら、Clojure におけるポリモーフィズムを学びます。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: プロトコルとレコードによるポリモーフィズム
 
 ## 7.1 はじめに

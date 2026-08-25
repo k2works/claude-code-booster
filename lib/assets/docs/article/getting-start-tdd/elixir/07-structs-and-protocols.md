@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 7 章: 構造体とプロトコルによるポリモーフィズム"
+description: "この章では、defstruct と defprotocol を使って、Elixir で型ごとに振る舞いを切り替える方法を学びます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 7 章: 構造体とプロトコルによるポリモーフィズム
 
 ## 7.1 はじめに

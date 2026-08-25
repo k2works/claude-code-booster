@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 08: エラーハンドリング戦略"
+description: "Elixir における関数型エラーハンドリングパターンを学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 08: エラーハンドリング戦略
 
 Elixir における関数型エラーハンドリングパターンを学びます。

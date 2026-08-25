@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章: レンタルビデオシステム — 6言語統合ガイド"
+description: "レンタルビデオシステムは、Martin Fowler の「リファクタリング」で有名な例題を関数型で再設計するケーススタディです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第17章: レンタルビデオシステム — 6言語統合ガイド
 
 ## 1. はじめに

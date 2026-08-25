@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 不変データとパイプライン処理"
+description: "前章では高階関数と関数合成を導入しました。"
+tags: [article, getting-start-tdd, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 不変データとパイプライン処理
 
 ## 11.1 はじめに

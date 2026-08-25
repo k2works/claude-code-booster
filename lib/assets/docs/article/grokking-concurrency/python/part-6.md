@@ -1,11 +1,10 @@
 ---
-title: Part VI - ノンブロッキング I/O
-description: ノンブロッキング I/O とイベント駆動プログラミングを学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, non-blocking, event-loop, reactor, python
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part VI - ノンブロッキング I/O"
+description: "ノンブロッキング I/O とイベント駆動プログラミングを学ぶ"
+tags: [article, grokking-concurrency, python, concurrency, non-blocking, event-loop, reactor]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VI: ノンブロッキング I/O

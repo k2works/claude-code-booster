@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第21章: ベストプラクティス — 6言語統合ガイド"
+description: "本章は、これまでの 20 章で学んだ関数型デザインパターンを実践で活かすためのベストプラクティスをまとめます。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第21章: ベストプラクティス — 6言語統合ガイド
 
 ## 1. はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part II: 関数型スタイルのプログラミング（Clojure 版）"
+description: "本章では、関数型プログラミングの核心となるテクニックを学びます。"
+tags: [article, grokkingfp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part II: 関数型スタイルのプログラミング（Clojure 版）
 
 本章では、関数型プログラミングの核心となるテクニックを学びます。イミュータブルなデータ操作、高階関数、そして `mapcat` による複雑なデータ変換を習得します。

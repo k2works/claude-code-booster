@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 15 章 ES/CQRS マイクロサービス（Axon）のデプロイ — Kustomize 対 Helm"
+description: "前章では、イベント連携を RabbitMQ で行うイベント駆動マイクロサービス（case-2）を Kustomize と Helm で比較しました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 15 章 ES/CQRS マイクロサービス（Axon）のデプロイ — Kustomize 対 Helm
 
 ## はじめに

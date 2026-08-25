@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part III - 第 6 章：Option 型による安全なエラーハンドリング"
+description: "null は「10 億ドルの過ち」と呼ばれるほど、ソフトウェア開発に多大なバグをもたらしてきました。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # Part III - 第 6 章：Option 型による安全なエラーハンドリング
 
 ## 6.1 はじめに：null の問題

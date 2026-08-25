@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 07: 副作用と純粋関数"
+description: "Elixir における副作用の管理と純粋関数の分離について学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 07: 副作用と純粋関数
 
 Elixir における副作用の管理と純粋関数の分離について学びます。

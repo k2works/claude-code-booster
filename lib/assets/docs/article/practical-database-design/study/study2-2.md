@@ -1,3 +1,12 @@
+---
+type: Article
+title: "実践データベース設計：販売管理システム 研究 2 - JavaFX デスクトップアプリケーションの実装"
+description: "本研究では、API サーバー構成（第13章）やモノリスサービス（研究 1）とは異なるアプローチとして、JavaFX によるデスクトップアプリケーションを実装します。"
+tags: [article, practical-database-design, study]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 実践データベース設計：販売管理システム 研究 2 - JavaFX デスクトップアプリケーションの実装
 
 ## はじめに

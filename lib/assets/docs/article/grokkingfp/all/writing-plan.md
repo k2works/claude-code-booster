@@ -1,3 +1,12 @@
+---
+type: Article
+title: "統合記事 執筆計画"
+description: "「Grokking Functional Programming」11 言語版の統合記事（全 12 章）を執筆する計画です。"
+tags: [article, grokkingfp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 統合記事 執筆計画
 
 ## 概要

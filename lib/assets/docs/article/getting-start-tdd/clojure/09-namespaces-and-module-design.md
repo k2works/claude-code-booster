@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: 名前空間とモジュール設計"
+description: "この章ではモノリシックなコードを名前空間に分割し、ドメインモデルに基づいたモジュール設計を行います。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: 名前空間とモジュール設計
 
 ## 9.1 はじめに

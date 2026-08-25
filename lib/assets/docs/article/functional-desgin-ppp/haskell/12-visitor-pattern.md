@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第12章: Visitor パターン"
+description: "Visitor パターンは、オブジェクト構造の要素に対して実行する操作を分離し、構造を変更せずに新しい操作を追加できるようにするパターンです。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第12章: Visitor パターン
 
 ## はじめに

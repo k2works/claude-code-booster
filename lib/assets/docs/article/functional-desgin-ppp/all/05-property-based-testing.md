@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第5章: プロパティベーステスト — 6言語統合ガイド"
+description: "従来の Example-Based Testing は「特定の入力に対する特定の出力」を検証しますが、プロパティベーステスト（PBT）は「すべての入力に対して成り立つ性質」を検証します。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第5章: プロパティベーステスト — 6言語統合ガイド
 
 ## 1. はじめに

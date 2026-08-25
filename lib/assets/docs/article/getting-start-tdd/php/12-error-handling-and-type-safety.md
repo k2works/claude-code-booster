@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと型安全性"
+tags: [article, getting-start-tdd, php]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと型安全性
 
 ## 12.1 例外処理

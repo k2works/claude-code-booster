@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 4 章: バージョン管理と Conventional Commits"
+description: "ソフトウェア開発では、変更履歴を安全に管理し、チームで追跡可能にする仕組みが重要です。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 4 章: バージョン管理と Conventional Commits
 
 ## 4.1 はじめに

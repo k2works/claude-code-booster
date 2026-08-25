@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第13章: Abstract Factory パターン"
+description: "Abstract Factory パターンは、関連するオブジェクト群を、その具体的なクラスを指定せずに生成するパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第13章: Abstract Factory パターン
 
 ## はじめに

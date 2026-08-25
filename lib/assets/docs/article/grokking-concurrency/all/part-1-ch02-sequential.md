@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I: 並行処理の基礎"
+description: "並行処理を理解するためには、まず逐次処理（Sequential Processing）の特徴と限界を知る必要があります。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part I: 並行処理の基礎
 
 ## 1.1 はじめに

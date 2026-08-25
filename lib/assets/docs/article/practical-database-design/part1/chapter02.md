@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第2章：基幹業務システムの業務領域"
+description: "本章では、基幹業務システムを構成する各業務領域について詳しく解説します。"
+tags: [article, practical-database-design, part1]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第2章：基幹業務システムの業務領域
 
 本章では、基幹業務システムを構成する各業務領域について詳しく解説します。各領域がどのような業務を担当し、他の領域とどのように連携するかを理解することで、システム全体の設計に役立てることができます。

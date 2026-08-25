@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第9章: Adapter パターン — 6言語統合ガイド"
+description: "Adapter パターンは、互換性のないインターフェースを接続する GoF パターンです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第9章: Adapter パターン — 6言語統合ガイド
 
 ## 1. はじめに

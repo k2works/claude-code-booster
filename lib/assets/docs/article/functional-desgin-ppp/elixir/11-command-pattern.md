@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第11章: Command パターン"
+description: "Command パターンは、リクエストをオブジェクト（データ）としてカプセル化し、異なるリクエストでクライアントをパラメータ化したり、操作の履歴を記録したり、Undo/Redo 機能を実装できるようにするパターンです。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第11章: Command パターン
 
 ## はじめに

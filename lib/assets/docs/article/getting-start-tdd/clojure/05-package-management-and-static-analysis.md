@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 5 章: パッケージ管理と静的解析"
+description: "この章では Clojure プロジェクトのパッケージ管理と静的コード解析ツールについて学びます。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 5 章: パッケージ管理と静的解析
 
 ## 5.1 はじめに

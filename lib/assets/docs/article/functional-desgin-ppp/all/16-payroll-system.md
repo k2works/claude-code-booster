@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第16章: 給与計算システム — 6言語統合ガイド"
+description: "給与計算システムは、ドメインモデリングと多態的ディスパッチを実践的に学ぶためのケーススタディです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第16章: 給与計算システム — 6言語統合ガイド
 
 ## 1. はじめに

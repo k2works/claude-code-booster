@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 4 章 複数コンテナ構成でのアプリケーション構築"
+description: "前章まででは、単一のコンテナを作り、動かし、イメージとして配布する方法を学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 4 章 複数コンテナ構成でのアプリケーション構築
 
 ![複数コンテナ構成のアプリケーションを説明する 4 コマ漫画](images/chapter-04-comic.png)

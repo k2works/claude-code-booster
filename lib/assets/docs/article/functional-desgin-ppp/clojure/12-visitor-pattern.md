@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第12章: Visitor パターン"
+description: "Visitor パターンは、データ構造と操作を分離し、既存のデータ構造を変更することなく新しい操作を追加できるようにするパターンです。"
+tags: [article, functional-desgin-ppp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第12章: Visitor パターン
 
 ## はじめに

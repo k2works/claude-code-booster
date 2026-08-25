@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章：生産管理システムの全体像"
+description: "本章から第4部「生産管理システム」の解説に入ります。"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第22章：生産管理システムの全体像
 
 本章から第4部「生産管理システム」の解説に入ります。まず、生産管理システムのスコープと、関連する組織の役割分担について解説します。

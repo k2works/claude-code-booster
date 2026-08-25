@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第21章: ベストプラクティス"
+description: "関数型プログラミングのベストプラクティスを実践的な例とともに解説します。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第21章: ベストプラクティス
 
 ## はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第22章: OO から FP への移行"
+description: "オブジェクト指向プログラミング（OOP）から関数型プログラミング（FP）への移行パターンを解説します。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第22章: OO から FP への移行
 
 ## はじめに

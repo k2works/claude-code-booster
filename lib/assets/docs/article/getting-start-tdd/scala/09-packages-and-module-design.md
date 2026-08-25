@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 9 章: パッケージとモジュール設計"
+description: "クラスが増えると、実装の正しさだけでなく「どこに何を書くか」が品質に直結します。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 9 章: パッケージとモジュール設計
 
 ## 9.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第15章：勘定科目の設計（ORM版）"
+description: "財務会計システムの根幹となる勘定科目マスタを Spring Data JPA で設計します。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第15章：勘定科目の設計（ORM版）
 
 財務会計システムの根幹となる勘定科目マスタを Spring Data JPA で設計します。本章では、TDD（テスト駆動開発）を用いて勘定科目マスタ、勘定科目構成マスタ、課税取引マスタを JPA エンティティとして実装していきます。

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: パターンマッチとガード"
+description: "前章では代数的データ型と型クラスを使って FizzBuzz のタイプ別ロジックを構造化しました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: パターンマッチとガード
 
 ## 8.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第5章：マスタ情報の設計"
+description: "販売管理システムの基盤となるマスタ情報を TDD で設計していきます。"
+tags: [article, practical-database-design, part2]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第5章：マスタ情報の設計
 
 販売管理システムの基盤となるマスタ情報を TDD で設計していきます。本章では、組織・社員・商品・取引先といった基本的なマスタテーブルの設計と実装を行います。

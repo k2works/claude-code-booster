@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 2 章 コンテナのデプロイ"
+description: "前章では Docker とコンテナの基本概念について学びました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 2 章 コンテナのデプロイ
 
 ![コンテナのデプロイ手順を説明する 4 コマ漫画](images/chapter-02-comic.png)

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第16章: 給与計算システム"
+description: "本章では、給与計算システムを題材に、関数型プログラミングにおけるドメインモデリングと多態性の実現を学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第16章: 給与計算システム
 
 ## はじめに

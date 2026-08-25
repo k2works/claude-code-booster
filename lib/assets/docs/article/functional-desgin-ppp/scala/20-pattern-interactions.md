@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章: パターン間の相互作用"
+description: "デザインパターンは単独で使用されることもありますが、実際のアプリケーションでは複数のパターンを組み合わせて使用することが一般的です。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第20章: パターン間の相互作用
 
 ## 1. はじめに

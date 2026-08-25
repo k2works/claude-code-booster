@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part V: 並行処理（Clojure 版）"
+description: "本章では、Clojure における並行処理を学びます。"
+tags: [article, grokkingfp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part V: 並行処理（Clojure 版）
 
 本章では、Clojure における並行処理を学びます。atom/ref/agent による共有状態管理、pmap による並列処理、そして core.async を使った CSP（Communicating Sequential Processes）スタイルの並行プログラミングを習得します。

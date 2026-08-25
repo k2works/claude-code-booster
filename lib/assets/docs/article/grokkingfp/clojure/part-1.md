@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part I: 関数型プログラミングの基礎（Clojure 版）"
+description: "本章では、関数型プログラミングの基本概念を Clojure で学びます。"
+tags: [article, grokkingfp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part I: 関数型プログラミングの基礎（Clojure 版）
 
 本章では、関数型プログラミングの基本概念を Clojure で学びます。

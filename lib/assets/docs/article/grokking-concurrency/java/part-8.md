@@ -1,11 +1,10 @@
 ---
-title: Part VIII - 分散並列処理
-description: MapReduce パターンと分散処理を学ぶ
-published: true
-date: 2025-12-30T09:00:00.000Z
-tags: concurrency, mapreduce, distributed, java
-editor: markdown
-dateCreated: 2025-12-30T09:00:00.000Z
+type: Article
+title: "Part VIII - 分散並列処理"
+description: "MapReduce パターンと分散処理を学ぶ"
+tags: [article, grokking-concurrency, java, concurrency, mapreduce, distributed]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VIII: 分散並列処理

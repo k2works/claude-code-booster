@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第14章: Abstract Server パターン"
+description: "Abstract Server パターンは、サーバー（サービス提供者）のインターフェースを抽象化し、クライアントを具体的な実装から分離するパターンです。"
+tags: [article, functional-desgin-ppp, rust]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第14章: Abstract Server パターン
 
 ## はじめに

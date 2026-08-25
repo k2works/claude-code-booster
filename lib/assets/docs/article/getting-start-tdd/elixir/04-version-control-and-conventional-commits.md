@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 4 章: バージョン管理と Conventional Commits"
+description: "この章では、Elixir プロジェクトを安全に育てるための Git の基本操作と、Conventional Commits の実践方法を学びます。"
+tags: [article, getting-start-tdd, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 4 章: バージョン管理と Conventional Commits
 
 ## 4.1 はじめに

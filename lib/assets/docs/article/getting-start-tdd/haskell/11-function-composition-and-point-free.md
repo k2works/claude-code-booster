@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 関数合成とポイントフリースタイル"
+description: "前章では高階関数とカリー化を学びました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 関数合成とポイントフリースタイル
 
 ## 11.1 はじめに

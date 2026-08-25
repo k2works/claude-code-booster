@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 8 章: デザインパターンの適用"
+description: "前章では、カプセル化とポリモーフィズムで if/elif の連鎖を排除しました。"
+tags: [article, getting-start-tdd, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: デザインパターンの適用
 
 ## 8.1 はじめに

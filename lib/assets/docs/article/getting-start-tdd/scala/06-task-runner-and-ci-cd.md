@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 6 章: タスクランナーと CI/CD"
+description: "TDD を継続するには、テスト・整形・静的解析を毎回確実に実行できる仕組みが必要です。"
+tags: [article, getting-start-tdd, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 6 章: タスクランナーと CI/CD
 
 ## 6.1 はじめに

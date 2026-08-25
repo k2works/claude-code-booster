@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章: 並行処理システム"
+description: "本章では、Scala の並行処理プリミティブを使った並行処理システムを学びます。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第18章: 並行処理システム
 
 ## はじめに

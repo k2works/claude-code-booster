@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章: ビデオレンタルシステム"
+description: "本章では、Martin Fowler の「リファクタリング」で有名なビデオレンタルシステムを F# で実装します。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-27T04:43:33Z }
+---
+
 # 第17章: ビデオレンタルシステム
 
 ## はじめに

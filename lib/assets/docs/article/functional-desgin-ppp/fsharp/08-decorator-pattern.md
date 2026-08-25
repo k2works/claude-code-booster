@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第8章: Decorator パターン"
+description: "Decorator パターンは、既存のオブジェクトに新しい機能を動的に追加するパターンです。"
+tags: [article, functional-desgin-ppp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第8章: Decorator パターン
 
 ## はじめに

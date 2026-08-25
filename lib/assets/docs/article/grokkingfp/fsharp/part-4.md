@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: 非同期処理とストリーム"
+description: "本章では、関数型プログラミングにおける副作用の扱い方を学びます。"
+tags: [article, grokkingfp, fsharp]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV: 非同期処理とストリーム
 
 本章では、関数型プログラミングにおける副作用の扱い方を学びます。F# の Async を使って副作用を純粋関数内で安全に記述し、Seq（シーケンス）で無限のデータを扱う方法を習得します。

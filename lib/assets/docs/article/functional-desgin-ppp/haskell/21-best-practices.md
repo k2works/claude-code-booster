@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第21章 関数型プログラミングのベストプラクティス"
+description: "この章では、Haskell での関数型プログラミングにおけるベストプラクティスを学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第21章 関数型プログラミングのベストプラクティス
 
 ## 概要

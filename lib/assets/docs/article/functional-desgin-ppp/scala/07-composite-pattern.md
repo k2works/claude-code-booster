@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第7章: Composite パターン"
+description: "Composite パターンは、オブジェクトをツリー構造で構成し、個々のオブジェクトとオブジェクトの集合を同じように扱うことができるようにするパターンです。"
+tags: [article, functional-desgin-ppp, scala]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第7章: Composite パターン
 
 ## はじめに

@@ -1,11 +1,10 @@
 ---
-title: Part VI - ノンブロッキング I/O
-description: future と promise
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, clojure, async
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part VI - ノンブロッキング I/O"
+description: "future と promise"
+tags: [article, grokking-concurrency, clojure, concurrency, async]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part VI: ノンブロッキング I/O

@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第29章：品質管理の設計"
+tags: [article, practical-database-design, part4]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第29章：品質管理の設計
 
 ## 29.1 品質管理の概要

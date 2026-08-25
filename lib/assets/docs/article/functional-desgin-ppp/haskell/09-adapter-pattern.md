@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第9章: Adapter パターン"
+description: "Adapter パターンは、既存のクラスのインターフェースを、クライアントが期待する別のインターフェースに変換するパターンです。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第9章: Adapter パターン
 
 ## はじめに

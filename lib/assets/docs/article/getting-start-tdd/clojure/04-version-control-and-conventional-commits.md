@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 4 章: バージョン管理と Conventional Commits"
+description: "第 1 部では TDD の基本サイクル（RED → GREEN → REFACTOR）を体験しました。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 4 章: バージョン管理と Conventional Commits
 
 ## 4.1 はじめに

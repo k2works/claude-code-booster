@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part IV: 状態管理とストリーム処理（Clojure 版）"
+description: "本章では、Clojure における副作用の扱い方を学びます。"
+tags: [article, grokkingfp, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part IV: 状態管理とストリーム処理（Clojure 版）
 
 本章では、Clojure における副作用の扱い方を学びます。atom による状態管理、遅延評価、非同期処理、そして遅延シーケンスとトランスデューサーによるストリーム処理を習得します。

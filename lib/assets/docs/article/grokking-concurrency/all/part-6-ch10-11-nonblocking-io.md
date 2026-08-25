@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Part VI: ノンブロッキング I/O"
+description: "Part V でロックベースの同期を学びましたが、ロックにはデッドロックやコンテキストスイッチのオーバーヘッドが伴います。"
+tags: [article, grokking-concurrency, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Part VI: ノンブロッキング I/O
 
 ## 6.1 はじめに

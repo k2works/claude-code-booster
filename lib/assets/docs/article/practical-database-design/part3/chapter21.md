@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第21章：API サービスの実装"
+description: "本章では、財務会計システムの API サービスを TDD で実装します。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第21章：API サービスの実装
 
 本章では、財務会計システムの API サービスを TDD で実装します。ヘキサゴナルアーキテクチャに基づき、勘定科目マスタ API、仕訳 API、残高照会 API を構築します。

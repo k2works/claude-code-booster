@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第20章：財務会計データ設計（D社事例）【ORM版】"
+description: "本章では、化粧品製造販売会社D社を題材として、Spring Data JPA を使用した財務会計システムのデータ設計と Seed データ実装を解説します。"
+tags: [article, practical-database-design, part3-orm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第20章：財務会計データ設計（D社事例）【ORM版】
 
 本章では、化粧品製造販売会社D社を題材として、Spring Data JPA を使用した財務会計システムのデータ設計と Seed データ実装を解説します。JPA の CascadeType.ALL によるカスケード保存や、CommandLineRunner による起動時データ投入を活用します。

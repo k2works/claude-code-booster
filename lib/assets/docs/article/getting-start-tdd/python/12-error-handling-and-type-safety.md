@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: エラーハンドリングと型安全性"
+description: "前章までに、関数型プログラミングのテクニックを FizzBuzz に適用しました。"
+tags: [article, getting-start-tdd, python]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: エラーハンドリングと型安全性
 
 ## 12.1 はじめに

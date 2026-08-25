@@ -1,3 +1,11 @@
+---
+type: Article
+title: "第 8 章: デザインパターンの適用"
+tags: [article, getting-start-tdd, php]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 8 章: デザインパターンの適用
 
 ## 8.1 値オブジェクト（Value Object）

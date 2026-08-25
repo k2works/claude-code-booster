@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章 コンテナのさまざまな活用方法"
+description: "前章までは、アプリケーションを動かすための基盤としてコンテナや Kubernetes を扱ってきました。"
+tags: [article, getting-start-docker-kubernetes]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-06-26T00:29:42Z }
+---
+
 # 第 12 章 コンテナのさまざまな活用方法
 
 ![コンテナのさまざまな活用方法を説明する 4 コマ漫画](images/chapter-12-comic.png)

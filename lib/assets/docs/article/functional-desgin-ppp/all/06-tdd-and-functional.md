@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第6章: TDD と関数型プログラミング — 6言語統合ガイド"
+description: "テスト駆動開発（TDD）は「テストを先に書き、テストが通る最小限のコードを実装し、リファクタリングする」サイクルです。"
+tags: [article, functional-desgin-ppp, all]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第6章: TDD と関数型プログラミング — 6言語統合ガイド
 
 ## 1. はじめに

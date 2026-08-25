@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 12 章: モナドとエラーハンドリング"
+description: "前章までに高階関数、カリー化、関数合成、ポイントフリースタイルを学びました。"
+tags: [article, getting-start-tdd, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 12 章: モナドとエラーハンドリング
 
 ## 12.1 はじめに

@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第 11 章: 永続データ構造とパイプライン処理"
+description: "この章では Clojure の 永続データ構造（Persistent Data Structures）と、それを活用した パイプライン処理 を学びます。"
+tags: [article, getting-start-tdd, clojure]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第 11 章: 永続データ構造とパイプライン処理
 
 ## 11.1 はじめに

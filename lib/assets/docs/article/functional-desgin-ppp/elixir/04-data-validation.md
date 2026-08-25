@@ -1,3 +1,12 @@
+---
+type: Article
+title: "Chapter 04: データバリデーション"
+description: "Elixir におけるデータバリデーションと型安全性について学びます。"
+tags: [article, functional-desgin-ppp, elixir]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # Chapter 04: データバリデーション
 
 Elixir におけるデータバリデーションと型安全性について学びます。

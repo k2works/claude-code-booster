@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第18章 勘定科目残高の設計"
+description: "本章では、財務会計システムにおける勘定科目残高の設計を行います。"
+tags: [article, practical-database-design, part3]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-30T08:34:28Z }
+---
+
 # 第18章 勘定科目残高の設計
 
 ## 概要

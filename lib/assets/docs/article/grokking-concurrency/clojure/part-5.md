@@ -1,11 +1,10 @@
 ---
-title: Part V - 同期と排他制御
-description: STM と ref による銀行口座
-published: true
-date: 2025-12-31T10:00:00.000Z
-tags: concurrency, clojure, stm
-editor: markdown
-dateCreated: 2025-12-31T10:00:00.000Z
+type: Article
+title: "Part V - 同期と排他制御"
+description: "STM と ref による銀行口座"
+tags: [article, grokking-concurrency, clojure, concurrency, stm]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
 ---
 
 # Part V: 同期と排他制御

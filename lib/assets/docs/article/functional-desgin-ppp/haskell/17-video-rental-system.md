@@ -1,3 +1,12 @@
+---
+type: Article
+title: "第17章: レンタルビデオシステム"
+description: "本章では、Martin Fowler の「リファクタリング」で有名なレンタルビデオシステムを題材に、関数型プログラミングによる料金計算ロジックの設計を学びます。"
+tags: [article, functional-desgin-ppp, haskell]
+status: stable
+generated: { by: human:kakimomokuri, at: 2026-03-24T05:22:28Z }
+---
+
 # 第17章: レンタルビデオシステム
 
 ## はじめに
