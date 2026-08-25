@@ -73,6 +73,7 @@ graph TD
 3. `planning-releases --report` で完了報告書を作成する
 4. `syncing-github-project --sync` で GitHub に最終同期する
 5. `operating-docs --update` で `docs/index.md` と `mkdocs.yml` を同期する
+6. `apply-okf` で、このイテレーションで作成・更新した計画・報告書・設計ドキュメントに OKF 規約を適用する（`apply docs --changed --by <agent>`）。イテレーション計画は完了したら `verify` ではなく実績を記した報告書が後継になるので、計画側は `stable` のまま残し、報告書を新規登録する
 
 ## GitHub 同期フロー（--sync）
 
@@ -80,7 +81,8 @@ graph TD
 
 1. `syncing-github-project` で GitHub Issue / Milestone / Label を同期する
 2. `operating-docs --update` で `docs/index.md`、`mkdocs.yml`、各ディレクトリの `index.md` を現在のドキュメント構成に同期する
-3. 変更があればコミットする
+3. `docs/` が OKF バンドルなら `apply-okf` で変更分に規約を適用し、`gulp okf:check` で ERROR 0 を確認する
+4. 変更があればコミットする
 
 ## 途中から再開
 
@@ -140,5 +142,6 @@ GitHub Project
 - `syncing-github-project` — GitHub Project への同期と一元管理
 - `tracking-progress` — 進捗分析・レポート生成
 - `operating-docs` — ドキュメントインデックス更新・Lint（`--sync` 時に自動実行）
+- `apply-okf` — 計画・報告書への OKF 規約適用（イテレーション終了時・`--sync` 時）
 - `orchestrating-analysis` — 分析フェーズのオーケストレーション
 - `orchestrating-development` — 開発フェーズのオーケストレーション

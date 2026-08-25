@@ -60,6 +60,9 @@ description: 分析フェーズ全体のワークフローをオーケストレ�
 |------|--------|--------|
 | 技術スタック選定 | `analyzing-tech-stack` | 技術選定・評価結果 |
 | ADR 作成 | `creating-adr` | Architecture Decision Record |
+| OKF 適用 | `apply-okf` | 各工程の成果物へのフロントマター付与・`index.md`/`log.md` 更新 |
+
+`docs/` が OKF 知識バンドル（ルート `index.md` に `okf_version` がある）なら、各工程で設計ドキュメントを作成・更新するたびに `apply-okf` を実行する。分析の成果物はエージェントが書き、人がレビューして確定する流れなので、作成時は `status: draft`、レビュー後に `verify --by human:<id>` で `stable` に昇格させる。工程ごとにこれを行えば、分析フェーズの終わりには「どの文書が誰に確認済みか」がフロントマターから読める状態になる。
 
 ## 進め方
 
@@ -100,5 +103,5 @@ description: 分析フェーズ全体のワークフローをオーケストレ�
 ## 注意事項
 
 - 分析結果は開発フェーズで継続的に見直す。完璧を目指して分析を長引かせるより、十分な品質で開発に進み、フィードバックで改善する方が効果的
-- 各工程の成果物は `docs/` 配下に Markdown + PlantUML で文書化する
+- 各工程の成果物は `docs/` 配下に Markdown + PlantUML で文書化する。OKF バンドルなら作成・更新のたびに `apply-okf` で規約を適用し、`gulp okf:check` が ERROR 0 の状態でコミットする
 - リリース計画（`planning-releases`）は分析フェーズの最後に、技術スタック選定後に実施する
