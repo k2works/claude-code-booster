@@ -142,3 +142,6 @@ vite.config.ts.timestamp-*
 .idea
 tmp
 lib/assets/.claude/agent-memory
+
+# スキル評価の作業ディレクトリ（skill-creator が生成）
+lib/assets/.claude/skills/*-workspace
