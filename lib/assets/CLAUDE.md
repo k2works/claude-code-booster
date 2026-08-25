@@ -108,6 +108,7 @@
 | `creating-article` | 技術記事・連載シリーズの執筆（記事とサンプルコードの同期） |
 | `creating-release-report` | リリース完了報告書作成 |
 | `creating-iteration-report` | イテレーション完了報告書作成 |
+| `migrating-okf` | プロジェクトドキュメントの OKF 知識バンドルへの移行・仕様バージョンアップ・適合性検証 |
 
 ### 学習
 
