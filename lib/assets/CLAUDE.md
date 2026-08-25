@@ -109,6 +109,7 @@
 | `creating-release-report` | リリース完了報告書作成 |
 | `creating-iteration-report` | イテレーション完了報告書作成 |
 | `migrating-okf` | プロジェクトドキュメントの OKF 知識バンドルへの移行・仕様バージョンアップ・適合性検証 |
+| `apply-okf` | 文書の作成・更新・レビュー・廃止時に OKF 規約（フロントマター・verified・index/log）を適用 |
 
 ### 学習
 
