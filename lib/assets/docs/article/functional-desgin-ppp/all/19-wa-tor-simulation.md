@@ -292,4 +292,4 @@ Wa-Tor シミュレーションは、関数型プログラミングの総合力�
 
 ## 言語別個別記事
 
-- [Clojure](../clojure/19-wa-tor-simulation.md) | [Scala](../scala/19-wa-tor-simulation.md) | [Elixir](../elixir/19-wa-tor-simulation.md) | [F#](../fsharp/19-wa-tor-simulation.md) | [Haskell](../haskell/19-wa-tor-simulation.md) | [Rust](../rust/19-wa-tor-simulation.md)
+- [Clojure](../clojure/19-wator-simulation.md) | [Scala](../scala/19-wator-simulation.md) | [Elixir](../elixir/19-wator-simulation.md) | [F#](../fsharp/19-wator-simulation.md) | [Haskell](../haskell/19-wator-simulation.md) | [Rust](../rust/19-wator-simulation.md)

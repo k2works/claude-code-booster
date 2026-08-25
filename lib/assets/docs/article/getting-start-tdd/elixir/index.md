@@ -30,6 +30,6 @@ FizzBuzz 問題を題材に、Elixir でテスト駆動開発を体験する。
 
 ### 第 4 部: 関数型プログラミング
 
-1. [10: 高階関数とパイプライン演算子](./10-higher-order-functions-and-pipeline-operator.md)
+1. [10: 高階関数とパイプライン演算子](./10-higher-order-functions-and-pipeline.md)
 2. [11: Stream と遅延評価](./11-stream-and-lazy-evaluation.md)
-3. [12: エラーハンドリングと with 構文](./12-error-handling-and-with-expression.md)
+3. [12: エラーハンドリングと with 構文](./12-error-handling-and-with.md)

@@ -303,5 +303,5 @@ Part II では、スレッドとプロセスを使って並行処理を実装し
 
 ## 参考コード
 
-- [apps/java/src/main/java/concurrency/ch02/PasswordCracker.java](../../../apps/java/src/main/java/concurrency/ch02/PasswordCracker.java)
-- [apps/java/src/test/java/concurrency/ch02/PasswordCrackerTest.java](../../../apps/java/src/test/java/concurrency/ch02/PasswordCrackerTest.java)
+- `apps/java/src/main/java/concurrency/ch02/PasswordCracker.java`
+- `apps/java/src/test/java/concurrency/ch02/PasswordCrackerTest.java`

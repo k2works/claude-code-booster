@@ -217,4 +217,4 @@ Part IV では、タスク分解と並列パターン（Fork/Join、パイプラ
 
 ## 参考コード
 
-- [apps/java/src/main/java/concurrency/ch06/GameLoop.java](../../../apps/java/src/main/java/concurrency/ch06/GameLoop.java)
+- `apps/java/src/main/java/concurrency/ch06/GameLoop.java`

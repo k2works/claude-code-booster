@@ -294,5 +294,5 @@ Part V では、同期と排他制御を学びます。レースコンディシ�
 
 ## 参考コード
 
-- [apps/python/Chapter 7/count_votes/count_votes_concurrent.py](../../../apps/python/Chapter%207/count_votes/count_votes_concurrent.py)
-- [apps/python/Chapter 7/pipeline.py](../../../apps/python/Chapter%207/pipeline.py)
+- `apps/python/Chapter 7/count_votes/count_votes_concurrent.py`
+- `apps/python/Chapter 7/pipeline.py`

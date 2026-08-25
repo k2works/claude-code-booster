@@ -308,6 +308,6 @@ Part VIII では、MapReduce パターンと分散並列処理を学びます。
 
 ## 参考コード
 
-- [apps/python/Chapter 12/coroutine.py](../../../apps/python/Chapter%2012/coroutine.py)
-- [apps/python/Chapter 12/future_burger.py](../../../apps/python/Chapter%2012/future_burger.py)
-- [apps/python/Chapter 12/asynchronous_pizza/](../../../apps/python/Chapter%2012/asynchronous_pizza/)
+- `apps/python/Chapter 12/coroutine.py`
+- `apps/python/Chapter 12/future_burger.py`
+- `apps/python/Chapter 12/asynchronous_pizza/`

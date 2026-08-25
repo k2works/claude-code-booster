@@ -188,9 +188,9 @@
 
 ## 付録
 
-- [用語集](./appendix-glossary.md)
-- [参考文献](./appendix-references.md)
-- [Clojure 開発環境セットアップ](./appendix-setup.md)
+- 用語集（未作成）
+- 参考文献（未作成）
+- Clojure 開発環境セットアップ（未作成）
 
 ---
 

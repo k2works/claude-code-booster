@@ -235,4 +235,4 @@ Part II では、プロセスとスレッドを使って並行処理を実装し
 
 ## 参考コード
 
-- [apps/python/Chapter 2/password_cracking_sequential.py](../../../apps/python/Chapter%202/password_cracking_sequential.py)
+- `apps/python/Chapter 2/password_cracking_sequential.py`

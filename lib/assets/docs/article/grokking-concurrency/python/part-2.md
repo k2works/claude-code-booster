@@ -411,7 +411,7 @@ Part III では、マルチタスキングとスケジューリングの概念�
 
 ## 参考コード
 
-- [apps/python/Chapter 4/multithreading.py](../../../apps/python/Chapter%204/multithreading.py)
-- [apps/python/Chapter 4/process_lifecycle.py](../../../apps/python/Chapter%204/process_lifecycle.py)
-- [apps/python/Chapter 5/thread_pool.py](../../../apps/python/Chapter%205/thread_pool.py)
-- [apps/python/Chapter 5/password_cracking_parallel.py](../../../apps/python/Chapter%205/password_cracking_parallel.py)
+- `apps/python/Chapter 4/multithreading.py`
+- `apps/python/Chapter 4/process_lifecycle.py`
+- `apps/python/Chapter 5/thread_pool.py`
+- `apps/python/Chapter 5/password_cracking_parallel.py`

@@ -45,44 +45,44 @@
     - ジェネレータの作成
     - プロパティの定義と検証
 
-6. [TDD と関数型プログラミング](./06-tdd-functional.md)
+6. [TDD と関数型プログラミング](./06-tdd-and-fp.md)
 
 
-    - ExUnit によるテスト
-    - Red-Green-Refactor サイクル
-    - ドキュメントテスト（doctest）
+    - TDD の基本サイクル
+    - テスタブルな設計
+    - 純粋関数によるビジネスロジック
 
-### 第3部: 構造パターン
+### 第3部: 副作用と外部システム
 
-7. [Composite パターン](./07-composite-pattern.md)
-
-
-    - 再帰的なデータ構造
-    - ネストした構造の操作
-    - アキュムレータを使った走査
-
-8. [Decorator パターン](./08-decorator-pattern.md)
+7. [副作用と純粋関数](./07-effects-and-pure-functions.md)
 
 
-    - 関数合成によるデコレーション
-    - 高階関数でのラッピング
-    - マクロによる振る舞いの追加
+    - 純粋関数 vs 副作用
+    - Functional Core, Imperative Shell
+    - 副作用の遅延実行（Effect as Data）
 
-9. [Adapter パターン](./09-adapter-pattern.md)
+8. [エラーハンドリング戦略](./08-error-handling-strategies.md)
 
 
-    - 関数アダプター
-    - プロトコル変換
-    - レガシーコードとの統合
+    - Result 型
+    - Validated パターン
+    - エラードメインモデリング
+
+9. [I/O と外部システム](./09-io-and-external-systems.md)
+
+
+    - コンソール I/O の抽象化
+    - ファイルシステムの抽象化
+    - リポジトリパターン
+
+10. [並行処理パターン](./10-concurrency-patterns.md)
+
+
+    - 基本的なプロセス
+    - Agent（状態管理）
+    - GenServer / Task
 
 ### 第4部: 振る舞いパターン
-
-10. [Strategy パターン](./10-strategy-pattern.md)
-
-
-    - 第一級関数としての戦略
-    - モジュールによる戦略実装
-    - 動的な戦略切り替え
 
 11. [Command パターン](./11-command-pattern.md)
 

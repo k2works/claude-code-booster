@@ -346,8 +346,8 @@ N: プロセッサ数
 
 ## 参考コード
 
-- [apps/python/Chapter 13/matmul/](../../../apps/python/Chapter%2013/matmul/)
-- [apps/python/Chapter 13/wordcount/](../../../apps/python/Chapter%2013/wordcount/)
+- `apps/python/Chapter 13/matmul/`
+- `apps/python/Chapter 13/wordcount/`
 
 ---
 

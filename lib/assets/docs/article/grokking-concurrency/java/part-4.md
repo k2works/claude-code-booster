@@ -208,5 +208,5 @@ Part V では、同期と排他制御を学びます。レースコンディシ�
 
 ## 参考コード
 
-- [apps/java/src/main/java/concurrency/ch07/VoteCounter.java](../../../apps/java/src/main/java/concurrency/ch07/VoteCounter.java)
-- [apps/java/src/main/java/concurrency/ch07/Pipeline.java](../../../apps/java/src/main/java/concurrency/ch07/Pipeline.java)
+- `apps/java/src/main/java/concurrency/ch07/VoteCounter.java`
+- `apps/java/src/main/java/concurrency/ch07/Pipeline.java`

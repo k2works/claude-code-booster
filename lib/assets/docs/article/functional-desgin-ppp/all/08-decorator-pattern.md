@@ -297,4 +297,4 @@ Decorator パターンは、関数型プログラミングで**高階関数**と
 
 ## 言語別個別記事
 
-- [Clojure](../clojure/08-decorator-pattern.md) | [Scala](../scala/08-decorator-pattern.md) | [Elixir](../elixir/08-error-handling.md) | [F#](../fsharp/08-decorator-pattern.md) | [Haskell](../haskell/08-decorator-pattern.md) | [Rust](../rust/08-decorator-pattern.md)
+- [Clojure](../clojure/08-decorator-pattern.md) | [Scala](../scala/08-decorator-pattern.md) | [Elixir](../elixir/08-error-handling-strategies.md) | [F#](../fsharp/08-decorator-pattern.md) | [Haskell](../haskell/08-decorator-pattern.md) | [Rust](../rust/08-decorator-pattern.md)

@@ -108,4 +108,4 @@ cd apps/java
 
 ## 参考コード
 
-- [apps/java/src/main/java/concurrency/ch08/BankAccount.java](../../../apps/java/src/main/java/concurrency/ch08/BankAccount.java)
+- `apps/java/src/main/java/concurrency/ch08/BankAccount.java`

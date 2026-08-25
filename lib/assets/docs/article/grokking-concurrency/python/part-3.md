@@ -222,5 +222,5 @@ Part IV では、タスク分解と並列パターン（Fork/Join、パイプラ
 
 ## 参考コード
 
-- [apps/python/Chapter 6/arcade_machine.py](../../../apps/python/Chapter%206/arcade_machine.py)
-- [apps/python/Chapter 6/pacman.py](../../../apps/python/Chapter%206/pacman.py)
+- `apps/python/Chapter 6/arcade_machine.py`
+- `apps/python/Chapter 6/pacman.py`

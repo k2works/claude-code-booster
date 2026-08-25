@@ -291,6 +291,6 @@ Part VII では、Python の `asyncio` を使った非同期プログラミン�
 
 ## 参考コード
 
-- [apps/python/Chapter 10/pizza_server.py](../../../apps/python/Chapter%2010/pizza_server.py)
-- [apps/python/Chapter 11/event_loop.py](../../../apps/python/Chapter%2011/event_loop.py)
-- [apps/python/Chapter 11/pizza_reactor.py](../../../apps/python/Chapter%2011/pizza_reactor.py)
+- `apps/python/Chapter 10/pizza_server.py`
+- `apps/python/Chapter 11/event_loop.py`
+- `apps/python/Chapter 11/pizza_reactor.py`

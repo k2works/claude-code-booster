@@ -329,5 +329,5 @@ Part III では、マルチタスキングとスケジューリングの概念�
 
 ## 参考コード
 
-- [apps/java/src/main/java/concurrency/ch04/ThreadBasics.java](../../../apps/java/src/main/java/concurrency/ch04/ThreadBasics.java)
-- [apps/java/src/main/java/concurrency/ch05/PasswordCrackerParallel.java](../../../apps/java/src/main/java/concurrency/ch05/PasswordCrackerParallel.java)
+- `apps/java/src/main/java/concurrency/ch04/ThreadBasics.java`
+- `apps/java/src/main/java/concurrency/ch05/PasswordCrackerParallel.java`

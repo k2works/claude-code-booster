@@ -309,6 +309,6 @@ Part VI では、ノンブロッキング I/O とイベント駆動プログラ�
 
 ## 参考コード
 
-- [apps/python/Chapter 8/race_condition/](../../../apps/python/Chapter%208/race_condition/)
-- [apps/python/Chapter 8/semaphore.py](../../../apps/python/Chapter%208/semaphore.py)
-- [apps/python/Chapter 9/deadlock/](../../../apps/python/Chapter%209/deadlock/)
+- `apps/python/Chapter 8/race_condition/`
+- `apps/python/Chapter 8/semaphore.py`
+- `apps/python/Chapter 9/deadlock/`
