@@ -109,6 +109,8 @@ sources:
 python .claude/skills/migrating-okf/scripts/okf_check.py --check <バンドルルート>
 ```
 
+運用手順書に登録済みの Gulp タスク `gulp okf:check`（同じスクリプトを呼ぶ）でもよい。`gulp okf:help` に `okf:upgrade`・`okf:viz`（上流ツールでグラフ可視化）などの一覧がある。
+
 検証内容はガイド §11 に対応する。
 
 | レベル | 内容 |

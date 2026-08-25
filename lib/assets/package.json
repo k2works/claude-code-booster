@@ -13,6 +13,8 @@
     "vault:decrypt": "gulp vault:decrypt",
     "vault:view": "gulp vault:view",
     "vault:rekey": "gulp vault:rekey",
+    "okf:check": "gulp okf:check",
+    "okf:viz": "gulp okf:viz",
     "claude:yolo": "claude --dangerously-skip-permissions",
     "copilot:yolo": "copilot --allow-all-tools",
     "codex:yolo": "codex --yolo",
