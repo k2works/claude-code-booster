@@ -110,7 +110,7 @@ IaC（Infrastructure as Code）によるインフラ管理を行います。
 
 1. **現状確認**: 既存の環境・インフラ・ドキュメントを確認
 2. **環境計画**: 必要な環境と構築順序を決定
-3. **手順書作成**: テンプレートを基に環境ごとの手順書を作成
+3. **手順書作成**: テンプレートを基に環境ごとの手順書を作成。書く前に `apply-docs-structure` で配置先を判断する（プロジェクト別構成なら `docs/operation/<project>/` 配下。Skill: `apply-docs-structure`）
 4. **環境構築**: 手順書に従い段階的に環境を構築（Skill: `managing-operations`）
 5. **CI/CD 構築**: パイプラインの設計と実装
 6. **運用スクリプト**: タスクランナー・自動化スクリプトの作成
@@ -157,4 +157,5 @@ IaC（Infrastructure as Code）によるインフラ管理を行います。
 - `operating-deploy` : デプロイ・ロールバック
 - `operating-backup` : バックアップ・リストア
 - `analyzing-operation` : 運用要件の定義
+- `apply-docs-structure` : 手順書の配置先判断（プロジェクト別 `docs/operation/<project>/`）
 - `apply-okf` : 手順書への OKF 規約適用（`stale_after`・`deprecate`）
