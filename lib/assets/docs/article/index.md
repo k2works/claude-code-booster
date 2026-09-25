@@ -7,6 +7,7 @@
 | シリーズ | テーマ | 説明 |
 |------|------|------|
 | [テスト駆動開発から始めるプログラミング入門](https://k2works.github.io/getting-started-tdd/) | TDD を軸にした言語入門 | 共通題材で Red-Green-Refactor を体験し、言語ごとの設計思想を比較できます。 |
+| [アルゴリズムからはじめるプログラミング入門](https://k2works.github.io/getting-started-algorithm/article/) | アルゴリズムを軸にした言語入門 | 基本アルゴリズム、配列、探索、スタックとキュー、再帰、ソート、文字列処理、リスト、木構造までを TDD で実装しながら、多言語で比較して学べます。 |
 | [Grokking Functional Programming](https://k2works.github.io/grokkingfp-excersice/) | 関数型プログラミング | 純粋関数、イミュータブルデータ、Option/Either、IO、並行処理まで体系的に学べます。 |
 | [Grokking Concurrency](https://k2works.github.io/grokking-concurrency-exercise/) | 並行処理プログラミング | スレッド、同期、非同期、ノンブロッキング I/O、分散並列処理を多言語で比較できます。 |
 | [Grokking Machine Learning](https://k2works.github.io/grokking-machine-learning-excersice/) | 機械学習 | 線形回帰から決定木、ニューラルネットワーク、SVM、アンサンブル学習まで、機械学習アルゴリズムを Python・Kotlin・F# で自前実装しながら学べます。 |
