@@ -13,5 +13,6 @@
 | [Grokking Concurrency](https://k2works.github.io/grokking-concurrency-exercise/) | 並行処理プログラミング | スレッド、同期、非同期、ノンブロッキング I/O、分散並列処理を多言語で比較できます。 |
 | [Grokking Machine Learning](https://k2works.github.io/grokking-machine-learning-excersice/) | 機械学習 | 線形回帰から決定木、ニューラルネットワーク、SVM、アンサンブル学習まで、機械学習アルゴリズムを Python・Kotlin・F# で自前実装しながら学べます。 |
 | [関数型デザイン - 原則、パターン、実践](https://k2works.github.io/functional-desgin-ppp/) | 関数型デザインパターン | OOP のデザインパターンを関数型パラダイムでどう表現するかを実践的に学べます。 |
+| [From Objects to Functions 演習](https://k2works.github.io/from-objects-to-functions-excersice/) | 関数型アーキテクチャ | To-Do アプリ Zettai を題材に、HTTP、ドメインモデリング、イベントソーシング、関数型エラーハンドリング、ファンクタ・モナドによる射影と永続化までを Kotlin・なでしこ3・Rust で実装しながら学べます。 |
 | [実践データベース設計：基幹業務システム編](https://k2works.github.io/practical-database-design/) | データベース設計 | 販売管理・財務会計・生産管理の基幹業務システムを題材に、業務フローとデータモデルを体系的に学べます。 |
 | [Docker/Kubernetes 実践コンテナ解説](https://k2works.github.io/getting-started-docker-kubernetes/) | コンテナ・オーケストレーション | コンテナの基礎から複数コンテナ構成、Kubernetes、継続的デリバリー、ケーススタディまで実践的に学べます。 |
