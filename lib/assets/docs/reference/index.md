@@ -14,6 +14,7 @@
 - [AI-DLC 導入ガイド](./AI-DLC導入ガイド.md) - AWS が提唱する AI-DLC の 10 原則・成果物・フェーズ・参照実装（aidlc-workflows）と、XP ベースの開発ライフサイクル・Skills 体系への組み込み方
 - [AI-DLC 用語集](./AI-DLC用語集.md) - AI-DLC の用語を基本概念・成果物・フェーズと儀式・計画・実装・参照実装の区分で定義し、XP・Scrum との対応を示す
 - [ドキュメント構成ガイド](./ドキュメント構成ガイド.md) - 単一企業・統合戦略・複数プロジェクトのコンセプトに基づく docs/ と apps/ の構成規約
+- [Living Documentation導入ガイド](./LivingDocumentation導入ガイド.md) - 『Living Documentation』に基づくドキュメントの再定義と 4 原則、知識の活用・拡張・キュレーション、Living Glossary・Living Diagram、ランタイムドキュメンテーションと、本プロジェクトの成果物への適用方法
 
 ### 経営・ビジネス
 
