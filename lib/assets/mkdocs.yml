@@ -11,7 +11,6 @@ theme:
     accent: indigo
   features:
     - navigation.tabs
-    - navigation.sections
     - toc.integrate
     - search.suggest
     - search.highlight
@@ -82,6 +81,8 @@ nav:
       - 概要: review/index.md
   - ADR:
       - 概要: adr/index.md
+  - ジャーナル:
+      - 概要: journal/index.md
   - 記事:
       - 概要: article/index.md
   - リファレンス:

@@ -26,12 +26,14 @@ okf_version: "0.2"
 | [運用](./operation/index.md) | 環境構築、デプロイ、運用手順の整理                   | `index.md` を整備済み |
 | [レビュー](./review/index.md) | 分析・開発レビュー結果の記録                      | `index.md` を整備済み |
 | [ADR](./adr/index.md) | Architecture Decision Records の管理   | `index.md` を整備済み |
+| [ジャーナル](./journal/index.md) | 開発ジャーナル（判断と学びの記録）        | `index.md` を整備済み |
 | [記事](./article/index.md) | 学習用の記事シリーズ一覧                        | 公開サイトへのリンク集 |
 | [リファレンス](./reference/index.md) | 開発ガイドラインやベストプラクティス                  | 39 件のドキュメントを配置 |
 | [テンプレート](./template/index.md) | 各種ドキュメントの作成テンプレート                   | 18 件のテンプレートを配置 |
 
 ## 補足
 
-- `strategy/`、`requirements/`、`design/`、`development/`、`operation/` は現時点ではカテゴリ索引が中心です。
-- `journal/` は作業ログ用の予約ディレクトリです。
+- `strategy/` は企業で 1 つの統合戦略として管理し、プロジェクト別のサブディレクトリは作りません。
+- `requirements/`、`design/`、`development/`、`operation/`、`adr/`、`journal/`、`review/` はプロジェクト別に管理します。カテゴリ直下の `index.md` はプロジェクト一覧の索引で、実ドキュメントとその一覧は `<category>/<project>/index.md` 配下に置きます。
+- プロジェクトの追加は `apply-docs-structure` スキル（add-project）で行います。構成の規約は [ドキュメント構成ガイド](./reference/ドキュメント構成ガイド.md) を参照してください。
 - `assets/` は MkDocs 用のスタイル・スクリプトを格納しています。
