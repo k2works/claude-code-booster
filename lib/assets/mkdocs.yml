@@ -89,6 +89,7 @@ nav:
       - 概要: reference/index.md
       - よいソフトウェアとは: reference/よいソフトウェアとは.md
       - ロジカルシンキング: reference/ロジカルシンキング.md
+      - メンタルモデル構築ガイド（汎用版）: reference/メンタルモデル構築ガイド_汎用版.md
       - 開発ガイド: reference/開発ガイド.md
       - 開発ガイド（AI-DLC 版）: reference/開発ガイド_AI-DLC版.md
       - AI-DLC 導入ガイド: reference/AI-DLC導入ガイド.md
