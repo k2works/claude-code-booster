@@ -831,41 +831,145 @@ test("raceN は先に完了した側を Either で返す") {
 
 ## 6. 代数構造の実用
 
-ファンクタ・モナド・アプリカティブは、これまでに使ってきた `map`、`flatMap`、`zip` の共通のパターンに付けた名前である。数学の用語を覚えることが目的ではなく、「この型にこの操作が使える」と見抜いて、合成の道具を選べるようにするために使う。
+モノイド・ファンクタ・モナド・アプリカティブ・プロファンクタは、これまでに使ってきた `fold`、`map`、`flatMap`、`zip` の共通のパターンに付けた名前である。数学の用語を覚えることが目的ではなく、「この型にこの操作が使える」と見抜いて、合成の道具を選べるようにするために使う。
 
-| パターン | 操作 | 意味 | これまでの例 |
-| --- | --- | --- | --- |
-| ファンクタ | `map` | 文脈の中の値を変換する | `List.map`、`Either.map` |
-| モナド | `flatMap` | 文脈を返す関数を連鎖させる | `Either.flatMap`、`either { }` の `bind()` |
-| アプリカティブ | `zip` / `zipOrAccumulate` | 独立した複数の文脈を組み合わせる | 検証エラーの蓄積 |
+Zettai 版では、5 つの構造がすべて現れた。Kotlin では、標準ライブラリと Arrow が与えるものと、自作したものがある。
 
-選び方は依存の有無で決まる。
+| 構造 | 章 | Kotlin |
+| --- | --- | --- |
+| モノイド | 5 | 自作（標準の `fold` を使う） |
+| ファンクタ | 7・8 | 標準にある（`List.map`、`Either.map`） |
+| モナド | 9 | Arrow にある（`Either.flatMap`、`either { }` と `bind()`） |
+| アプリカティブ | 11 | Arrow にある（`zipOrAccumulate`）。入力の検証では `zipAll` を自作 |
+| プロファンクタ | 12 | 自作（`Encoder` と `Decoder`） |
 
-- **次の処理が前の結果に依存する**: モナド（`flatMap`）。最初の失敗で止まる。
-- **処理が互いに独立している**: アプリカティブ。すべてを実行し、失敗を蓄積できる。
+### 6.1 モノイドでイベントを畳み込む
 
-### 6.1 ファンクタでイベントを射影する
-
-イベントの列を `fold` で畳み込み、読み取り用の表（射影）を作る。これはファンクタ的な変換と畳み込みの組み合わせである。
+イベントの列を、標準の `fold` で状態へ畳み込む。`fold` は初期値から始め、左から順にイベントを現在の状態へ取り込む。
 
 ```kotlin
-data class ToDoListRow(
-    val listName: ListName,
-    val itemCount: Int,
-    val doneCount: Int,
-)
-
-fun List<ToDoListEvent>.replayFrom(
-    initial: ToDoListState = ToDoListState.empty,
-): ToDoListState =
-    fold(initial) { state, event -> state.apply(event) }
+fun List<ToDoListEvent>.replayFrom(from: ToDoListState): ToDoListState =
+    fold(from) { state, event -> state.apply(event) }
 ```
 
-### 6.2 アプリカティブでバリデーションを合成する
+イベントを固定すると、「状態を受け取り状態を返す関数」になる。この関数を値として扱い、合成（`andThen`）と単位元（`identityTransition`）を用意する。
 
-独立した複数の検証を結合して、入力の問題をまとめて返す。
+```kotlin
+typealias StateTransition = (ToDoListState) -> ToDoListState
+```
 
-検証結果の合成には `zipAll` を使う。誤りの側は `NonEmptyList` で、失敗しているなら誤りは必ず 1 つ以上あることを型が保証する。シグネチャは次のとおりである。
+```kotlin
+fun ToDoListEvent.asTransition(): StateTransition =
+    { state -> state.apply(this) }
+```
+
+二つの状態変換は順番につなげられる。
+
+```kotlin
+infix fun StateTransition.andThen(next: StateTransition): StateTransition =
+    { state -> next(this(state)) }
+```
+
+何もしない変換もある。
+
+```kotlin
+val identityTransition: StateTransition = { it }
+```
+
+イベント列を変換へ畳み込むとき、この単位元を初期値にする。
+
+```kotlin
+fun List<ToDoListEvent>.asTransition(): StateTransition =
+    fold(identityTransition) { accumulated, event ->
+        accumulated andThen event.asTransition()
+    }
+```
+
+この構造には二つの法則がある。
+
+- 結合律: `(a andThen b) andThen c` と `a andThen (b andThen c)` の結果は同じである。
+- 単位元: identity を左または右につないでも結果は変わらない。
+
+状態変換、合成、単位元がそろい、法則が成り立つ構造をモノイドと呼ぶ。法則があると、長いイベント列を分割して別々に畳み込み、後で合成しても、結果が変わらない。
+
+### 6.2 ファンクタとモナドは標準と Arrow にある
+
+`List.map` と `Either.map` はファンクタである。読み出しが失敗しうるようになると、クエリの結果は `Either<ZettaiError, List<ToDoListRow>>` になり、`map` が二重になる。それでも、恒等則と合成則が成り立つ。
+
+```kotlin
+    "クエリ結果の map は恒等則を満たす" {
+        checkAll(results) { result ->
+            result.map { it } shouldBe result
+        }
+    }
+```
+
+```kotlin
+    "クエリ結果の map は合成則を満たす" {
+        checkAll(results, rowToInt, intToText) { result, f, g ->
+            result.map { rows -> rows.map(f) }.map { values -> values.map(g) } shouldBe
+                result.map { rows -> rows.map { g(f(it)) } }
+        }
+    }
+```
+
+`map` に `Either` を返す関数を渡すと、`Either` が二重になる。読み出して、判断して、保存する操作は、それぞれ失敗しうるので、内側を開けて繋ぐ `flatMap` が要る。Arrow の `either { }` と `bind()` は、この `flatMap` の連鎖と同じ結果になり、上から順に読める形で書ける。
+
+```kotlin
+        execute = { command ->
+            either {
+                val state = readAggregate(command.user, command.listName).bind().replayFrom()
+                val events = handle(command, state).bind()
+                persist(events).bind()
+                events
+            }
+        },
+```
+
+読み出しの失敗、コマンドの拒否、保存の失敗のどれが起きても、そこで打ち切って同じ `Left` を返す。
+
+`flatMap` が予測可能に繋がるには、3 つの性質が必要である。`pure(a)` は値 `a` を成功として包む操作で、`f` と `g` は `Either` を返す関数である。
+
+1. 左恒等則: `pure(a).flatMap(f)` は `f(a)` と同じ
+2. 右恒等則: `m.flatMap(pure)` は `m` と同じ
+3. 結合律: `m.flatMap(f).flatMap(g)` は `m.flatMap { x -> f(x).flatMap(g) }` と同じ
+
+法則は、モノイドやファンクタと同じように、プロパティテストで確かめる。
+
+```kotlin
+    "左恒等則：pure(a).flatMap(f) は f(a) と同じ" {
+        checkAll(values, steps) { a, f ->
+            pure(a).flatMap(f) shouldBe f(a)
+        }
+    }
+```
+
+```kotlin
+    "結合律：flatMap を続けても、中にまとめても同じ" {
+        checkAll(results, steps, steps) { m, f, g ->
+            m.flatMap(f).flatMap(g) shouldBe m.flatMap { x -> f(x).flatMap(g) }
+        }
+    }
+```
+
+`bind()` の連鎖が `flatMap` と同じ結果になることも、同じ方法で確かめる。
+
+```kotlin
+    // Hub の `either { ... bind() ... }` は、flatMap の連鎖を上から読める形で書いたもの。
+    "Raise の bind の連鎖は flatMap と同じ結果になる" {
+        checkAll(results, steps, steps) { m, f, g ->
+            val withBind: Either<ZettaiError, Int> = either { g(f(m.bind()).bind()).bind() }
+
+            withBind shouldBe m.flatMap(f).flatMap(g)
+        }
+    }
+```
+
+この 3 つの性質を満たす `flatMap` と `pure` を持つ構造が、モナドである。
+
+### 6.3 アプリカティブでバリデーションを合成する
+
+`either { }` のモナドは、最初のエラーで止まる。独立した複数の検証をすべて走らせ、エラーを全部集めるには、アプリカティブを使う。Arrow の `zipOrAccumulate` は 3.4 節のとおりである。入力の検証では、検証結果の合成に `zipAll` を使う。誤りの側は `NonEmptyList` で、失敗しているなら誤りは必ず 1 つ以上あることを型が保証する。シグネチャは次のとおりである。
 
 ```kotlin
 fun <P, A, B, R> zipAll(
@@ -884,9 +988,48 @@ fun validateName(field: InputField, raw: String): Either<NonEmptyList<FieldProbl
 
 検証が済んだ入力だけがドメインのコマンドになる。境界で生の文字列を検証済みの型に変え、内側では検証を繰り返さない。
 
-### 6.3 どの構造を選ぶか: 判断の手順
+### 6.4 プロファンクタで入力と出力の両方を変換する
 
-Zettai 連載の最終章（第 13 章）は、連載で使った 5 つの構造を「いつ選ぶか」で整理している。ここまでの 3 つに、モノイドとプロファンクタを加えた 5 つである。
+JSON の変換のように、書き込みと読み込みの両方向を持つ型は、入力側を `contramap`、出力側を `map` で変換する。2 つを一度に行うのが `dimap` である。
+
+```kotlin
+data class Encoder<A, B>(val run: (A) -> B) {
+    fun <C, D> dimap(contramap: (C) -> A, map: (B) -> D): Encoder<C, D> =
+        Encoder { map(run(contramap(it))) }
+}
+```
+
+読む側の `Decoder` も、同じ形である。
+
+```kotlin
+data class Decoder<B, A>(val run: (B) -> Either<ConversionFailure, A>) {
+    fun <C, D> dimap(contramap: (C) -> B, map: (A) -> D): Decoder<C, D> =
+        Decoder { run(contramap(it)).map(map) }
+}
+```
+
+どちらも、プロファンクタの形をしている。反変は「入力を受け取る前に、別の型から写す」こと、共変は「出力を返したあとで、別の型へ写す」ことである。求められる法則は次の 2 つである。
+
+- `dimap id id = id`
+- `dimap (f ∘ g) (h ∘ k) = dimap g h ∘ dimap f k`
+
+法則はプロパティテストで確かめる。プロファンクタという名前は、見つけたものに名前を付けただけで、名前を付けても実装が賢くなるわけではない。法則が通ることだけが、名前の根拠である。
+
+2 つを束ねた `Converter` には、入力と出力を同時に写す一般の `dimap` を持たせなかった。行きと帰りで、逆向きの関数が要るためである。持たせたのは、繋ぐ `andThen` である。
+
+```kotlin
+data class Converter<A, B>(val encoder: Encoder<A, B>, val decoder: Decoder<B, A>) {
+    fun <C> andThen(next: Converter<B, C>): Converter<A, C> =
+        Converter(
+            encoder = encoder.dimap({ it }, next.encoder.run),
+            decoder = Decoder { c -> next.decoder.run(c).flatMap(decoder.run) },
+        )
+}
+```
+
+### 6.5 どの構造を選ぶか: 判断の手順
+
+5 つの構造を「いつ選ぶか」で整理する。
 
 | 構造 | 持つもの | 選ぶとき | 連載の章 |
 | --- | --- | --- | --- |
@@ -914,33 +1057,7 @@ flowchart TD
 
 上から順に「いいえ」なら下へ進む。強い構造から確かめて、要らなければ弱いものにする。
 
-このガイドの Kotlin の道具に当てはめると、次のようになる。
-
-| 判断 | 選ぶもの | このガイドの例 |
-| --- | --- | --- |
-| 前の結果を使って次を決める | モナド: `flatMap`、`either { }` と `bind()` | `parseShow`（3.3 節）、トランザクション内の `either { }`（7.6 節） |
-| 独立な検証を合わせ、失敗を全部集める | アプリカティブ: `zipOrAccumulate`、`zipAll` | `validateUserAccumulating`（3.4 節）、`validateName`（6.2 節） |
-| 同じ型を畳み込む | モノイド: `fold` | `replayFrom`（6.1 節）、`projectFrom`（7.5 節） |
-| 中身だけを変える | ファンクタ: `map` | `Either.map`、`List.map` |
-
-#### 強い構造が偉いわけではない
-
-連載は、これを 3 回書いている。
-
-| 章 | 書いたこと |
-| --- | --- |
-| 9 | 「強い」とは「できることが多い」という意味で、「偉い」という意味ではない。`map` で足りるなら `map` を使う |
-| 10 | クエリ側は書き込まないので `flatMap` は要らない。`map` で足りた |
-| 11 | モナドのほうが強いのに、失敗の扱いでは劣る |
-
-11 章の対比が分かりやすい。
-
-```text
-モナド:         前の結果を使う → 前が失敗したら次を決められない → 止まる
-アプリカティブ: 前の結果を使わない → 独立に走らせられる → 全部集まる
-```
-
-できることを増やすと、できなくなることがある。モナドは「前の結果を使う」能力を得た代わりに、「失敗を集める」能力を失った。必要な強さを選ぶ。これが 5 つの構造から得た、唯一の実用的な結論である。
+「強い」とは「できることが多い」という意味で、「偉い」という意味ではない。`map` で足りるなら `map` を使う。できることを増やすと、できなくなることがある。モナドは「前の結果を使う」能力を得た代わりに、「失敗を集める」能力を失った。必要な強さを選ぶ。
 
 ---
 
