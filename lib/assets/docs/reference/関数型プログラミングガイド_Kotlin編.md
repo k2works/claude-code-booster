@@ -47,7 +47,7 @@ flowchart LR
 | 3 | 型で表すエラー | 失敗を例外ではなく戻り値の型で表す |
 | 4 | 副作用の管理 | 副作用を「実行しない記述」として値にする |
 | 5 | 並行処理 | 並行処理も構造と型で安全にする |
-| 6 | 代数構造の実用 | 合成のパターンに名前を付けて使い分ける |
+| 6 | 代数構造の実用 | 合成のパターンに名前を付け、判断の手順で使い分ける |
 | 7 | アーキテクチャ | 状態を事実（イベント）の列として扱う |
 | 8 | テスト戦略 | 純粋関数の性質をテストで言い切る |
 | 9 | 静的解析とルール設定 | 関数型の規約を機械で守らせる。PMD のカスタムルールも作る。ただし教材コードとの衝突に注意する |
@@ -884,6 +884,64 @@ fun validateName(field: InputField, raw: String): Either<NonEmptyList<FieldProbl
 
 検証が済んだ入力だけがドメインのコマンドになる。境界で生の文字列を検証済みの型に変え、内側では検証を繰り返さない。
 
+### 6.3 どの構造を選ぶか: 判断の手順
+
+Zettai 連載の最終章（第 13 章）は、連載で使った 5 つの構造を「いつ選ぶか」で整理している。ここまでの 3 つに、モノイドとプロファンクタを加えた 5 つである。
+
+| 構造 | 持つもの | 選ぶとき | 連載の章 |
+| --- | --- | --- | --- |
+| モノイド | 合成と単位元 | 同じ型のものを畳み込みたい | 5 |
+| ファンクタ | `map` | 箱の中身だけを変えたい | 7・8 |
+| アプリカティブ | `map` と `combine` | 独立な計算を合わせ、失敗を全部集めたい | 11 |
+| モナド | `map` と `flatMap` と `pure` | 前の結果を使って次を決めたい | 9・10 |
+| プロファンクタ | `map` と `contramap` | 入力と出力の両方を変換したい | 12 |
+
+実際には、次の順で考えると決まる。
+
+```mermaid
+flowchart TD
+    Q1{入力と出力の両方を<br>変換する？} -->|はい| P[プロファンクタ<br>map と contramap]
+    Q1 -->|いいえ| Q2{前の結果を使って<br>次を決める？}
+    Q2 -->|はい| M[モナド<br>flatMap]
+    Q2 -->|いいえ| Q3{複数の結果を<br>合わせる？}
+    Q3 -->|はい| Q4{失敗を全部<br>集めたい？}
+    Q4 -->|はい| A[アプリカティブ<br>combine]
+    Q4 -->|いいえ| M2[モナドでもよい]
+    Q3 -->|いいえ| Q5{同じ型を<br>畳み込む？}
+    Q5 -->|はい| MO[モノイド]
+    Q5 -->|いいえ| F[ファンクタ<br>map]
+```
+
+上から順に「いいえ」なら下へ進む。強い構造から確かめて、要らなければ弱いものにする。
+
+このガイドの Kotlin の道具に当てはめると、次のようになる。
+
+| 判断 | 選ぶもの | このガイドの例 |
+| --- | --- | --- |
+| 前の結果を使って次を決める | モナド: `flatMap`、`either { }` と `bind()` | `parseShow`（3.3 節）、トランザクション内の `either { }`（7.6 節） |
+| 独立な検証を合わせ、失敗を全部集める | アプリカティブ: `zipOrAccumulate`、`zipAll` | `validateUserAccumulating`（3.4 節）、`validateName`（6.2 節） |
+| 同じ型を畳み込む | モノイド: `fold` | `replayFrom`（6.1 節）、`projectFrom`（7.5 節） |
+| 中身だけを変える | ファンクタ: `map` | `Either.map`、`List.map` |
+
+#### 強い構造が偉いわけではない
+
+連載は、これを 3 回書いている。
+
+| 章 | 書いたこと |
+| --- | --- |
+| 9 | 「強い」とは「できることが多い」という意味で、「偉い」という意味ではない。`map` で足りるなら `map` を使う |
+| 10 | クエリ側は書き込まないので `flatMap` は要らない。`map` で足りた |
+| 11 | モナドのほうが強いのに、失敗の扱いでは劣る |
+
+11 章の対比が分かりやすい。
+
+```text
+モナド:         前の結果を使う → 前が失敗したら次を決められない → 止まる
+アプリカティブ: 前の結果を使わない → 独立に走らせられる → 全部集まる
+```
+
+できることを増やすと、できなくなることがある。モナドは「前の結果を使う」能力を得た代わりに、「失敗を集める」能力を失った。必要な強さを選ぶ。これが 5 つの構造から得た、唯一の実用的な結論である。
+
 ---
 
 ## 7. アーキテクチャ: 関数で組み立てる
@@ -1408,12 +1466,26 @@ ktlint の標準ルールを適用すると、整形の副作用が出ること�
 
 #### ルール一覧
 
-| ルール | 検出するもの | 根拠となる規約 |
-| --- | --- | --- |
-| `NoVarProperty` | クラスやトップレベルの `var` プロパティ（関数内のローカルな `var` は許す） | 状態を持たせず、値を変換する（1.3 節） |
-| `NoNotNullAssertion` | `!!` | null は `?:` や `ensureNotNull` で扱う（3.1 節） |
-| `NoThrow` | `throw` 式 | 失敗は例外ではなく `Either` で返す（第 3 章） |
-| `NoMutableCollectionInSignature` | 公開関数の引数・戻り値の `MutableList` / `MutableSet` / `MutableMap` / `MutableCollection` | 可変コレクションを共有しない（2.1 節） |
+各章の内容を、機械で検査できる形のルールにした。章ごとの対応は次のとおりである。
+
+| 章 | ルール | 検出するもの | 根拠となる規約 |
+| --- | --- | --- | --- |
+| 1 基礎 | `NoVarProperty` | クラスやトップレベルの `var` プロパティ（関数内のローカルな `var` は許す） | 状態を持たせず、値を変換する（1.3 節） |
+| 1 基礎 | `NoVarClassParameter` | コンストラクタの `var`（`data class(var x: Int)` など） | 値は不変にし、`copy` で新しい値を作る（2.1 節、7.3 節） |
+| 2 関数型スタイル | `NoMutableCollectionInSignature` | 公開関数の引数・戻り値の `MutableList` / `MutableSet` / `MutableMap` / `MutableCollection` | 可変コレクションを共有しない（2.1 節） |
+| 2 関数型スタイル | `NoMutableCollectionFactory` | `buildList` / `buildSet` / `buildMap` の外での `mutableListOf` や `ArrayList()` などの生成 | 可変操作は `buildList` の内側に閉じ込める（2.1 節） |
+| 2 関数型スタイル | `NoReduce` | `reduce` / `reduceRight` | 空のコレクションで例外を投げる。`fold` か `reduceOrNull` を使う（2.3 節） |
+| 3 型で表すエラー | `NoNotNullAssertion` | `!!` | null は `?:` や `ensureNotNull` で扱う（3.1 節） |
+| 3 型で表すエラー | `NoThrow` | `throw` 式 | 失敗は例外ではなく `Either` で返す（第 3 章） |
+| 3 型で表すエラー | `NoGenericCatch` | `Exception` / `Throwable` / `RuntimeException` の `catch` | 例外は `Either.catch` で値にする（4.3 節） |
+| 4 副作用の管理 | `SideEffectInNonSuspendFunction` | `suspend` でない関数の中での、時計・乱数・UUID・標準出力の呼び出し | 隠れた入力と副作用は `suspend` で型に表す（1.2 節、4.2 節） |
+| 4 副作用の管理 | `NoRunBlocking` | `runBlocking` の呼び出し | 副作用の型付け（`suspend`）を呼び出し側で打ち消さない（4.2 節） |
+| 5 並行処理 | `NoGlobalScope` | `GlobalScope` の使用 | 構造化並行性の中で起動する（5.2 節） |
+| 5 並行処理 | `NoRawConcurrency` | `Thread(...)`、`thread { }`、`Executors`、`synchronized`、`@Synchronized` | スレッドやロックではなく、コルーチンと `Atomic` で共有状態を更新する（5.1 節） |
+| 5 並行処理、8 テスト戦略 | `NoThreadSleep` | `Thread.sleep` | スレッドを塞ぐ。`delay` と、テストでは `runTest` の仮想時間を使う（5.2 節） |
+| 6 代数構造の実用 | `NoNestedFlatMap` | `flatMap` の中の `flatMap` | `either { }` と `bind()`、`sequence { }` で平らに書く（2.5 節、3.3 節） |
+
+第 7 章（アーキテクチャ）は、イベントやコマンドを不変の値で表す規約として `NoVarProperty` と `NoVarClassParameter`、境界の一度きりの `runBlocking` として `NoRunBlocking` が対応する。第 8 章（テスト戦略）は、`Thread.sleep` と `runBlocking` を使わずに `runTest` で時間を扱う規約として `NoThreadSleep` と `NoRunBlocking` が対応する。`sealed interface` の `when` に `else` を書かない、純粋関数の性質をプロパティベーステストで書く、といった規約は、型情報やテストの内容が要るため、構文の検査では表せない。レビューとテストで守る。
 
 #### ルールセット
 
@@ -1476,6 +1548,179 @@ ktlint の標準ルールを適用すると、整形の副作用が出ること�
             ]]></value></property>
         </properties>
     </rule>
+
+    <rule name="SideEffectInNonSuspendFunction" language="kotlin"
+          message="時計・乱数・スリープ・標準出力などの副作用は suspend 関数の中に置くか、引数で外から受け取る"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>suspend でない関数の中で、隠れた入力や副作用を持つ呼び出しをすることを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression
+    [ancestor::FunctionDeclaration[1]]
+    [not(ancestor::FunctionDeclaration[1]/Modifiers//T-SUSPEND)]
+    [
+        (
+            PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = ('println', 'print')]
+            and PostfixUnarySuffix[1]/CallSuffix
+        )
+        or (
+            PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'System']
+            and PostfixUnarySuffix[1]/NavigationSuffix/SimpleIdentifier/T-Identifier
+                [@Text = ('currentTimeMillis', 'nanoTime')]
+            and PostfixUnarySuffix[2]/CallSuffix
+        )
+        or (
+            PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'Random']
+            and PostfixUnarySuffix[1]/NavigationSuffix/SimpleIdentifier/T-Identifier
+                [starts-with(@Text, 'next')]
+            and PostfixUnarySuffix[2]/CallSuffix
+        )
+        or (
+            PrimaryExpression/SimpleIdentifier/T-Identifier
+                [@Text = ('Instant', 'LocalDate', 'LocalDateTime', 'LocalTime', 'ZonedDateTime', 'OffsetDateTime')]
+            and PostfixUnarySuffix[1]/NavigationSuffix/SimpleIdentifier/T-Identifier[@Text = 'now']
+            and PostfixUnarySuffix[2]/CallSuffix
+        )
+        or (
+            PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'UUID']
+            and PostfixUnarySuffix[1]/NavigationSuffix/SimpleIdentifier/T-Identifier[@Text = 'randomUUID']
+            and PostfixUnarySuffix[2]/CallSuffix
+        )
+    ]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoRunBlocking" language="kotlin"
+          message="runBlocking で suspend の型付けを打ち消さない。呼び出し側も suspend にするか、境界で一度だけ使う"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>runBlocking の呼び出しを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression
+    [PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'runBlocking']]
+    [PostfixUnarySuffix[1]/CallSuffix]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoVarClassParameter" language="kotlin"
+          message="コンストラクタの var は val にし、変更は copy で新しい値を作る"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>コンストラクタのプロパティを var で宣言することを禁止する。イベントやコマンドなどの値は不変にする。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//ClassParameter[T-VAR]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoMutableCollectionFactory" language="kotlin"
+          message="可変コレクションの生成は buildList / buildSet / buildMap の内側に閉じ込める"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>buildList / buildSet / buildMap の外で、可変コレクションを生成することを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression
+    [PrimaryExpression/SimpleIdentifier/T-Identifier
+        [@Text = ('mutableListOf', 'mutableSetOf', 'mutableMapOf', 'arrayListOf', 'hashSetOf', 'hashMapOf',
+                  'linkedSetOf', 'linkedMapOf', 'ArrayList', 'HashSet', 'HashMap', 'LinkedHashSet', 'LinkedHashMap')]]
+    [PostfixUnarySuffix/CallSuffix]
+    [not(ancestor::PostfixUnaryExpression
+        [PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = ('buildList', 'buildSet', 'buildMap')]])]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoReduce" language="kotlin"
+          message="reduce は空のコレクションで例外を投げる。fold か reduceOrNull を使う"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>reduce / reduceRight の呼び出しを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression/PostfixUnarySuffix/NavigationSuffix/SimpleIdentifier/T-Identifier
+    [@Text = ('reduce', 'reduceRight')]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoGenericCatch" language="kotlin"
+          message="Exception / Throwable を広く catch せず、Either.catch で値にするか、想定する例外の型だけを catch する"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>Exception / Throwable / RuntimeException を catch することを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//CatchBlock[Type//T-Identifier[@Text = ('Exception', 'Throwable', 'RuntimeException')]]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoNestedFlatMap" language="kotlin"
+          message="flatMap の入れ子は、either ブロックと bind()、または sequence ビルダーで平らに書く"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>flatMap の中で flatMap を呼ぶことを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression
+    [PostfixUnarySuffix/NavigationSuffix/SimpleIdentifier/T-Identifier[@Text = 'flatMap']]
+    [ancestor::PostfixUnaryExpression
+        [PostfixUnarySuffix/NavigationSuffix/SimpleIdentifier/T-Identifier[@Text = 'flatMap']]]
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoGlobalScope" language="kotlin"
+          message="GlobalScope を使わず、coroutineScope の中で起動して構造化並行性を保つ"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>GlobalScope の使用を禁止する。</description>
+        <priority>2</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'GlobalScope']
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoRawConcurrency" language="kotlin"
+          message="スレッドやロックを直接扱わず、コルーチンと Atomic で共有状態を更新する"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>Thread の生成、thread { }、Executors、synchronized、@Synchronized を禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+(
+    //PostfixUnaryExpression
+        [PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = ('Thread', 'thread', 'synchronized')]]
+        [PostfixUnarySuffix[1]/CallSuffix]
+    | //PostfixUnaryExpression
+        [PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'Executors']]
+    | //SingleAnnotation/UnescapedAnnotation/UserType/SimpleUserType/SimpleIdentifier/T-Identifier
+        [@Text = 'Synchronized']
+)
+            ]]></value></property>
+        </properties>
+    </rule>
+
+    <rule name="NoThreadSleep" language="kotlin"
+          message="Thread.sleep はスレッドを塞ぐ。suspend 関数の delay を使い、テストでは runTest の仮想時間を使う"
+          class="net.sourceforge.pmd.lang.rule.xpath.XPathRule">
+        <description>Thread.sleep の呼び出しを禁止する。</description>
+        <priority>3</priority>
+        <properties>
+            <property name="xpath"><value><![CDATA[
+//PostfixUnaryExpression
+    [PrimaryExpression/SimpleIdentifier/T-Identifier[@Text = 'Thread']]
+    [PostfixUnarySuffix[1]/NavigationSuffix/SimpleIdentifier/T-Identifier[@Text = 'sleep']]
+            ]]></value></property>
+        </properties>
+    </rule>
 </ruleset>
 ```
 
@@ -1495,6 +1740,33 @@ ktlint の標準ルールを適用すると、整形の副作用が出ること�
 - **型の別名は検出できない。** `typealias Names = MutableList<String>` で包むと見逃す。
 - **公開かどうかは関数自身の修飾子だけで判断する。** `private` なクラスの中の公開関数も報告する。
 - **型情報を使っていない。** `auxClasspath` の設定は要らないが、`import ... as` で別名を付けた型は見逃す。
+
+副作用の型付けのルール（`SideEffectInNonSuspendFunction`、`NoRunBlocking`）は、呼び出しの式の形を読む。
+
+| 式 | 意味 | 根拠 |
+| --- | --- | --- |
+| `PostfixUnaryExpression` | `a.b(...)` や `f(...)` のような、先頭の要素と後ろに続く接尾辞の並び | `System.currentTimeMillis()` の構文木は、`PrimaryExpression`（`System`）、`NavigationSuffix`（`.currentTimeMillis`）、`CallSuffix`（`()`）の順に並ぶ。PMD の `ast-dump` で確認した |
+| `PostfixUnarySuffix[1]/CallSuffix` | 先頭の要素の直後が呼び出し。`println(...)` や `runBlocking { }` のような修飾なしの呼び出し | 同上 |
+| `PostfixUnarySuffix[1]/NavigationSuffix/...` と `PostfixUnarySuffix[2]/CallSuffix` | `名前.メンバ(...)` の形の呼び出し | 同上 |
+| `ancestor::FunctionDeclaration[1]` | その呼び出しを直接囲む関数（一番内側） | XPath の標準の軸 |
+| `Modifiers//T-SUSPEND` | その関数が `suspend` で修飾されている | `suspend` 関数の構文木に `T-SUSPEND` が現れる（`ast-dump` で確認） |
+
+このルールが検出する呼び出しは、次のとおりである。型名と関数名の文字列で判断するので、一覧にないものは検出しない。
+
+| 種類 | 検出する呼び出し |
+| --- | --- |
+| 標準出力 | `println(...)`、`print(...)` |
+| 時計 | `System.currentTimeMillis()`、`System.nanoTime()`、`Instant.now()`、`LocalDate.now()`、`LocalDateTime.now()`、`LocalTime.now()`、`ZonedDateTime.now()`、`OffsetDateTime.now()` |
+| 乱数 | `Random.next...(...)`（`Random.nextInt(1, 7)` など） |
+| 識別子の生成 | `UUID.randomUUID()` |
+
+次の点に注意する。
+
+- **関数の外は対象外。** トップレベルのプロパティの初期化（`val top = System.currentTimeMillis()`）のように、囲む関数がない場所は見逃す。
+- **`Random.Default.nextInt()` のように、途中に要素が挟まる形は見逃す。**
+- **`suspend` の関数の中のラムダは許す。** 一番内側の関数が `suspend` であれば報告しない。
+- **`suspend` にしても、純粋になるわけではない。** このルールが求めるのは、副作用を持つ処理を `suspend` 関数の中、または引数として外から受け取る関数（`clock: () -> Long` のような形）に置くことで、呼び出し位置を型で限定することである。
+- **`fun main()` や HTTP の入口など、境界のコードは報告される。** 除外パターンで外すか、ルールセットを分ける。
 
 #### 標準ルールと合わせて有効にする
 
@@ -1545,13 +1817,31 @@ fun add(items: MutableList<String>): MutableList<String> = items   // NoMutableC
 private fun addPrivate(items: MutableList<String>): Int = items.size   // private は対象外
 
 fun readOnly(items: List<String>): List<String> = items + "x"          // 読み取り専用は対象外
+
+fun now(): Long = System.currentTimeMillis()                  // SideEffectInNonSuspendFunction
+fun log(message: String) { println(message) }                 // SideEffectInNonSuspendFunction
+suspend fun castTheDie(): Int = Random.nextInt(1, 7)          // suspend 関数の中は対象外
+fun pureScore(word: String): Int = word.length                // 純粋関数は対象外
+fun blocking(): Int = runBlocking { 1 }                       // NoRunBlocking
+data class Counter2(var x: Int)                                // NoVarClassParameter
+fun words(): List<String> { val l = mutableListOf("a"); return l }   // NoMutableCollectionFactory
+fun squares(n: Int): List<Int> = buildList { val tmp = mutableListOf(n); addAll(tmp) }   // buildList の中は対象外
+fun biggest(n: List<Int>): Int = n.reduce { a, b -> if (a > b) a else b }   // NoReduce
+fun safe(): Int = try { 1 } catch (e: Exception) { 0 }          // NoGenericCatch
+fun nested(a: List<Int>): List<Int> = a.flatMap { x -> listOf(x).flatMap { y -> listOf(y) } }   // NoNestedFlatMap
+fun launchAll() { GlobalScope.launch { } }                     // NoGlobalScope
+fun spawn() { thread { } }                                     // NoRawConcurrency
+@Synchronized fun sync() {}                                    // NoRawConcurrency
+fun nap() { Thread.sleep(10) }                                 // NoThreadSleep
 ```
 
 ```bash
 pmd check -d src -R fp-kotlin-ruleset.xml -f text --no-cache
 ```
 
-期待する結果は、`NoVarProperty` が 1 件（4 行目）、`NoNotNullAssertion` が 1 件（14 行目）、`NoThrow` が 1 件（18 行目）、`NoMutableCollectionInSignature` が 2 件（20 行目、引数と戻り値）である。PMD 7.29.0 で実行したところ、この 5 件だけが報告された。件数が合わないときは、PMD の `designer`（構文木を見るツール）で、実際のノード名を確かめて XPath を直す。
+期待する結果は、`NoVarProperty` が 1 件（4 行目）、`NoNotNullAssertion` が 1 件（14 行目）、`NoThrow` が 1 件（18 行目）、`NoMutableCollectionInSignature` が 2 件（20 行目、引数と戻り値）、`SideEffectInNonSuspendFunction` が 2 件（26・27 行目）、`NoRunBlocking` が 1 件（30 行目）、`NoVarClassParameter` が 1 件（31 行目）、`NoMutableCollectionFactory` が 1 件（32 行目）、`NoReduce` が 1 件（34 行目）、`NoGenericCatch` が 1 件（35 行目）、`NoNestedFlatMap` が 1 件（36 行目）、`NoGlobalScope` が 1 件（37 行目）、`NoRawConcurrency` が 2 件（38・39 行目）、`NoThreadSleep` が 1 件（40 行目）である。PMD 7.29.0 で実行したところ、この 17 件だけが報告された。`suspend` 関数の中の `Random.nextInt`、`buildList` の内側の `mutableListOf`（33 行目）、純粋関数は報告されない。
+
+ルールの `message` に `{` と `}` を書いてはいけない。PMD が `MessageFormat` として解釈し、`can't parse argument number` の内部エラーで処理が失敗する。コード片を示したいときは、`description` に書くか、波括弧を使わない言い方にする（`either ブロック`、`sequence ビルダー`）。件数が合わないときは、PMD の `designer`（構文木を見るツール）で、実際のノード名を確かめて XPath を直す。
 
 実行時に `No auxClasspath configured for Kotlin; type resolution will not work.` という警告が出る。これらのルールは型情報を使わない構文の検査なので、無視してよい。
 
@@ -1567,6 +1857,10 @@ pmd check -d src -R fp-kotlin-ruleset.xml -f text --no-cache
 | 前置の `!true` | 報告されない |
 | `i!!.plus(1)` | 報告される |
 | 本体にブロックを持つローカル関数の `MutableSet` 引数 | 報告されない |
+| 非 `suspend` のメソッドの `Instant.now()`、`System.nanoTime()`、`UUID.randomUUID()`、`print("a")` | 報告される |
+| `suspend` 関数の中の `println`、ラムダ内の `Random.nextInt()` | 報告されない |
+| 時計を `clock: () -> Long` で受け取り `clock()` を呼ぶ関数 | 報告されない |
+| `Random.Default.nextInt()`、トップレベルプロパティの `System.currentTimeMillis()` | 報告されない（見逃す） |
 
 なお、式本体のローカル関数（`fun h() { fun inner(a: MutableSet<Int>) = 1 }`）を含むファイルでは、PMD 7.29.0 が内部エラー（`Parameter count mismatch in !debug only!`）で処理に失敗した。これらのルールの問題ではなく、PMD 側の挙動である。同じ形のコードがあるときは、PMD の更新を試す。
 
