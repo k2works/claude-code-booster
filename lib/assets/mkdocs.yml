@@ -123,6 +123,7 @@ nav:
       - 環境変数管理ガイド: reference/環境変数管理ガイド.md
       - 言語別開発ガイド: reference/言語別開発ガイド.md
       - 関数型プログラミングガイド（Kotlin 編）: reference/関数型プログラミングガイド_Kotlin編.md
+      - 関数型プログラミングガイド（Rust 編）: reference/関数型プログラミングガイド_Rust編.md
       - Java アプリケーション環境構築ガイド: reference/Javaアプリケーション環境構築ガイド.md
       - TypeScript アプリケーション環境構築ガイド: reference/TypeScriptアプリケーション環境構築ガイド.md
       - 運用スクリプト作成ガイド: reference/運用スクリプト作成ガイド.md
