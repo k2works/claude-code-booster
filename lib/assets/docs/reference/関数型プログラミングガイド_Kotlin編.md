@@ -4,7 +4,7 @@ title: "関数型プログラミングガイド（Kotlin 編）"
 description: "Kotlin の標準ライブラリ、Arrow、kotlinx.coroutines で関数型プログラミングを実践するためのガイド。純粋関数からエラーの型表現、副作用の管理、並行処理、イベントソーシングによるアーキテクチャ設計までを一本の流れで整理する。"
 tags: [reference, kotlin, functional-programming, arrow]
 status: draft
-generated: { by: claude-sonnet-5-5, at: 2026-11-13T00:00:00Z }
+generated: { by: claude-code/claude-sonnet-5-5, at: 2026-11-13T00:00:00Z }
 ---
 
 # 関数型プログラミングガイド（Kotlin 編）
