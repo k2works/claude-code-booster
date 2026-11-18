@@ -133,6 +133,7 @@ AI-DLC で守ること：
 | `migrating-ai-dlc` | XP ベースの既存プロジェクトを AI-DLC の運用（Unit 分解・Bolt 計画・リスク台帳・ガードレール）へ移行・適合性検証 |
 | `apply-okf` | 文書の作成・更新・レビュー・廃止時に OKF 規約（フロントマター・verified・index/log）を適用 |
 | `apply-docs-structure` | ドキュメント構成ガイド（単一企業・統合戦略・複数プロジェクト）に基づく配置判断・新プロジェクトのディレクトリ一式作成・構成検証 |
+| `apply-living-documentation` | Living Documentation の原則に基づく文書化判断（書く・リンク・生成・書かない）、根拠の補足、ガイドツアー・サイトシーイングによるキュレーション、用語集・図の自動生成 |
 
 ### 学習
 
