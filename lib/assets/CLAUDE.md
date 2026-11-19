@@ -52,6 +52,7 @@ AI-DLC で守ること：
 | `orchestrating-analysis` | 分析フェーズの全体ワークフロー |
 | `orchestrating-development` | 開発フェーズの TDD ワークフロー・Codex 分業 |
 | `orchestrating-operation` | 運用フェーズの環境構築・デプロイワークフロー |
+| `orchestrating-project` | 計画・進捗管理フェーズのワークフロー（リリース計画→GitHub 同期→進捗追跡） |
 
 ### 分析
 
@@ -78,6 +79,7 @@ AI-DLC で守ること：
 | :--- | :--- |
 | `developing-backend` | バックエンド TDD（インサイドアウト） |
 | `developing-frontend` | フロントエンド TDD（アウトサイドイン） |
+| `developing-release` | リリースワークフロー（品質ゲート・バージョンバンプ・CHANGELOG・タグ） |
 
 ### レビュー
 
@@ -111,6 +113,7 @@ AI-DLC で守ること：
 | `operating-cicd` | CI/CD パイプライン構築 |
 | `operating-deploy` | デプロイ・ロールバック |
 | `operating-qt` | コード品質管理（SonarQube） |
+| `validating-operating-setup` | 環境セットアップ手順書の実施状況の監査 |
 | `operating-backup` | バックアップ・リストア |
 | `killing-processes` | 開発プロセス強制終了 |
 
