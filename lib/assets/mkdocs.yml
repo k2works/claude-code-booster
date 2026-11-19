@@ -126,6 +126,7 @@ nav:
       - 関数型プログラミングガイド（Rust 編）: reference/関数型プログラミングガイド_Rust編.md
       - 関数型プログラミングガイド（Scala 編）: reference/関数型プログラミングガイド_Scala編.md
       - Java アプリケーション環境構築ガイド: reference/Javaアプリケーション環境構築ガイド.md
+      - Java アプリケーションデモ環境構築ガイド: reference/Javaアプリケーションデモ環境構築ガイド.md
       - TypeScript アプリケーション環境構築ガイド: reference/TypeScriptアプリケーション環境構築ガイド.md
       - 運用スクリプト作成ガイド: reference/運用スクリプト作成ガイド.md
       - Codex CLI MCP アプリケーション開発フロー: reference/CodexCLIMCPアプリケーション開発フロー.md
