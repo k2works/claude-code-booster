@@ -112,6 +112,7 @@ Claude Code をより効率的に使うための基本設定テンプレート�
 | `apply-okf` | 文書の作成・更新・レビュー・廃止時に OKF 規約（フロントマター・verified・index/log）を適用。 |
 | `apply-docs-structure` | ドキュメント構成ガイドに基づく配置判断、新プロジェクトのディレクトリ一式作成、構成検証。 |
 | `apply-living-documentation` | Living Documentation の原則に基づく文書化判断、根拠の補足、キュレーション、用語集・図の自動生成。 |
+| `building-project` | テンプレート展開直後のプロジェクトを立ち上げ。プレースホルダー置換、.gitignore 追加、領域ごとの初期コミット。 |
 
 #### 学習系
 
@@ -238,6 +239,7 @@ Claude Code をより効率的に使うための基本設定テンプレート�
 │   ├── apply-okf/SKILL.md
 │   ├── apply-docs-structure/SKILL.md
 │   ├── apply-living-documentation/SKILL.md
+│   ├── building-project/SKILL.md
 │   ├── orchestrating-analysis/SKILL.md
 │   ├── orchestrating-development/SKILL.md
 │   ├── orchestrating-operation/SKILL.md
